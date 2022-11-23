@@ -32,5 +32,3 @@ http://search.ccgp.gov.cn
 http://www.mof.gov.cn
 http://www.ccgp-beijing.gov.cn
 http://www.ccgp-shanghai.gov.cn
-
-Process finished with exit code 0

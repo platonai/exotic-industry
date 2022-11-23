@@ -1,0 +1,1006 @@
+2022-11-23 11:57:25.041  INFO [main] a.p.s.ScentEnvironment - Registered features(69): top, left, width, height, char, txt_nd, img, a, sibling, child, dep, seq, txt_dns, pid, tag, nd_id, nd_cs, ft_sz, color, b_bolor, rtop, rleft, rrow, rcol, dist, simg, mimg, limg, aimg, saimg, maimg, laimg, char_max, char_ave, own_char, own_txt_nd, grant_child, descend, sep, rseq, txt_nd_c, vcc, vcv, avcc, avcv, hcc, hcv, ahcc, ahcv, txt_df, cap_df, tn_max_w, tn_ave_w, tn_max_h, tn_ave_h, a_max_w, a_ave_w, a_max_h, a_ave_h, img_max_w, img_ave_w, img_max_h, img_ave_h, tn_total_w, tn_total_h, a_total_w, a_total_h, img_total_w, img_total_h
+2022-11-23 11:57:25.046  INFO [main] a.p.s.ScentEnvironment - Initializing feature calculator, use ChainedFeatureCalculator with Level2FeatureCalculator appended
+2022-11-23 11:57:25.078  INFO [main] a.p.s.ScentEnvironment - Scent environment is initialized
+2022-11-23 11:57:25.083  INFO [main] a.p.s.q.h.c.s.AbstractScentSQLContext - AbstractScentSQLContext is created | #1
+2022-11-23 11:57:25.111  INFO [main] a.p.p.c.PulsarContexts - Active context | ai.platon.scent.ql.h2.context.support.DefaultClassPathXmlScentH2Context#1
+2022-11-23 11:57:25.187  INFO [main] a.p.p.c.c.AbstractConfiguration - Find legacy resource: jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-skeleton/1.10.6/pulsar-skeleton-1.10.6.jar!/config/legacy/pulsar-default.xml
+2022-11-23 11:57:25.188  INFO [main] a.p.p.c.c.AbstractConfiguration - Find legacy resource: jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-skeleton/1.10.6/pulsar-skeleton-1.10.6.jar!/config/legacy/pulsar-site.xml
+2022-11-23 11:57:25.189  INFO [main] a.p.p.c.c.AbstractConfiguration - Find legacy resource: jar:file:/home/vincent/.m2/repository/ai/platon/scent/scent-resources/1.10.3-SNAPSHOT/scent-resources-1.10.3-SNAPSHOT.jar!/config/legacy/default/pulsar-task.xml
+2022-11-23 11:57:25.207  INFO [main] a.p.p.c.c.AbstractConfiguration - profile: <default> | [pulsar-default.xml, pulsar-site.xml, pulsar-task.xml]
+2022-11-23 11:57:25.208  INFO [main] a.p.p.c.c.AbstractConfiguration - Find legacy resource: jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-skeleton/1.10.6/pulsar-skeleton-1.10.6.jar!/config/legacy/pulsar-default.xml
+2022-11-23 11:57:25.209  INFO [main] a.p.p.c.c.AbstractConfiguration - Find legacy resource: jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-skeleton/1.10.6/pulsar-skeleton-1.10.6.jar!/config/legacy/pulsar-site.xml
+2022-11-23 11:57:25.210  INFO [main] a.p.p.c.c.AbstractConfiguration - Find legacy resource: jar:file:/home/vincent/.m2/repository/ai/platon/scent/scent-resources/1.10.3-SNAPSHOT/scent-resources-1.10.3-SNAPSHOT.jar!/config/legacy/default/pulsar-task.xml
+2022-11-23 11:57:25.212  INFO [main] a.p.p.c.c.AbstractConfiguration - profile: <default> | [pulsar-default.xml, pulsar-site.xml, pulsar-task.xml]
+2022-11-23 11:57:25.284  INFO [main] a.p.p.c.ResourceLoader - Find resource seeds/bidding.txt | file:/home/vincent/workspace/exotic-industry/exotic-bidding/target/classes/seeds/bidding.txt
+2022-11-23 11:57:25.574  INFO [main] a.p.p.c.ResourceLoader - Find resource regex-normalize.xml | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-filter/1.10.6/pulsar-filter-1.10.6.jar!/regex-normalize.xml
+2022-11-23 11:57:25.649  INFO [main] a.p.p.c.ResourceLoader - Find resource protocol-plugins.txt | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-protocol/1.10.6/pulsar-protocol-1.10.6.jar!/protocol-plugins.txt
+2022-11-23 11:57:26.086  INFO [main] a.p.p.c.p.ProtocolFactory - Supported protocols: crowd, browser
+2022-11-23 11:57:26.196  INFO [main] a.p.p.c.CoreMetrics - maxUrlLength: 1024 timeoutUrls: 0 failedUrls: 0 deadUrls: 0
+2022-11-23 11:57:26.236  INFO [main] a.p.p.c.ResourceLoader - Find resource prefix-urlfilter.txt | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-filter/1.10.6/pulsar-filter-1.10.6.jar!/prefix-urlfilter.txt
+2022-11-23 11:57:26.242  INFO [main] a.p.p.c.ResourceLoader - Find resource suffix-urlfilter.txt | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-filter/1.10.6/pulsar-filter-1.10.6.jar!/suffix-urlfilter.txt
+2022-11-23 11:57:26.249  INFO [main] a.p.p.c.ResourceLoader - Find resource regex-urlfilter.txt | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-filter/1.10.6/pulsar-filter-1.10.6.jar!/regex-urlfilter.txt
+2022-11-23 11:57:26.256  INFO [main] a.p.p.c.ResourceLoader - Find resource automaton-urlfilter.txt | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-filter/1.10.6/pulsar-filter-1.10.6.jar!/automaton-urlfilter.txt
+2022-11-23 11:57:26.377  INFO [main] a.p.p.c.p.h.PrimerHtmlParser - className: PrimerHtmlParser defaultCharEncoding: utf-8 parseFilters
+2022-11-23 11:57:26.406  INFO [main] a.p.p.c.ResourceLoader - Find resource parse-plugins.xml | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-parse/1.10.6/pulsar-parse-1.10.6.jar!/parse-plugins.xml
+2022-11-23 11:57:26.409  INFO [main] a.p.p.c.p.h.PrimerHtmlParser - className: PrimerHtmlParser defaultCharEncoding: utf-8
+2022-11-23 11:57:26.410  INFO [main] a.p.p.c.p.ParserFactory - Active parsers:
+          ----------Params Table----------
+                     Name   Value
+                text/html: ai.platon.pulsar.crawl.parse.html.PrimerHtmlParser
+ application/x-javascript:
+                 text/xml: ai.platon.pulsar.parse.tika.TikaParser
+           text/aspdotnet: ai.platon.pulsar.crawl.parse.html.PrimerHtmlParser
+      application/rss+xml: ai.platon.pulsar.parse.tika.TikaParser
+                        *: ai.platon.pulsar.parse.tika.TikaParser
+    application/xhtml+xml: ai.platon.pulsar.crawl.parse.html.PrimerHtmlParser
+
+2022-11-23 11:57:26.419  INFO [main] a.p.p.c.p.PageParser - maxParseTime: PT1M maxParsedLinks: 200 groupMode: BY_HOST ignoreExternalLinks: false maxUrlLength: 1024 defaultAnchorLenMin: 2 defaultAnchorLenMax: 200
+2022-11-23 11:57:42.745  INFO [main] a.p.p.p.g.GoraStorage - Backend data store: FileBackendPageStore realSchema: FileBackendPageStore
+2022-11-23 11:58:03.941  INFO [main] a.p.p.p.AutoDetectStorageProvider - Storage is created: class ai.platon.pulsar.persist.gora.FileBackendPageStore realSchema: FileBackendPageStore
+2022-11-23 11:58:03.989  INFO [main] a.p.p.c.c.L.Task -   3. 💯 💿 U  got 200 283.74 KiB in 11.612s, last fetched 27m56s ago, fc:1 | 2/68/4/101/3075 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=5cf26c45-6f50-4278-aa80-a3eaba8923ad -ignoreFailure -requireSize 1000
+2022-11-23 11:58:04.367  INFO [main] a.p.p.c.ResourceLoader - Find resource feature/classify/common/block-stat-basic.xml | jar:file:/home/vincent/.m2/repository/ai/platon/scent/scent-resources/1.10.3-SNAPSHOT/scent-resources-1.10.3-SNAPSHOT.jar!/feature/classify/common/block-stat-basic.xml
+2022-11-23 11:58:04.487  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 11:58:04.490  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=5cf26c45-6f50-4278-aa80-a3eaba8923ad | file:///tmp/pulsar-vincent/cache/web/export/portal/nbzfcg-cn-765badc0801d7af8e6ba57c9d9a08664.htm
+2022-11-23 11:58:04.490  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=5cf26c45-6f50-4278-aa80-a3eaba8923ad
+2.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=54
+3.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=4
+4.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=99
+5.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=53
+6.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=6
+7.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=3
+8.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=7
+9.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=60
+10.	http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=2
+2022-11-23 11:58:04.506  INFO [main] a.p.p.c.c.L.Task -   6. 💯 💿 U  got 200 53.50 KiB in 15.723s, last fetched 27m32s ago, fc:1 | 2/83/1/87/836 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticePeriod=1 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:04.866  INFO [main] a.p.p.c.f.p.PrivacyContextIdGeneratorFactory - Using id generator f.p.SequentialPrivacyContextIdGenerator
+2022-11-23 11:58:04.896  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #10pczN4, active: 0, allowed: 2
+2022-11-23 11:58:04.929  INFO [main] a.p.p.c.AppContext - Version: Linux version 5.15.0-53-generic (buildd@lcy02-amd64-047) (gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #59-Ubuntu SMP Mon Oct 17 18:53:30 UTC 2022
+
+2022-11-23 11:58:05.151  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.2fvt0
+2022-11-23 11:58:11.666  INFO [r-worker-1] a.p.p.c.ResourceLoader - Find resource js/stealth.js | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-browser/1.10.6/pulsar-browser-1.10.6.jar!/js/stealth.js
+2022-11-23 11:58:11.670  INFO [r-worker-1] a.p.p.c.ResourceLoader - Find resource js/__pulsar_utils__.js | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-browser/1.10.6/pulsar-browser-1.10.6.jar!/js/__pulsar_utils__.js
+2022-11-23 11:58:11.675  INFO [r-worker-1] a.p.p.c.ResourceLoader - Find resource js/configs.js | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-browser/1.10.6/pulsar-browser-1.10.6.jar!/js/configs.js
+2022-11-23 11:58:11.676  INFO [r-worker-1] a.p.p.c.ResourceLoader - Find resource js/node_ext.js | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-browser/1.10.6/pulsar-browser-1.10.6.jar!/js/node_ext.js
+2022-11-23 11:58:11.678  INFO [r-worker-1] a.p.p.c.ResourceLoader - Find resource js/node_traversor.js | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-browser/1.10.6/pulsar-browser-1.10.6.jar!/js/node_traversor.js
+2022-11-23 11:58:11.679  INFO [r-worker-1] a.p.p.c.ResourceLoader - Find resource js/feature_calculator.js | jar:file:/home/vincent/.m2/repository/ai/platon/pulsar/pulsar-browser/1.10.6/pulsar-browser-1.10.6.jar!/js/feature_calculator.js
+2022-11-23 11:58:24.347  INFO [main] a.p.p.c.c.L.Task -   9. 💯 🔃 U for RT got 200 52.50 KiB in 12.564s, last fetched 26m46s ago, fc:2 | 2/83/1/76/836 | 10pczN4 | file:///tmp/ln/77c52aa488d213a2b276a3d2fb23984d.htm | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=11 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:24.367  INFO [main] a.p.p.c.c.L.Task -  12. 💯 💿 U  got 200 53.05 KiB in 15.187s, last fetched 26m26s ago, fc:1 | 2/83/1/84/836 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=12 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:24.389  INFO [main] a.p.p.c.c.L.Task -  15. 💯 💿 U  got 200 55.13 KiB in 11.153s, last fetched 26m13s ago, fc:1 | 2/83/2/90/836 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=13 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:24.410  INFO [main] a.p.p.c.c.L.Task -  18. 💯 💿 U  got 200 55.83 KiB in 13.667s, last fetched 25m50s ago, fc:1 | 2/83/1/90/955 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=2 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:24.426  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #2kDRXp4, active: 1, allowed: 2
+2022-11-23 11:58:26.265  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 1 pages in 1m(0.02 pages/s) successfully | content: 0, 52.50 KiB/s, 895 B/p
+2022-11-23 11:58:41.772  INFO [main] a.p.p.c.c.L.Task -  21. 💯 🔃 U for RT got 200 25.03 KiB in 9.959s, last fetched 25m3s ago, fc:2 | 2/39/0/39/836 | 10pczN4 | file:///tmp/ln/4bc32e4a5b289c53942cc8b45852985a.htm | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=21 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.783  INFO [main] a.p.p.c.c.L.Task -  24. 💯 💿 U  got 200 24.96 KiB in 17.598s, last fetched 24m35s ago, fc:1 | 2/39/0/39/836 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=3 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.793  INFO [main] a.p.p.c.c.L.Task -  27. 💯 💿 U  got 200 55.30 KiB in 19.258s, last fetched 24m14s ago, fc:1 | 2/83/1/89/895 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=4 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.803  INFO [main] a.p.p.c.c.L.Task -  30. 💯 Loaded 💿 U  got 200 55.64 KiB in 16.51s, last fetched 23m46s ago, fc:1 | i/a/nm/st/h:2/83/1/90/1015 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=51 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.812  INFO [main] a.p.p.c.c.L.Task -  33. 💯 💿 U  got 200 55.54 KiB in 13.294s, last fetched 23m23s ago, fc:1 | 2/83/1/89/925 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=53 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.822  INFO [main] a.p.p.c.c.L.Task -  36. 💯 💿 U  got 200 27.78 KiB in 16.126s, last fetched 22m56s ago, fc:1 | 2/41/0/45/836 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=54 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.831  INFO [main] a.p.p.c.c.L.Task -  39. 💯 💿 U  got 200 54.74 KiB in 16.351s, last fetched 22m36s ago, fc:1 | 2/83/1/90/865 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=6 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.839  INFO [main] a.p.p.c.c.L.Task -  42. 💯 💿 U  got 200 51.39 KiB in 10.061s, last fetched 22m22s ago, fc:1 | 2/83/1/75/836 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=60 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:41.961  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.3dib1
+2022-11-23 11:58:59.434  INFO [main] a.p.p.c.c.L.Task -  45. 💯 🔃 U for RT got 200 50.67 KiB in 10.548s, last fetched 21m33s ago, fc:2 | 2/78/0/76/836 | 2kDRXp4 | file:///tmp/ln/3fd0a90dd2caf3de673da129e58bbfd3.htm | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=7 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:59.443  INFO [main] a.p.p.c.c.L.Task -  48. 💯 💿 U  got 200 54.47 KiB in 11.638s, last fetched 21m19s ago, fc:1 | 2/83/1/74/836 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=91 -ignoreFailure -requireSize 1000
+2022-11-23 11:58:59.451  INFO [main] a.p.p.c.c.L.Task -  51. 💯 💿 U  got 200 53.43 KiB in 16.243s, last fetched 20m54s ago, fc:1 | 2/83/1/87/836 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=99 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.034  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 48234496(47104K) committed = 75497472(73728K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 77827072(76003K) committed = 140509184(137216K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1443264(1409K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 11:59:00.129  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 17 documents share 30 terms out of 44 counted (68.18%)
+2022-11-23 11:59:00.129  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 17/17 recoverable documents with confidence 68.18%
+2022-11-23 11:59:00.131  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           17        30     68.18%    100.00%
+2            5         2      4.55%      4.55%
+3            6         3      6.82%     11.36%
+4            7         1      2.27%     13.64%
+5            9         4      9.09%     22.73%
+6           13         1      2.27%     25.00%
+7           14         3      6.82%     31.82%
+totalFrequency: 44	mode: 17
+2022-11-23 11:59:00.148  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 52428800(51200K) committed = 75497472(73728K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 77827072(76003K) committed = 140509184(137216K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1443264(1409K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 11:59:00.249  INFO [main] a.p.s.s.BlockLocator - Found 5 anchor groups from 3 navigate components
+2022-11-23 11:59:00.252  INFO [main] a.p.s.a.AutoMiner - Find 5 anchor groups in page http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=12 | file:///tmp/pulsar-vincent/cache/web/export/portal/nbzfcg-cn-cd0a4a1b04fff6ee04cae6f587610cd9.htm
+2022-11-23 11:59:00.253  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=b841911d-53af-42ec-b0cd-450a51eb2d58
+2.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=8fa13c6e-e8a1-4014-865a-f66aacdc4ec8
+3.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=90ea5769-4160-47d0-98a5-9f38a981f850
+4.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=1ab18863-0c11-4592-a802-2da4656afc35
+5.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=a984a14b-2816-4b2e-8264-12e1dceefa81
+6.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=b7cf11cc-b3bd-494a-887e-ff11ecf64bdc
+7.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=cf18a1f3-255e-4b41-9938-9ea1bfd4c101
+8.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=5bb19fcb-e371-4bbd-8b89-22863dca73d4
+9.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=f1e4ed53-0c49-4aec-b236-51394c44433b
+10.	http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=1d53cb44-5d93-42bc-9680-bef28bb2c733
+2022-11-23 11:59:00.262  INFO [main] a.p.p.c.c.L.Task -  58. 💯 💿 U  got 200 251.81 KiB in 10.156s, last fetched 20m36s ago, fc:1 | 2/67/1/50/1548 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=1ab18863-0c11-4592-a802-2da4656afc35 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.274  INFO [main] a.p.p.c.c.L.Task -  61. 💯 💿 U  got 200 241.78 KiB in 10.119s, last fetched 20m21s ago, fc:1 | 2/67/1/45/2225 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=1d53cb44-5d93-42bc-9680-bef28bb2c733 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.288  INFO [main] a.p.p.c.c.L.Task -  64. 💯 💿 U  got 200 241.53 KiB in 16.32s, last fetched 20m ago, fc:1 | 2/67/1/44/2225 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=2b2a6e6d-6426-4774-bb58-58c95a7c98a9 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.315  INFO [main] a.p.p.c.c.L.Task -  67. 💯 💿 U  got 200 272.70 KiB in 10.602s, last fetched 19m43s ago, fc:1 | 2/67/8/77/1625 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=4b7dd031-6d9f-422d-8e0e-9623a9cf7df9 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.326  INFO [main] a.p.p.c.c.L.Task -  70. 💯 Loaded 💿 U  got 200 253.22 KiB in 10.179s, last fetched 19m26s ago, fc:1 | i/a/nm/st/h:2/67/2/72/1267 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=5bb19fcb-e371-4bbd-8b89-22863dca73d4 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.338  INFO [main] a.p.p.c.c.L.Task -  73. 💯 💿 U  got 200 264.56 KiB in 11.585s, last fetched 19m13s ago, fc:1 | 2/67/9/89/1618 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=6dc5a3c9-90e3-4845-9ef7-8e59bfad14d7 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.350  INFO [main] a.p.p.c.c.L.Task -  76. 💯 💿 U  got 200 250.50 KiB in 11.705s, last fetched 18m53s ago, fc:1 | 2/67/1/50/1446 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=7290c8f7-62ea-4a70-9c15-fe8f0d8a0469 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.360  INFO [main] a.p.p.c.c.L.Task -  79. 💯 💿 U  got 200 246.78 KiB in 10.628s, last fetched 18m40s ago, fc:1 | 2/68/2/52/1829 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=8fa13c6e-e8a1-4014-865a-f66aacdc4ec8 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.369  INFO [main] a.p.p.c.c.L.Task -  82. 💯 💿 U  got 200 278.62 KiB in 9.6s, last fetched 18m21s ago, fc:1 | 2/67/17/96/2052 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=90ea5769-4160-47d0-98a5-9f38a981f850 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.379  INFO [main] a.p.p.c.c.L.Task -  85. 💯 💿 U  got 200 251.45 KiB in 11.644s, last fetched 18m6s ago, fc:1 | 2/67/1/50/1639 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=a984a14b-2816-4b2e-8264-12e1dceefa81 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.388  INFO [main] a.p.p.c.c.L.Task -  88. 💯 💿 U  got 200 252.21 KiB in 11.286s, last fetched 17m48s ago, fc:1 | 2/67/1/50/1543 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=b7cf11cc-b3bd-494a-887e-ff11ecf64bdc -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.397  INFO [main] a.p.p.c.c.L.Task -  91. 💯 💿 U  got 200 244.41 KiB in 11.19s, last fetched 17m26s ago, fc:1 | 2/67/1/41/1632 | 123.115.206.232 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=b841911d-53af-42ec-b0cd-450a51eb2d58 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:00.406  INFO [main] a.p.p.c.c.L.Task -  94. 💯 💿 U  got 200 279.54 KiB in 9.123s, last fetched 17m14s ago, fc:1 | 2/67/12/108/2119 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=cf18a1f3-255e-4b41-9938-9ea1bfd4c101 -ignoreFailure -requireSize 1000
+2022-11-23 11:59:23.049  INFO [main] a.p.p.c.c.L.Task -  97. 💯 🔃 U for RT got 200 281.93 KiB in 14.222s, last fetched 16m33s ago, fc:2 | 2/67/10/99/2162 | 10pczN4 | file:///tmp/ln/9dfd1135eb3f08110ee123af7f650364.htm | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=f1e4ed53-0c49-4aec-b236-51394c44433b -ignoreFailure -requireSize 1000
+2022-11-23 11:59:23.056  INFO [main] a.p.p.c.c.L.Task - 100. 💯 Loaded 💿 U  got 200 252.08 KiB in 9.658s, last fetched 16m14s ago, fc:1 | i/a/nm/st/h:2/67/1/50/1543 | 114.238.101.77 | http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=f9eb235c-7bd6-48f8-9e33-ddf3aa4f3b5d -ignoreFailure -requireSize 1000
+2022-11-23 11:59:23.269  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 23068672(22528K) committed = 44040192(43008K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 115170816(112471K) committed = 165675008(161792K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 8388608(8192K) committed = 8388608(8192K) max = -1(-1K)
+2022-11-23 11:59:23.309  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 15 documents share 35 terms out of 49 counted (71.43%)
+2022-11-23 11:59:23.309  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 15/15 recoverable documents with confidence 71.43%
+2022-11-23 11:59:23.309  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1            5         8     16.33%     16.33%
+2            6         2      4.08%     20.41%
+3            7         1      2.04%     22.45%
+4            8         1      2.04%     24.49%
+5           14         2      4.08%     28.57%
+6           15        35     71.43%    100.00%
+totalFrequency: 49	mode: 15
+2022-11-23 11:59:23.314  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 25165824(24576K) committed = 44040192(43008K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 115170816(112471K) committed = 199229440(194560K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 8388608(8192K) committed = 8388608(8192K) max = -1(-1K)
+2022-11-23 11:59:23.349  INFO [main] a.p.p.c.c.L.Task - 103. 💯 💿 U  got 200 90.14 KiB in 17.69s, last fetched 15m54s ago, fc:1 | 0/69/1/471/1421 | 123.115.206.232 | https://hnsbenji.hnsggzy.com/gczb/index.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 11:59:23.388  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 3 navigate components
+2022-11-23 11:59:23.389  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page https://hnsbenji.hnsggzy.com/gczb/index.jhtml | file:///tmp/pulsar-vincent/cache/web/export/portal/hnsggzy-com-972a9cff7f0ffd66d524a8287fe215fb.htm
+2022-11-23 11:59:23.389  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	https://hnsbenji.hnsggzy.com/jygksz/91380255.jhtml
+2.	https://hnsbenji.hnsggzy.com/jygkgy/91380328.jhtml
+3.	https://hnsbenji.hnsggzy.com/gcjsqt/91380252.jhtml
+4.	https://hnsbenji.hnsggzy.com/jygksl/91380181.jhtml
+5.	https://hnsbenji.hnsggzy.com/jygksz/91380117.jhtml
+6.	https://hnsbenji.hnsggzy.com/jygksl/91380180.jhtml
+2022-11-23 11:59:42.955  INFO [main] a.p.p.c.c.L.Task - 105. 💯 ⚡ U for N got 200 39.30 KiB in 13.318s, fc:1 | 0/34/11/63/906 | 2kDRXp4 | file:///tmp/ln/3f5f6f873f452a5569d9b3b450370326.htm | https://hnsbenji.hnsggzy.com/gcjsqt/91380252.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:00:23.736  INFO [main] a.p.p.c.c.L.Task - 107. 💯 ⚡ U for N got 200 35.08 KiB in 35.794s, fc:1 | 0/34/4/46/797 | 10pczN4 | file:///tmp/ln/727fe137042a27421398f59fc8d3857f.htm | https://hnsbenji.hnsggzy.com/jygkgy/91380328.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:00:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 6 pages in 3m(0.03 pages/s) successfully | content: 0, 484.50 KiB/s, 2.69 KiB/p
+2022-11-23 12:00:44.739  INFO [main] a.p.p.c.c.L.Task - 109. 💯 ⚡ U for N got 200 134.95 KiB in 10.15s, fc:1 | 0/35/28/176/4443 | 2kDRXp4 | file:///tmp/ln/e0e3aa9ced33729869b871ea0b12f230.htm | https://hnsbenji.hnsggzy.com/jygksl/91380180.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:01:05.470  INFO [main] a.p.p.c.c.L.Task - 111. 💯 ⚡ U for N got 200 135.66 KiB in 10.083s, fc:1 | 0/35/28/178/4511 | 10pczN4 | file:///tmp/ln/f1711ba1f125a006ab615242c2b8535c.htm | https://hnsbenji.hnsggzy.com/jygksl/91380181.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:01:21.638  INFO [main] a.p.p.c.c.L.Task - 113. 💯 ⚡ U for N got 200 132.89 KiB in 9.568s, fc:1 | 0/36/25/149/4710 | 2kDRXp4 | file:///tmp/ln/ce1077676ee00f26efb2e12ab71df840.htm | https://hnsbenji.hnsggzy.com/jygksz/91380117.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:02:22.968  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | https://hnsbenji.hnsggzy.com/jygksz/91380255.jhtml
+2022-11-23 12:02:22.970  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 1/8 | 1#10pczN4 | 115. Retry(1601) rsp: PRIVACY
+2022-11-23 12:02:22.972  INFO [main] a.p.p.c.c.L.Task - 115. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.027s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | file:///tmp/ln/26e9e3f18b67277c8ec8ab8545504849.htm | https://hnsbenji.hnsggzy.com/jygksz/91380255.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:02:23.068  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 0(0K) committed = 58720256(57344K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 144302592(140920K) committed = 201326592(196608K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 2097152(2048K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 12:02:23.089  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 5 documents share 18 terms out of 18 counted (100.00%)
+2022-11-23 12:02:23.090  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 5/6 recoverable documents with confidence 100.00%
+2022-11-23 12:02:23.090  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           5        18    100.00%    100.00%
+totalFrequency: 18	mode: 5
+2022-11-23 12:02:23.094  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 2097152(2048K) committed = 58720256(57344K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 144302592(140920K) committed = 201326592(196608K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 2097152(2048K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 12:02:23.130  INFO [main] a.p.p.c.c.L.Task - 118. 💯 💿 U  got 200 313.42 KiB in 24.639s, last fetched 16m32s ago, fc:1 | 1/155/1/345/1134 | 113.138.147.189 | http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:02:23.280  INFO [main] a.p.s.s.BlockLocator - Found 4 anchor groups from 4 navigate components
+2022-11-23 12:02:23.281  INFO [main] a.p.s.a.AutoMiner - Find 4 anchor groups in page http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml | file:///tmp/pulsar-vincent/cache/web/export/portal/gzggzy-cn-9d839ba647af1b7c86c39350a7c8fe75.htm
+2022-11-23 12:02:23.281  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.gzggzy.cn/jyywjsgcszgczbgg/914098.jhtml
+2.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913898.jhtml
+3.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913926.jhtml
+4.	http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml
+5.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913883.jhtml
+6.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913869.jhtml
+7.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913877.jhtml
+8.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913887.jhtml
+9.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913902.jhtml
+10.	http://www.gzggzy.cn/jyywjsgcszgczbgg/913893.jhtml
+2022-11-23 12:02:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 9 pages in 5m(0.03 pages/s) successfully | content: 0, 888.00 KiB/s, 2.96 KiB/p
+2022-11-23 12:02:44.617  INFO [main] a.p.p.c.c.L.Task - 120. 💯 New ⚡ U for N got 200 58.69 KiB in 16.332s, fc:1 | i/a/nm/st/h:1/89/1/89/2592 | 2kDRXp4 | file:///tmp/ln/2a962d205e66a1d0ed9e35917bd21f27.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913869.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:03:03.461  INFO [main] a.p.p.c.c.L.Task - 122. 💯 ⚡ U for N got 200 51.37 KiB in 15.198s, fc:1 | 1/89/1/61/1439 | 10pczN4 | file:///tmp/ln/44e1d987fad21659fec0b1be7e86f380.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913877.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:03:19.195  INFO [main] a.p.p.c.c.L.Task - 124. 💯 ⚡ U for N got 200 53.66 KiB in 13.039s, fc:1 | 1/93/2/66/2659 | 2kDRXp4 | file:///tmp/ln/7ba7aaac07b73dcb3dd6b68bf07870e7.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913883.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:03:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 12 pages in 6m(0.03 pages/s) successfully | content: 0, 1.03 MiB/s, 2.92 KiB/p
+2022-11-23 12:03:43.515  INFO [main] a.p.p.c.c.L.Task - 126. 💯 ⚡ U for N got 200 47.41 KiB in 20.612s, fc:1 | 1/88/3/51/1376 | 10pczN4 | file:///tmp/ln/0e02c38ba2b71be8eaad919eb6c914a7.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913887.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:04:19.052  INFO [main] a.p.p.c.c.L.Task - 128. 💯 ⚡ U for N got 200 69.71 KiB in 25.121s, fc:1 | 1/111/4/68/3499 | 2kDRXp4 | file:///tmp/ln/464680665edaac8facc81c367b83e80c.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913893.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:04:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 14 pages in 7m(0.03 pages/s) successfully | content: 0, 1.14 MiB/s, 2.78 KiB/p
+2022-11-23 12:04:36.289  INFO [main] a.p.p.c.c.L.Task - 130. 💯 New ⚡ U for N got 200 64.05 KiB in 13.586s, fc:1 | i/a/nm/st/h:1/103/1/64/3303 | 10pczN4 | file:///tmp/ln/87bba618443b0cbb66d0fea6fa026a73.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913898.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:04:51.533  INFO [main] a.p.p.c.c.L.Task - 132. 💯 ⚡ U for N got 200 63.75 KiB in 10.582s, fc:1 | 1/105/1/67/3303 | 2kDRXp4 | file:///tmp/ln/b3f3ff0dc29f7b6ec781f75572936630.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913902.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:05:10.157  INFO [main] a.p.p.c.c.L.Task - 134. 💯 ⚡ U for N got 200 51.10 KiB in 8.988s, fc:1 | 1/90/1/68/2491 | 10pczN4 | file:///tmp/ln/025af0d01c3b546d77ce751723db9b19.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/913926.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:05:28.399  INFO [main] a.p.p.c.c.L.Task - 136. 💯 ⚡ U for N got 200 44.05 KiB in 10.035s, fc:1 | 1/88/6/55/1349 | 2kDRXp4 | file:///tmp/ln/f3c9598155695853b700d508202022c6.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/914098.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:05:41.152  INFO [main] a.p.p.c.c.L.Task - 138. 💯 ⚡ U for N got 200 43.85 KiB in 10.986s, fc:1 | 1/88/6/56/1314 | 10pczN4 | file:///tmp/ln/f5e92f27c2bf7e07ae0edf01130996bf.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/914103.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:05:41.155  INFO [main] a.p.p.c.c.L.Task - 141. 💯 💿 U  got 200 313.42 KiB in 24.639s, last fetched 19m50s ago, fc:1 | 1/155/1/345/1134 | 113.138.147.189 | http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml -ignoreFailure -requireSize 1000
+2022-11-23 12:05:41.331  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 203423744(198656K) committed = 268435456(262144K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 152397824(148826K) committed = 283115520(276480K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 8388608(8192K) committed = 8388608(8192K) max = -1(-1K)
+2022-11-23 12:05:41.349  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 6 documents share 21 terms out of 47 counted (44.68%)
+2022-11-23 12:05:41.349  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 6/11 recoverable documents with confidence 44.68%
+2022-11-23 12:05:41.349  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1            6        21     44.68%     44.68%
+2            9         1      2.13%     46.81%
+3           10         6     12.77%     59.57%
+4           11        19     40.43%    100.00%
+totalFrequency: 47	mode: 6
+2022-11-23 12:05:41.351  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 205520896(200704K) committed = 268435456(262144K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 152397824(148826K) committed = 283115520(276480K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 8388608(8192K) committed = 8388608(8192K) max = -1(-1K)
+2022-11-23 12:06:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 19 pages in 9m(0.04 pages/s) successfully | content: 0, 1.40 MiB/s, 2.66 KiB/p
+2022-11-23 12:06:39.263  INFO [main] a.p.p.c.c.L.Task - 144. 💯 🔃 U for RT got 200 29.65 KiB in 48.231s, last fetched 12m33s ago, fc:3 | 3/39/0/33/622 | 2kDRXp4 | file:///tmp/ln/2c0e56fc52b08a5a43e85251b8742ff8.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/moreinfo2.html -ignoreFailure -requireSize 1000
+2022-11-23 12:06:39.269  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:06:39.270  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/moreinfo2.html | file:///tmp/pulsar-vincent/cache/web/export/portal/dezhou-gov-cn-2c0e56fc52b08a5a43e85251b8742ff8.htm
+2022-11-23 12:06:39.270  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220214/7d9d03c8-8272-40ee-9b40-aee93aef18ee.html
+2.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20211229/23f28a3f-fe77-40ef-84b2-d5a5e8cd9487.html
+3.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20211230/ba0bd124-41ec-40ed-a975-a7ccd916c865.html
+4.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220217/cad27e0e-1c42-4f5c-9c1c-2b29760872c0.html
+5.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220303/9fb75934-d7ed-45c6-867b-60677adfcd2c.html
+6.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220214/b08de7bd-4049-48a1-be41-a6abf46a4fa4.html
+7.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20221018/13f4c72e-736b-483e-bd70-7025bd305740.html
+8.	http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20210930/6eccc93e-755c-47c0-b37d-eabf8ad744de.html
+2022-11-23 12:07:26.208  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 20 pages in 10m(0.03 pages/s) successfully | content: 0, 1.43 MiB/s, 2.44 KiB/p
+2022-11-23 12:07:41.773  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20210930/6eccc93e-755c-47c0-b37d-eabf8ad744de.html
+2022-11-23 12:07:41.777  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 1/8 | 1#10pczN4 | 146. Retry(1601) rsp: PRIVACY
+2022-11-23 12:07:41.780  INFO [main] a.p.p.c.c.L.Task - 146. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.024s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | file:///tmp/ln/0a9138bb134590544078fb131e1b4bc6.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20210930/6eccc93e-755c-47c0-b37d-eabf8ad744de.html -ignoreFailure -requireSize 1000
+2022-11-23 12:07:57.228  INFO [main] a.p.p.c.c.L.Task - 148. 💯 ⚡ U for N got 200 13.17 KiB in 11.401s, fc:1 | 3/16/1/25/500 | 2kDRXp4 | file:///tmp/ln/65afd9f16cdfe9c9446d613679e3199f.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20211229/23f28a3f-fe77-40ef-84b2-d5a5e8cd9487.html -ignoreFailure -requireSize 1000
+2022-11-23 12:08:11.819  INFO [main] a.p.p.c.c.L.Task - 150. 💯 New ⚡ U for N got 200 13.35 KiB in 10.955s, fc:1 | i/a/nm/st/h:3/16/1/25/500 | 10pczN4 | file:///tmp/ln/b7e2331349be91544293ab1f358c696c.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20211230/ba0bd124-41ec-40ed-a975-a7ccd916c865.html -ignoreFailure -requireSize 1000
+2022-11-23 12:08:27.082  INFO [main] a.p.p.c.c.L.Task - 152. 💯 ⚡ U for N got 200 242.98 KiB in 9.897s, fc:1 | 3/15/5/115/7835 | 2kDRXp4 | file:///tmp/ln/b7f17f218a62fea9d50207555c3b266b.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220214/7d9d03c8-8272-40ee-9b40-aee93aef18ee.html -ignoreFailure -requireSize 1000
+2022-11-23 12:08:55.489  INFO [main] a.p.p.c.c.L.Task - 154. 💯 ⚡ U for N got 200 17.73 KiB in 18.399s, fc:1 | 19/16/1/25/18343 | 10pczN4 | file:///tmp/ln/02c7264fe5617a54fd989725c417e73e.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220214/b08de7bd-4049-48a1-be41-a6abf46a4fa4.html -ignoreFailure -requireSize 1000
+2022-11-23 12:09:11.726  INFO [main] a.p.p.c.c.L.Task - 156. 💯 ⚡ U for N got 200 18.40 KiB in 13.869s, fc:1 | 26/15/1/20/26314 | 2kDRXp4 | file:///tmp/ln/243e616f2abca936ea234cfb90fcb3fc.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220217/cad27e0e-1c42-4f5c-9c1c-2b29760872c0.html -ignoreFailure -requireSize 1000
+2022-11-23 12:09:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 25 pages in 12m(0.03 pages/s) successfully | content: 0, 1.73 MiB/s, 2.46 KiB/p
+2022-11-23 12:09:27.803  INFO [main] a.p.p.c.c.L.Task - 158. 💯 ⚡ U for N got 200 20.87 KiB in 13.037s, fc:1 | 26/16/1/20/26545 | 10pczN4 | file:///tmp/ln/546bb6a67acdca2e5626f1fb0b66f0bd.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20220303/9fb75934-d7ed-45c6-867b-60677adfcd2c.html -ignoreFailure -requireSize 1000
+2022-11-23 12:09:45.669  INFO [main] a.p.p.c.c.L.Task - 160. 💯 New ⚡ U for N got 200 95.96 KiB in 9.94s, fc:1 | i/a/nm/st/h:3/16/0/87/5222 | 2kDRXp4 | file:///tmp/ln/bba0ef571d03e318449bdf340de483d7.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/20221018/13f4c72e-736b-483e-bd70-7025bd305740.html -ignoreFailure -requireSize 1000
+2022-11-23 12:09:45.698  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 115343360(112640K) committed = 222298112(217088K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 335544320(327680K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1713120(1672K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 12:09:45.704  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 7 documents share 18 terms out of 18 counted (100.00%)
+2022-11-23 12:09:45.704  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 7/8 recoverable documents with confidence 100.00%
+2022-11-23 12:09:45.704  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           7        18    100.00%    100.00%
+totalFrequency: 18	mode: 7
+2022-11-23 12:09:45.706  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 117440512(114688K) committed = 222298112(217088K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 335544320(327680K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1713120(1672K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 12:09:45.724  INFO [main] a.p.p.c.c.L.Task - 163. 💯 💿 U  got 200 67.24 KiB in 50.478s, last fetched 16m10s ago, fc:1 | 0/53/6/138/1548 | http://htgs.ccgp.gov.cn/GS8/contractpublish/search -ignoreFailure -requireSize 1000
+2022-11-23 12:09:45.735  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:09:45.735  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://htgs.ccgp.gov.cn/GS8/contractpublish/search | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-gov-cn-b30e2fd1da8fe1580726d4fe6671206b.htm
+2022-11-23 12:09:45.735  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a266d124210e?contractSign=0
+2.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a29596da2633?contractSign=0
+3.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a254905b1f37?contractSign=0
+4.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a241b7311c17?contractSign=0
+5.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a25174f01e11?contractSign=0
+6.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a257175c1fc2?contractSign=0
+7.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a299da6d2876?contractSign=0
+8.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a240e8431bf8?contractSign=0
+9.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a26c105022d0?contractSign=0
+10.	http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a27ae3fd2385?contractSign=0
+2022-11-23 12:10:15.684  INFO [main] a.p.p.c.c.L.Task - 165. 💯 ⚡ U for N got 200 18.96 KiB in 24.897s, fc:1 | 0/19/4/35/1601 | 10pczN4 | file:///tmp/ln/3187afdb4afbb28cff7c33edb2fc42aa.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a240e8431bf8?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:10:42.074  INFO [main] a.p.p.c.c.L.Task - 167. 💯 ⚡ U for N got 200 19.30 KiB in 17.052s, fc:1 | 0/19/4/34/1601 | 2kDRXp4 | file:///tmp/ln/7c1418c9425ff8cc48be1ed38940ff2f.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a24115bf1c06?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:10:57.900  INFO [main] a.p.p.c.c.L.Task - 169. 💯 ⚡ U for N got 200 19.16 KiB in 8.799s, fc:1 | 0/19/4/34/1601 | 10pczN4 | file:///tmp/ln/d7b23affbda675ec82c7599570ec557c.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a241b7311c17?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:11:15.556  INFO [main] a.p.p.c.c.L.Task - 171. 💯 ⚡ U for N got 200 19.15 KiB in 9.943s, fc:1 | 0/19/4/34/1601 | 2kDRXp4 | file:///tmp/ln/6631f33d3ed1ec2d681a4caa4315d955.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a24f7a521dd2?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:11:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 31 pages in 14m(0.04 pages/s) successfully | content: 0, 1.92 MiB/s, 2.34 KiB/p
+2022-11-23 12:11:35.544  INFO [main] a.p.p.c.c.L.Task - 173. 💯 ⚡ U for N got 200 19.48 KiB in 9.911s, fc:1 | 0/19/4/33/1601 | 10pczN4 | file:///tmp/ln/4fdaa08ddb4f23212a59749d92c39ae3.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a25174f01e11?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:11:48.830  INFO [main] a.p.p.c.c.L.Task - 175. 💯 ⚡ U for N got 200 19.28 KiB in 8.879s, fc:1 | 0/19/5/34/1601 | 2kDRXp4 | file:///tmp/ln/a61f1c9a9f047f4f57bbf4ad1f3c3407.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a255610c1e88?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:12:05.523  INFO [main] a.p.p.c.c.L.Task - 177. 💯 ⚡ U for N got 200 19.12 KiB in 9.434s, fc:1 | 0/19/5/35/1601 | 10pczN4 | file:///tmp/ln/8e5ce916d51285050a45c3f028e639fd.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a266d124210e?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:12:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 34 pages in 15m(0.04 pages/s) successfully | content: 0, 1.97 MiB/s, 2.25 KiB/p
+2022-11-23 12:13:12.303  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a270fb1121dc?contractSign=0
+2022-11-23 12:13:12.306  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 1/8 | 2#2kDRXp4 | 179. Retry(1601) rsp: PRIVACY
+2022-11-23 12:13:12.309  INFO [main] a.p.p.c.c.L.Task - 179. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.02s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | file:///tmp/ln/caa96dd8870ae201e9fb389043db62c8.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a270fb1121dc?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:13:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 34 pages in 16m(0.04 pages/s) successfully | content: 0, 1.97 MiB/s, 2.11 KiB/p
+2022-11-23 12:14:17.086  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a27ae3fd2385?contractSign=0
+2022-11-23 12:14:17.088  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 1/8 | 1#10pczN4 | 181. Retry(1601) rsp: PRIVACY
+2022-11-23 12:14:17.090  INFO [main] a.p.p.c.c.L.Task - 181. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.021s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | file:///tmp/ln/a216b89622f944e9fff79560a56567f6.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a27ae3fd2385?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:15:23.451  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a29596da2633?contractSign=0
+2022-11-23 12:15:23.454  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 2/8 | 2#2kDRXp4 | 183. Retry(1601) rsp: PRIVACY
+2022-11-23 12:15:23.457  INFO [main] a.p.p.c.c.L.Task - 183. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.017s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | file:///tmp/ln/cae8b355da73a377268fc180e97a3868.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382a9848af9690184a29596da2633?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:15:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 34 pages in 18m(0.03 pages/s) successfully | content: 0, 1.97 MiB/s, 1.87 KiB/p
+2022-11-23 12:16:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 34 pages in 19m(0.03 pages/s) successfully | content: 0, 1.97 MiB/s, 1.77 KiB/p
+2022-11-23 12:16:28.285  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a23ca6981c67?contractSign=0
+2022-11-23 12:16:28.289  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 2/8 | 1#10pczN4 | 185. Retry(1601) rsp: PRIVACY
+2022-11-23 12:16:28.291  INFO [main] a.p.p.c.c.L.Task - 185. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.022s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | file:///tmp/ln/43753411ab0e8c463ae3a8519c686b85.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a23ca6981c67?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:17:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 34 pages in 20m(0.03 pages/s) successfully | content: 0, 1.97 MiB/s, 1.68 KiB/p
+2022-11-23 12:17:33.198  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a24cccfe1e99?contractSign=0
+2022-11-23 12:17:33.201  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 2#2kDRXp4 | 187. Retry(1601) rsp: PRIVACY
+2022-11-23 12:17:33.204  INFO [main] a.p.p.c.c.L.Task - 187. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.022s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | file:///tmp/ln/a83e57659372f4a12136bc6ac9d7e1f4.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a24cccfe1e99?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:18:38.815  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a250dc6f1ef2?contractSign=0
+2022-11-23 12:18:38.818  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 1#10pczN4 | 189. Retry(1601) rsp: PRIVACY
+2022-11-23 12:18:38.821  INFO [main] a.p.p.c.c.L.Task - 189. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.021s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | file:///tmp/ln/d3af130aa14a597d48bd0ac89714ddf4.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a250dc6f1ef2?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:19:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 34 pages in 22m(0.03 pages/s) successfully | content: 0, 1.97 MiB/s, 1.53 KiB/p
+2022-11-23 12:19:46.063  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a25119b41ef8?contractSign=0
+2022-11-23 12:19:46.066  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 4/8 | 2#2kDRXp4 | 191. Retry(1601) rsp: PRIVACY
+2022-11-23 12:19:46.068  INFO [main] a.p.p.c.c.L.Task - 191. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.021s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | file:///tmp/ln/b65f2c5228b318be7f98fa49fcfa4b68.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a25119b41ef8?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:20:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 34 pages in 23m(0.02 pages/s) successfully | content: 0, 1.97 MiB/s, 1.46 KiB/p
+2022-11-23 12:20:47.706  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a254905b1f37?contractSign=0
+2022-11-23 12:20:47.708  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 4/8 | 1#10pczN4 | 193. Retry(1601) rsp: PRIVACY
+2022-11-23 12:20:47.711  INFO [main] a.p.p.c.c.L.Task - 193. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.023s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | file:///tmp/ln/92fb5531331b40a6f19164a53d1b6c85.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a254905b1f37?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:21:52.787  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a257175c1fc2?contractSign=0
+2022-11-23 12:21:52.790  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 5/8 | 2#2kDRXp4 | 195. Retry(1601) rsp: PRIVACY
+2022-11-23 12:21:52.793  INFO [main] a.p.p.c.c.L.Task - 195. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.02s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | file:///tmp/ln/a4e967c9e0432ed59a34d98444ffcb8f.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a257175c1fc2?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:22:08.884  INFO [main] a.p.p.c.c.L.Task - 197. 💯 ⚡ U for N got 200 19.38 KiB in 11.47s, fc:1 | 0/19/4/34/1601 | 10pczN4 | file:///tmp/ln/b494fd7fab49ee411fb055f9cf388e47.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a26c105022d0?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:22:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 35 pages in 25m(0.02 pages/s) successfully | content: 0, 1.99 MiB/s, 1.36 KiB/p
+2022-11-23 12:22:52.171  INFO [main] a.p.p.c.c.L.Task - 199. 💯 ⚡ U for N got 200 19.25 KiB in 39.882s, fc:1 | 0/19/4/34/1601 | 2kDRXp4 | file:///tmp/ln/e5e66b7312a3a8d0710db5405e8f4749.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a28b1a7f268b?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:23:11.465  INFO [main] a.p.p.c.c.L.Task - 201. 💯 ⚡ U for N got 200 19.40 KiB in 14.156s, fc:1 | 0/19/4/34/1657 | 10pczN4 | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a28f0f202761?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:23:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 37 pages in 26m(0.02 pages/s) successfully | content: 0, 2.03 MiB/s, 1.33 KiB/p
+2022-11-23 12:23:28.439  INFO [main] a.p.p.c.c.L.Task - 203. 💯 ⚡ U for N got 200 19.40 KiB in 9.534s, fc:1 | 0/19/4/34/1601 | 2kDRXp4 | http://htgs.ccgp.gov.cn/GS8/contractpublish/detail/2c8382aa848afb0b0184a299da6d2876?contractSign=0 -ignoreFailure -requireSize 1000
+2022-11-23 12:23:28.478  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 46137344(45056K) committed = 216006656(210944K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 325058560(317440K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 17063408(16663K) committed = 18874368(18432K) max = -1(-1K)
+2022-11-23 12:23:28.481  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 11 documents share 16 terms out of 17 counted (94.12%)
+2022-11-23 12:23:28.482  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 11/20 recoverable documents with confidence 94.12%
+2022-11-23 12:23:28.482  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           10         1      5.88%      5.88%
+2           11        16     94.12%    100.00%
+totalFrequency: 17	mode: 11
+2022-11-23 12:23:28.483  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 46137344(45056K) committed = 216006656(210944K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 325058560(317440K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 17063408(16663K) committed = 18874368(18432K) max = -1(-1K)
+2022-11-23 12:23:28.503  INFO [main] a.p.p.c.c.L.Task - 206. 💯 💿 U  got 200 29.51 KiB in 52.133s, last fetched 29m59s ago, fc:2 | 2/46/14/86/1313 | http://cgyx.ccgp.gov.cn/cgyx/pub/projSearch -ignoreFailure -requireSize 1000
+2022-11-23 12:23:28.511  INFO [main] a.p.s.s.BlockLocator - Found 2 anchor groups from 1 navigate components
+2022-11-23 12:23:28.511  INFO [main] a.p.s.a.AutoMiner - Find 2 anchor groups in page http://cgyx.ccgp.gov.cn/cgyx/pub/projSearch | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-gov-cn-ea52832d08ad576d7504a514e7e2da32.htm
+2022-11-23 12:23:28.511  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=635bb279-09df-4ab8-8b08-48e684a72149
+2.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=0b331c5e-2cfc-4081-a51d-96f208b48b34
+3.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=1c6a55e3-5ba2-42c9-811f-d5ca0b959275
+4.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=09e0dffb-8664-4f9b-b985-3a00d1f1f02b
+5.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=f927f89d-b836-4d05-b2b2-2a88e237bce3
+6.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=76e5530c-76f8-4516-bfd8-b522f9782dc2
+7.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=af54d474-9c08-4409-89a1-3305141c1ac8
+8.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=4d8c335a-a3c7-4834-849e-c842ff765c00
+9.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=bcb0e80e-f718-48af-858e-359bd9c2dbf3
+10.	http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=855ad479-090f-4154-9338-4551ba87e806
+2022-11-23 12:24:05.332  INFO [main] a.p.p.c.c.L.Task - 208. 💯 ⚡ U for N got 200 16.62 KiB in 26.261s, fc:1 | 2/17/3/36/1012 | 10pczN4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=09e0dffb-8664-4f9b-b985-3a00d1f1f02b -ignoreFailure -requireSize 1000
+2022-11-23 12:24:27.157  INFO [main] a.p.p.c.c.L.Task - 210. 💯 ⚡ U for N got 200 16.98 KiB in 17.201s, fc:1 | 2/17/3/35/1072 | 2kDRXp4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=0b331c5e-2cfc-4081-a51d-96f208b48b34 -ignoreFailure -requireSize 1000
+2022-11-23 12:24:40.026  INFO [main] a.p.p.c.c.L.Task - 212. 💯 ⚡ U for N got 200 16.65 KiB in 9.749s, fc:1 | 2/17/3/36/1024 | 10pczN4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=1c6a55e3-5ba2-42c9-811f-d5ca0b959275 -ignoreFailure -requireSize 1000
+2022-11-23 12:25:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 28m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 1.28 KiB/p
+2022-11-23 12:25:45.468  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=4d8c335a-a3c7-4834-849e-c842ff765c00
+2022-11-23 12:25:45.469  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 2#2kDRXp4 | 214. Retry(1601) rsp: PRIVACY
+2022-11-23 12:25:45.470  INFO [main] a.p.p.c.c.L.Task - 214. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.013s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=4d8c335a-a3c7-4834-849e-c842ff765c00 -ignoreFailure -requireSize 1000
+2022-11-23 12:26:49.972  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=635bb279-09df-4ab8-8b08-48e684a72149
+2022-11-23 12:26:49.974  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 1/8 | 1#10pczN4 | 216. Retry(1601) rsp: PRIVACY
+2022-11-23 12:26:49.976  INFO [main] a.p.p.c.c.L.Task - 216. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.015s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=635bb279-09df-4ab8-8b08-48e684a72149 -ignoreFailure -requireSize 1000
+2022-11-23 12:27:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 30m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 1.19 KiB/p
+2022-11-23 12:28:00.097  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=76e5530c-76f8-4516-bfd8-b522f9782dc2
+2022-11-23 12:28:00.099  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 4/8 | 2#2kDRXp4 | 218. Retry(1601) rsp: PRIVACY
+2022-11-23 12:28:00.101  INFO [main] a.p.p.c.c.L.Task - 218. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.013s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=76e5530c-76f8-4516-bfd8-b522f9782dc2 -ignoreFailure -requireSize 1000
+2022-11-23 12:28:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 31m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 1.16 KiB/p
+2022-11-23 12:29:09.588  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=855ad479-090f-4154-9338-4551ba87e806
+2022-11-23 12:29:09.589  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 2/8 | 1#10pczN4 | 220. Retry(1601) rsp: PRIVACY
+2022-11-23 12:29:09.589  INFO [main] a.p.p.c.c.L.Task - 220. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.011s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=855ad479-090f-4154-9338-4551ba87e806 -ignoreFailure -requireSize 1000
+2022-11-23 12:30:14.343  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=af54d474-9c08-4409-89a1-3305141c1ac8
+2022-11-23 12:30:14.345  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 5/8 | 2#2kDRXp4 | 222. Retry(1601) rsp: PRIVACY
+2022-11-23 12:30:14.346  INFO [main] a.p.p.c.c.L.Task - 222. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.012s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=af54d474-9c08-4409-89a1-3305141c1ac8 -ignoreFailure -requireSize 1000
+2022-11-23 12:30:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 33m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 1.08 KiB/p
+2022-11-23 12:31:17.780  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=bcb0e80e-f718-48af-858e-359bd9c2dbf3
+2022-11-23 12:31:17.781  INFO [main] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #10pczN4 has lived for 33m12s | success: 21(0.01 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(24.47 KiB/s) | tasks: 30 total run: 30 | null
+2022-11-23 12:31:17.781  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 1#10pczN4 | 224. Retry(1601) rsp: PRIVACY
+2022-11-23 12:31:17.782  INFO [main] a.p.p.c.c.L.Task - 224. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.011s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=bcb0e80e-f718-48af-858e-359bd9c2dbf3 -ignoreFailure -requireSize 1000
+2022-11-23 12:31:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 34m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 1.05 KiB/p
+2022-11-23 12:32:23.050  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=f927f89d-b836-4d05-b2b2-2a88e237bce3
+2022-11-23 12:32:23.053  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 6/8 | 2#2kDRXp4 | 226. Retry(1601) rsp: PRIVACY
+2022-11-23 12:32:23.054  INFO [main] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #2kDRXp4 has lived for 33m58s | success: 20(0.01 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(23.71 KiB/s) | tasks: 29 total run: 29 | null
+2022-11-23 12:32:23.056  INFO [main] a.p.p.c.c.L.Task - 226. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.014s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | http://cgyx.ccgp.gov.cn/cgyx/pub/proJ/details?projId=f927f89d-b836-4d05-b2b2-2a88e237bce3 -ignoreFailure -requireSize 1000
+2022-11-23 12:32:23.067  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 92274688(90112K) committed = 216006656(210944K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 325058560(317440K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 17063408(16663K) committed = 18874368(18432K) max = -1(-1K)
+2022-11-23 12:32:23.069  WARN [main] a.p.s.a.c.AnalysablePageCorpus - !!! No regional texts shared by 10 sample documents (df rate: 0.8) !!!
+2022-11-23 12:32:23.070  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Document frequency of regional texts: 3
+2022-11-23 12:32:23.071  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 92274688(90112K) committed = 216006656(210944K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 325058560(317440K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 17063408(16663K) committed = 18874368(18432K) max = -1(-1K)
+2022-11-23 12:32:23.091  INFO [main] a.p.p.c.c.L.Task - 229. 💯 💿 U  got 200 84.16 KiB in 40.752s, last fetched 38m56s ago, fc:1 | 2/72/6/162/2077 | http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index=1&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time=2021%3A05%3A17&end_time=2021%3A11%3A15&timeType=5&displayZone=&zoneId=&pppStatus=0&agentName= -ignoreFailure -requireSize 1000
+2022-11-23 12:32:23.103  INFO [main] a.p.s.s.BlockLocator - Found 2 anchor groups from 1 navigate components
+2022-11-23 12:32:23.103  INFO [main] a.p.s.a.AutoMiner - Find 2 anchor groups in page http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index=1&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time=2021%3A05%3A17&end_time=2021%3A11%3A15&timeType=5&displayZone=&zoneId=&pppStatus=0&agentName= | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-gov-cn-1c6c2e3b7060faf7137c59cf76df5cbe.htm
+2022-11-23 12:32:23.103  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070326.htm
+2.	http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202211/t20221123_19070336.htm
+3.	http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202211/t20221123_19070314.htm
+4.	http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202211/t20221123_19070321.htm
+5.	http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070325.htm
+6.	http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202211/t20221123_19070331.htm
+7.	http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202211/t20221123_19070335.htm
+8.	http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202211/t20221123_19070320.htm
+9.	http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202211/t20221123_19070313.htm
+10.	http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070328.htm
+2022-11-23 12:33:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 36m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 1019 B/p
+2022-11-23 12:33:32.653  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070325.htm
+2022-11-23 12:33:32.655  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 4/8 | 1#10pczN4 | 231. Retry(1601) rsp: PRIVACY
+2022-11-23 12:33:32.657  INFO [main] a.p.p.c.c.L.Task - 231. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.012s, fc:1/1 Retry(1601) rsp: CRAWL | 10pczN4 | http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070325.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:34:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 37m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 991 B/p
+2022-11-23 12:34:33.832  WARN [main] a.p.p.p.b.e.BrowserEmulator - Timeout to wait for document ready after 60 round, retry is supposed | http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070326.htm
+2022-11-23 12:34:33.833  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 7/8 | 2#2kDRXp4 | 233. Retry(1601) rsp: PRIVACY
+2022-11-23 12:34:33.834  INFO [main] a.p.p.c.c.L.Task - 233. 💔 ⚡ U for N got 1601 0 <- 0 in 1m0.014s, fc:1/1 Retry(1601) rsp: CRAWL | 2kDRXp4 | http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070326.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:34:38.227  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 7/8 | 1#10pczN4 | 235. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:34:38.228  INFO [main] a.p.p.c.c.L.Task - 235. 💔 ⚡ U for N got 1601 0 <- 0 in 1.13s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 10pczN4 | http://www.ccgp.gov.cn/cggg/dfgg/cjgg/202211/t20221123_19070328.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:34:44.871  INFO [main] a.p.p.c.c.L.Task - 237. 💔 ⚡ U for N got 1601 0 <- 0 in 1.13s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 2kDRXp4 | http://www.ccgp.gov.cn/cggg/dfgg/dylygg/202211/t20221123_19070327.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:34:50.506  INFO [main] a.p.p.c.c.L.Task - 239. 💔 ⚡ U for N got 1601 0 <- 0 in 1.106s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 10pczN4 | http://www.ccgp.gov.cn/cggg/dfgg/gkzb/202211/t20221123_19070320.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:34:50.512  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #3xD5Vm4, active: 1, allowed: 2
+2022-11-23 12:34:50.670  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.42g3o
+2022-11-23 12:34:55.514  INFO [4-thread-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #2kDRXp4(leaked) has lived for 36m31s | success: 20(0.01 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(22.10 KiB/s) | tasks: 31 total run: 31 | null
+2022-11-23 12:34:55.518  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 2kDRXp41
+2022-11-23 12:34:55.624  INFO [4-thread-1] a.p.p.p.b.d.WebDriverPoolManager - Web drivers are in GUI mode, please close it manually | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.2kDRXp4}
+2022-11-23 12:34:55.625  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 2kDRXp41
+2022-11-23 12:34:55.625  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully | 2kDRXp41 | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.2kDRXp4}
+2022-11-23 12:34:55.627  INFO [4-thread-1] a.p.p.c.f.p.PrivacyManager - The latest context throughput: 0.55 (success/min)
+2022-11-23 12:35:01.390  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 3#3xD5Vm4 | 241. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:35:01.391  INFO [main] a.p.p.c.c.L.Task - 241. 💔 ⚡ U for N got 1601 0 <- 0 in 1.086s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 3xD5Vm4 | http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202211/t20221123_19070313.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:35:01.394  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #4P1wfu4, active: 1, allowed: 2
+2022-11-23 12:35:01.497  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.5d7xm
+2022-11-23 12:35:06.395  INFO [4-thread-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #10pczN4(leaked) has lived for 37m1s | success: 21(0.01 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(21.99 KiB/s) | tasks: 33 total run: 33 | null
+2022-11-23 12:35:06.396  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 10pczN41
+2022-11-23 12:35:06.498  INFO [4-thread-1] a.p.p.p.b.d.WebDriverPoolManager - Web drivers are in GUI mode, please close it manually | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.10pczN4}
+2022-11-23 12:35:06.499  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 10pczN41
+2022-11-23 12:35:06.499  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully | 10pczN41 | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.10pczN4}
+2022-11-23 12:35:06.500  INFO [4-thread-1] a.p.p.c.f.p.PrivacyManager - The latest context throughput: 0.54, 0.57 (success/min)
+2022-11-23 12:35:09.556  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 4#4P1wfu4 | 243. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:35:09.557  INFO [main] a.p.p.c.c.L.Task - 243. 💔 ⚡ U for N got 1601 0 <- 0 in 1.112s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 4P1wfu4 | http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202211/t20221123_19070331.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:35:20.955  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 6/8 | 3#3xD5Vm4 | 245. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:35:20.956  INFO [main] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #3xD5Vm4 has lived for 30s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(21.86 KiB/s) | tasks: 2 total run: 2 | null
+2022-11-23 12:35:20.956  INFO [main] a.p.p.c.c.L.Task - 245. 💔 ⚡ U for N got 1601 0 <- 0 in 1.115s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 3xD5Vm4 | http://www.ccgp.gov.cn/cggg/dfgg/jzxcs/202211/t20221123_19070335.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:35:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 38m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 965 B/p
+2022-11-23 12:35:32.355  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 6/8 | 4#4P1wfu4 | 247. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:35:32.356  INFO [main] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #4P1wfu4 has lived for 30s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(21.74 KiB/s) | tasks: 2 total run: 2 | null
+2022-11-23 12:35:32.356  INFO [main] a.p.p.c.c.L.Task - 247. 💔 ⚡ U for N got 1601 0 <- 0 in 1.069s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 4P1wfu4 | http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202211/t20221123_19070314.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:35:38.311  INFO [main] a.p.p.c.c.L.Task - 249. 💔 ⚡ U for N got 1601 0 <- 0 in 1.052s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 3xD5Vm4 | http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202211/t20221123_19070321.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:35:41.105  INFO [main] a.p.p.c.c.L.Task - 251. 💔 ⚡ U for N got 1601 0 <- 0 in 1.049s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 4P1wfu4 | http://www.ccgp.gov.cn/cggg/dfgg/zbgg/202211/t20221123_19070336.htm -ignoreFailure -requireSize 1000
+2022-11-23 12:35:41.110  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 182452224(178176K) committed = 216006656(210944K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 325058560(317440K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 17063408(16663K) committed = 18874368(18432K) max = -1(-1K)
+2022-11-23 12:35:41.110  WARN [main] a.p.s.a.c.AnalysablePageCorpus - No regional text node
+2022-11-23 12:35:41.110  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 182452224(178176K) committed = 216006656(210944K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 191795712(187300K) committed = 325058560(317440K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 17063408(16663K) committed = 18874368(18432K) max = -1(-1K)
+2022-11-23 12:35:41.135  INFO [main] a.p.p.c.c.L.Task - 254. 💯 💿 U  got 200 12.97 KiB in 32.028s, last fetched 42m20s ago, fc:2 | 6/18/0/18/332 | http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhaobiaogonggao/ -ignoreFailure -requireSize 1000
+2022-11-23 12:35:41.139  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:35:41.140  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhaobiaogonggao/ | file:///tmp/pulsar-vincent/cache/web/export/portal/mof-gov-cn-dc5d418c1f7042873fd1e91d4e20342e.htm
+2022-11-23 12:35:41.140  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.mof.gov.cn/gkml/
+2.	http://www.mof.gov.cn/gongzhongcanyu/
+3.	http://www.mof.gov.cn/zhuantihuigu/
+4.	http://www.mof.gov.cn/
+5.	http://www.mof.gov.cn/zhengwuxinxi/
+6.	http://www.mof.gov.cn/znjg/
+7.	http://www.mof.gov.cn/zaixianfuwu/
+2022-11-23 12:35:41.143  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #5p4vEj4, active: 1, allowed: 2
+2022-11-23 12:35:41.269  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.6319l
+2022-11-23 12:35:46.143  INFO [4-thread-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #3xD5Vm4(leaked) has lived for 55s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(21.62 KiB/s) | tasks: 3 total run: 3 | null
+2022-11-23 12:35:46.144  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 3xD5Vm41
+2022-11-23 12:35:46.245  INFO [4-thread-1] a.p.p.p.b.d.WebDriverPoolManager - Web drivers are in GUI mode, please close it manually | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.3xD5Vm4}
+2022-11-23 12:35:46.245  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 3xD5Vm41
+2022-11-23 12:35:46.245  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully | 3xD5Vm41 | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.3xD5Vm4}
+2022-11-23 12:35:46.246  INFO [4-thread-1] a.p.p.c.f.p.PrivacyManager - The latest context throughput: 0.54, 0.56, 0.00 (success/min)
+2022-11-23 12:35:52.102  INFO [main] a.p.p.p.b.e.i.BrowserResponseHandlerImpl - Undocumented browser error DNS_PROBE_STARTED
+2022-11-23 12:35:52.134  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 5#5p4vEj4 | 256. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:35:52.135  INFO [main] a.p.p.c.c.L.Task - 256. 💔 ⚡ U for N got 1601 0 <- 0 in 1.124s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 5p4vEj4 | http://www.mof.gov.cn/ -ignoreFailure -requireSize 1000
+2022-11-23 12:35:52.138  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #65sBAX4, active: 1, allowed: 2
+2022-11-23 12:35:52.320  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.76m6g
+2022-11-23 12:35:55.360  INFO [main] a.p.p.p.b.e.i.BrowserResponseHandlerImpl - Undocumented browser error DNS_PROBE_STARTED
+2022-11-23 12:35:55.381  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 6#65sBAX4 | 258. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:35:55.382  INFO [main] a.p.p.c.c.L.Task - 258. 💔 ⚡ U for N got 1601 0 <- 0 in 1.152s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 65sBAX4 | http://www.mof.gov.cn/gkml/ -ignoreFailure -requireSize 1000
+2022-11-23 12:35:57.139  INFO [4-thread-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #4P1wfu4(leaked) has lived for 55s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(21.51 KiB/s) | tasks: 3 total run: 3 | null
+2022-11-23 12:35:57.140  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 4P1wfu41
+2022-11-23 12:35:57.241  INFO [4-thread-1] a.p.p.p.b.d.WebDriverPoolManager - Web drivers are in GUI mode, please close it manually | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.4P1wfu4}
+2022-11-23 12:35:57.241  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 4P1wfu41
+2022-11-23 12:35:57.242  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully | 4P1wfu41 | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.4P1wfu4}
+2022-11-23 12:35:57.242  INFO [4-thread-1] a.p.p.c.f.p.PrivacyManager - The latest context throughput: 0.53, 0.55, 0.00, 0.00 (success/min)
+2022-11-23 12:36:01.882  INFO [main] a.p.p.p.b.e.i.BrowserResponseHandlerImpl - Undocumented browser error DNS_PROBE_STARTED
+2022-11-23 12:36:01.911  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 6/8 | 5#5p4vEj4 | 260. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:36:01.912  INFO [main] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #5p4vEj4 has lived for 20s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(21.47 KiB/s) | tasks: 2 total run: 2 | null
+2022-11-23 12:36:01.913  INFO [main] a.p.p.c.c.L.Task - 260. 💔 ⚡ U for N got 1601 0 <- 0 in 1.096s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 5p4vEj4 | http://www.mof.gov.cn/gongzhongcanyu/ -ignoreFailure -requireSize 1000
+2022-11-23 12:36:08.579  INFO [main] a.p.p.p.b.e.i.BrowserResponseHandlerImpl - Undocumented browser error DNS_PROBE_STARTED
+2022-11-23 12:36:08.590  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 6/8 | 6#65sBAX4 | 262. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:36:08.590  INFO [main] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #65sBAX4 has lived for 16s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(21.40 KiB/s) | tasks: 2 total run: 2 | null
+2022-11-23 12:36:08.591  INFO [main] a.p.p.c.c.L.Task - 262. 💔 ⚡ U for N got 1601 0 <- 0 in 1.06s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 65sBAX4 | http://www.mof.gov.cn/zaixianfuwu/ -ignoreFailure -requireSize 1000
+2022-11-23 12:36:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 39m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 940 B/p
+2022-11-23 12:36:38.997  INFO [main] a.p.p.p.b.e.i.BrowserResponseHandlerImpl - Undocumented browser error DNS_PROBE_STARTED
+2022-11-23 12:36:39.009  INFO [main] a.p.p.c.c.L.Task - 264. 💔 ⚡ U for N got 1601 0 <- 0 in 21.086s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 5p4vEj4 | http://www.mof.gov.cn/zhengwuxinxi/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:06.412  INFO [main] a.p.p.p.b.e.i.BrowserResponseHandlerImpl - Undocumented browser error DNS_PROBE_STARTED
+2022-11-23 12:37:06.434  INFO [main] a.p.p.c.c.L.Task - 266. 💔 ⚡ U for N got 1601 0 <- 0 in 21.077s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 65sBAX4 | http://www.mof.gov.cn/zhuantihuigu/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:06.440  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #7XDhZh4, active: 1, allowed: 2
+2022-11-23 12:37:06.569  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.83iww
+2022-11-23 12:37:11.440  INFO [4-thread-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #5p4vEj4(leaked) has lived for 1m30s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(20.84 KiB/s) | tasks: 3 total run: 3 | null
+2022-11-23 12:37:11.440  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 5p4vEj41
+2022-11-23 12:37:11.541  INFO [4-thread-1] a.p.p.p.b.d.WebDriverPoolManager - Web drivers are in GUI mode, please close it manually | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.5p4vEj4}
+2022-11-23 12:37:11.542  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 5p4vEj41
+2022-11-23 12:37:11.542  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully | 5p4vEj41 | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.5p4vEj4}
+2022-11-23 12:37:11.542  INFO [4-thread-1] a.p.p.c.f.p.PrivacyManager - The latest context throughput: 0.52, 0.54, 0.00, 0.00, 0.00 (success/min)
+2022-11-23 12:37:38.617  INFO [main] a.p.p.p.b.e.i.BrowserResponseHandlerImpl - Undocumented browser error DNS_PROBE_FINISHED_NO_INTERNET
+2022-11-23 12:37:38.633  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - ⚠ Privacy leak warning 3/8 | 7#7XDhZh4 | 268. Retry(1601) rsp: PRIVACY, rrs: BrowserErrorPageException
+2022-11-23 12:37:38.633  INFO [main] a.p.p.c.c.L.Task - 268. 💔 ⚡ U for N got 1601 0 <- 0 in 29.34s, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 7XDhZh4 | http://www.mof.gov.cn/znjg/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.638  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 62914560(61440K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.639  WARN [main] a.p.s.a.c.AnalysablePageCorpus - No regional text node
+2022-11-23 12:37:38.639  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 62914560(61440K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.658  INFO [main] a.p.p.c.c.L.Task - 271. 💯 💿 U  got 200 12.97 KiB in 40.959s, last fetched 44m14s ago, fc:1 | 6/18/0/18/332 | http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhongbiaogonggao/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.662  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:37:38.663  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhongbiaogonggao/ | file:///tmp/pulsar-vincent/cache/web/export/portal/mof-gov-cn-412fce4aa61126b47cc2519ab0c46f5d.htm
+2022-11-23 12:37:38.663  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.mof.gov.cn/znjg/
+2.	http://www.mof.gov.cn/zhengwuxinxi/
+3.	http://www.mof.gov.cn/gongzhongcanyu/
+4.	http://www.mof.gov.cn/zaixianfuwu/
+5.	http://www.mof.gov.cn/gkml/
+6.	http://www.mof.gov.cn/zhuantihuigu/
+7.	http://www.mof.gov.cn/
+2022-11-23 12:37:38.688  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 71303168(69632K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.689  WARN [main] a.p.s.a.c.AnalysablePageCorpus - No regional text node
+2022-11-23 12:37:38.689  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 71303168(69632K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.698  INFO [main] a.p.p.c.c.L.Task - 288. 💯 💿 U  got 200 12.97 KiB in 28.369s, last fetched 44m17s ago, fc:2 | 6/18/0/18/332 | http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyanggengzhenggonggao/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.702  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:37:38.703  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyanggengzhenggonggao/ | file:///tmp/pulsar-vincent/cache/web/export/portal/mof-gov-cn-d35f8e316dc9fe2720d6256c906428d6.htm
+2022-11-23 12:37:38.703  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.mof.gov.cn/zhuantihuigu/
+2.	http://www.mof.gov.cn/gkml/
+3.	http://www.mof.gov.cn/gongzhongcanyu/
+4.	http://www.mof.gov.cn/znjg/
+5.	http://www.mof.gov.cn/
+6.	http://www.mof.gov.cn/zhengwuxinxi/
+7.	http://www.mof.gov.cn/zaixianfuwu/
+2022-11-23 12:37:38.725  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 81788928(79872K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.726  WARN [main] a.p.s.a.c.AnalysablePageCorpus - No regional text node
+2022-11-23 12:37:38.726  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 81788928(79872K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.734  INFO [main] a.p.p.c.c.L.Task - 305. 💯 💿 U  got 200 12.94 KiB in 39.191s, last fetched 44m16s ago, fc:1 | 6/18/0/18/332 | http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhaobiaogonggao/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.737  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:37:38.737  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhaobiaogonggao/ | file:///tmp/pulsar-vincent/cache/web/export/portal/mof-gov-cn-30503ab9669b9f326c2b8ee5b298d67b.htm
+2022-11-23 12:37:38.738  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.mof.gov.cn/gongzhongcanyu/
+2.	http://www.mof.gov.cn/zhengwuxinxi/
+3.	http://www.mof.gov.cn/gkml/
+4.	http://www.mof.gov.cn/zaixianfuwu/
+5.	http://www.mof.gov.cn/zhuantihuigu/
+6.	http://www.mof.gov.cn/znjg/
+7.	http://www.mof.gov.cn/
+2022-11-23 12:37:38.755  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 92274688(90112K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.755  WARN [main] a.p.s.a.c.AnalysablePageCorpus - No regional text node
+2022-11-23 12:37:38.756  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 92274688(90112K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.763  INFO [main] a.p.p.c.c.L.Task - 322. 💯 💿 U  got 200 12.94 KiB in 13.89s, last fetched 44m51s ago, fc:2 | 6/18/0/18/332 | http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhongbiaogonggao/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.767  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:37:38.767  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhongbiaogonggao/ | file:///tmp/pulsar-vincent/cache/web/export/portal/mof-gov-cn-ac89aa3299e4de6cbf727092cb4f2722.htm
+2022-11-23 12:37:38.767  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.mof.gov.cn/
+2.	http://www.mof.gov.cn/znjg/
+3.	http://www.mof.gov.cn/gongzhongcanyu/
+4.	http://www.mof.gov.cn/gkml/
+5.	http://www.mof.gov.cn/zaixianfuwu/
+6.	http://www.mof.gov.cn/zhengwuxinxi/
+7.	http://www.mof.gov.cn/zhuantihuigu/
+2022-11-23 12:37:38.794  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 100663296(98304K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.794  WARN [main] a.p.s.a.c.AnalysablePageCorpus - No regional text node
+2022-11-23 12:37:38.794  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 100663296(98304K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.804  INFO [main] a.p.p.c.c.L.Task - 339. 💯 💿 U  got 200 12.83 KiB in 23.215s, last fetched 44m31s ago, fc:2 | 6/18/0/18/332 | http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difanggengzhenggonggao/ -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.808  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:37:38.808  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difanggengzhenggonggao/ | file:///tmp/pulsar-vincent/cache/web/export/portal/mof-gov-cn-03acd967d13bdd77bbe7dde7474b053b.htm
+2022-11-23 12:37:38.808  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.mof.gov.cn/zhengwuxinxi/
+2.	http://www.mof.gov.cn/gongzhongcanyu/
+3.	http://www.mof.gov.cn/gkml/
+4.	http://www.mof.gov.cn/
+5.	http://www.mof.gov.cn/zhuantihuigu/
+6.	http://www.mof.gov.cn/zaixianfuwu/
+7.	http://www.mof.gov.cn/znjg/
+2022-11-23 12:37:38.828  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 111149056(108544K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.828  WARN [main] a.p.s.a.c.AnalysablePageCorpus - No regional text node
+2022-11-23 12:37:38.829  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 111149056(108544K) committed = 201326592(196608K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 206724608(201879K) committed = 333447168(325632K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 24095648(23530K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:37:38.837  INFO [main] a.p.p.c.c.L.Task - 356. 💯 💿 U  got 200 29.34 KiB in 49.552s, last fetched 44m11s ago, fc:1 | 5/18/0/33/976 | http://www.ccgp-beijing.gov.cn/xxgg/index.html?name=jieshou -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.842  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 12:37:38.842  WARN [main] a.p.s.a.AutoMiner -
+!!! No navigate url is found in document http://www.ccgp-beijing.gov.cn/xxgg/index.html?name=jieshou | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-beijing-gov-cn-bbed2efec28e1299977caf0af720ad1d.htm !!!
+
+2022-11-23 12:37:38.842  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 12:37:38.851  INFO [main] a.p.p.c.c.L.Task - 359. 💯 💿 U  got 200 22.45 KiB in 45.937s, last fetched 44m12s ago, fc:2 | 5/41/0/41/976 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:37:38.858  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:37:38.858  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-beijing-gov-cn-aa58a6833d9b24e138bdb37c3d3fb66c.htm
+2022-11-23 12:37:38.858  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469380.html
+2.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469478.html
+3.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469458.html
+4.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469382.html
+5.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469378.html
+6.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469477.html
+7.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469476.html
+8.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469379.html
+9.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469457.html
+10.	http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469375.html
+2022-11-23 12:37:38.861  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #8h2XoA4, active: 1, allowed: 2
+2022-11-23 12:37:39.003  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+/usr/bin/google-chrome-stable --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true --user-data-dir=/tmp/pulsar-vincent/context/browser/br.9hp1n
+2022-11-23 12:37:43.861  INFO [4-thread-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #65sBAX4(leaked) has lived for 1m51s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 220.38 MiB(20.56 KiB/s) | tasks: 3 total run: 3 | null
+2022-11-23 12:37:43.862  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 65sBAX41
+2022-11-23 12:37:43.962  INFO [4-thread-1] a.p.p.p.b.d.WebDriverPoolManager - Web drivers are in GUI mode, please close it manually | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.65sBAX4}
+2022-11-23 12:37:43.962  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 65sBAX41
+2022-11-23 12:37:43.962  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully | 65sBAX41 | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.65sBAX4}
+2022-11-23 12:37:43.962  INFO [4-thread-1] a.p.p.c.f.p.PrivacyManager - The latest context throughput: 0.51, 0.53, 0.00, 0.00, 0.00, 0.00 (success/min)
+2022-11-23 12:38:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 41m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 894 B/p
+2022-11-23 12:39:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 41 pages in 42m(0.02 pages/s) successfully | content: 0, 2.10 MiB/s, 873 B/p
+2022-11-23 12:39:41.670  INFO [main] a.p.p.c.c.L.Task - 361. 💯 ⚡ U for N got 200 21.55 KiB in 1m52.445s, fc:1 | 5/21/2/43/767 | 8h2XoA4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469375.html -ignoreFailure -requireSize 1000
+2022-11-23 12:40:24.836  INFO [main] a.p.p.c.c.L.Task - 363. 💯 ⚡ U for N got 200 21.58 KiB in 34.03s, fc:1 | 5/21/2/43/799 | 7XDhZh4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469378.html -ignoreFailure -requireSize 1000
+2022-11-23 12:40:38.788  INFO [main] a.p.p.c.c.L.Task - 365. 💯 ⚡ U for N got 200 22.02 KiB in 10.884s, fc:1 | 5/21/2/43/863 | 8h2XoA4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469379.html -ignoreFailure -requireSize 1000
+2022-11-23 12:40:58.866  INFO [main] a.p.p.c.c.L.Task - 367. 💯 ⚡ U for N got 200 21.88 KiB in 9.045s, fc:1 | 5/21/2/43/863 | 7XDhZh4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469380.html -ignoreFailure -requireSize 1000
+2022-11-23 12:41:10.766  INFO [main] a.p.p.c.c.L.Task - 369. 💯 ⚡ U for N got 200 21.63 KiB in 8.773s, fc:1 | 5/21/2/43/703 | 8h2XoA4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469381.html -ignoreFailure -requireSize 1000
+2022-11-23 12:41:24.206  INFO [main] a.p.p.c.c.L.Task - 371. 💯 ⚡ U for N got 200 21.70 KiB in 8.802s, fc:1 | 5/21/2/43/799 | 7XDhZh4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469382.html -ignoreFailure -requireSize 1000
+2022-11-23 12:41:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 47 pages in 44m(0.02 pages/s) successfully | content: 0, 2.23 MiB/s, 884 B/p
+2022-11-23 12:41:40.289  INFO [main] a.p.p.c.c.L.Task - 373. 💯 ⚡ U for N got 200 21.66 KiB in 9.779s, fc:1 | 5/21/2/44/735 | 8h2XoA4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469411.html -ignoreFailure -requireSize 1000
+2022-11-23 12:41:58.370  INFO [main] a.p.p.c.c.L.Task - 375. 💯 ⚡ U for N got 200 21.58 KiB in 9.43s, fc:1 | 5/21/2/44/703 | 7XDhZh4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469457.html -ignoreFailure -requireSize 1000
+2022-11-23 12:42:16.096  INFO [main] a.p.p.c.c.L.Task - 377. 💯 ⚡ U for N got 200 21.70 KiB in 8.852s, fc:1 | 5/21/2/43/799 | 8h2XoA4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221122_1469458.html -ignoreFailure -requireSize 1000
+2022-11-23 12:42:31.860  INFO [main] a.p.p.c.c.L.Task - 379. 💯 ⚡ U for N got 200 21.36 KiB in 9.751s, fc:1 | 5/21/2/43/639 | 7XDhZh4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469476.html -ignoreFailure -requireSize 1000
+2022-11-23 12:42:43.310  INFO [main] a.p.p.c.c.L.Task - 381. 💯 ⚡ U for N got 200 22.09 KiB in 9.283s, fc:1 | 5/21/2/43/863 | 8h2XoA4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469477.html -ignoreFailure -requireSize 1000
+2022-11-23 12:42:57.026  INFO [main] a.p.p.c.c.L.Task - 383. 💯 ⚡ U for N got 200 21.77 KiB in 9.278s, fc:1 | 5/21/2/43/735 | 7XDhZh4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469478.html -ignoreFailure -requireSize 1000
+2022-11-23 12:43:11.490  INFO [main] a.p.p.c.c.L.Task - 385. 💯 ⚡ U for N got 200 21.35 KiB in 9.21s, fc:1 | 5/21/2/43/639 | 8h2XoA4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469479.html -ignoreFailure -requireSize 1000
+2022-11-23 12:43:24.191  INFO [main] a.p.p.c.c.L.Task - 387. 💯 ⚡ U for N got 200 21.46 KiB in 9.276s, fc:1 | 5/21/2/43/671 | 7XDhZh4 | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/t20221123_1469480.html -ignoreFailure -requireSize 1000
+2022-11-23 12:43:24.227  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 69206016(67584K) committed = 195035136(190464K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 240853504(235208K) committed = 360710144(352256K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 3052888(2981K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 12:43:24.233  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 14 documents share 25 terms out of 31 counted (80.65%)
+2022-11-23 12:43:24.234  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 14/14 recoverable documents with confidence 80.65%
+2022-11-23 12:43:24.234  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1            5         2      6.45%      6.45%
+2            6         1      3.23%      9.68%
+3            7         1      3.23%     12.90%
+4            8         1      3.23%     16.13%
+5           12         1      3.23%     19.35%
+6           14        25     80.65%    100.00%
+totalFrequency: 31	mode: 14
+2022-11-23 12:43:24.235  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 69206016(67584K) committed = 195035136(190464K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 240853504(235208K) committed = 360710144(352256K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 3052888(2981K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 12:43:24.252  INFO [main] a.p.p.c.c.L.Task - 390. 💯 💿 U  got 200 78.99 KiB in 49.109s, last fetched 49m51s ago, fc:1 | 3/50/0/29/1198 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:43:24.257  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 12:43:24.257  WARN [main] a.p.s.a.AutoMiner -
+!!! No navigate url is found in document http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-shanghai-gov-cn-3f4ddcf83f8bee9747afd21e0b120171.htm !!!
+
+2022-11-23 12:43:24.257  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 12:43:24.265  INFO [main] a.p.p.c.c.L.Task - 393. 💯 💿 U  got 200 123.87 KiB in 43.217s, last fetched 49m52s ago, fc:2 | 3/83/3/51/1198 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:43:24.275  INFO [main] a.p.s.s.BlockLocator - Found 2 anchor groups from 1 navigate components
+2022-11-23 12:43:24.276  INFO [main] a.p.s.a.AutoMiner - Find 2 anchor groups in page http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-shanghai-gov-cn-b78758058eb96cac05ea33ae9fc1d6f1.htm
+2022-11-23 12:43:24.276  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/VwGSCBBTI1POM+jWFdM3ew==.html
+2.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/oURGEgN/HAw93c+dIKCZZQ==.html
+3.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/0iHKKjM92mADnUsHVoymBQ==.html
+4.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/NEp+3KcWPGoZSV5nrdXvhw==.html
+5.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/Yxn4uQjeC4NSqQbPl2ofzA==.html
+6.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/vbgx32YYU1Z+nwUrop7i2Q==.html
+7.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/iin37IOqnaANklDFzOsPkg==.html
+8.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/7Jv0/vPZMoA35zHbNFXd9w==.html
+2022-11-23 12:43:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 55 pages in 46m(0.02 pages/s) successfully | content: 0, 2.40 MiB/s, 910 B/p
+2022-11-23 12:43:57.795  INFO [main] a.p.p.c.c.L.Task - 395. 💯 ⚡ U for N got 200 68.35 KiB in 30.472s, fc:1 | 3/55/1/26/3663 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/0iHKKjM92mADnUsHVoymBQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:44:23.335  INFO [main] a.p.p.c.c.L.Task - 397. 💯 ⚡ U for N got 200 72.77 KiB in 19.171s, fc:1 | 3/55/1/26/4470 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/7Jv0/vPZMoA35zHbNFXd9w==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:44:42.420  INFO [main] a.p.p.c.c.L.Task - 399. 💯 ⚡ U for N got 200 71.34 KiB in 10.881s, fc:1 | 3/55/1/26/3958 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/NEp+3KcWPGoZSV5nrdXvhw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:44:56.847  INFO [main] a.p.p.c.c.L.Task - 401. 💯 ⚡ U for N got 200 69.77 KiB in 11.362s, fc:1 | 3/55/1/26/3722 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/VwGSCBBTI1POM+jWFdM3ew==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:45:09.884  INFO [main] a.p.p.c.c.L.Task - 403. 💯 ⚡ U for N got 200 71.08 KiB in 9.984s, fc:1 | 3/55/1/26/3964 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/Yxn4uQjeC4NSqQbPl2ofzA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:45:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 60 pages in 48m(0.02 pages/s) successfully | content: 0, 2.74 MiB/s, 997 B/p
+2022-11-23 12:45:27.830  INFO [main] a.p.p.c.c.L.Task - 405. 💯 ⚡ U for N got 200 70.00 KiB in 14.229s, fc:1 | 3/55/1/26/3785 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/iin37IOqnaANklDFzOsPkg==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:45:48.090  INFO [main] a.p.p.c.c.L.Task - 407. 💯 ⚡ U for N got 200 70.98 KiB in 14.376s, fc:1 | 3/55/1/26/4164 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/oURGEgN/HAw93c+dIKCZZQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:46:06.059  INFO [main] a.p.p.c.c.L.Task - 409. 💯 ⚡ U for N got 200 70.22 KiB in 10.86s, fc:1 | 3/55/1/26/3902 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/ZcyAnnouncement3001/vbgx32YYU1Z+nwUrop7i2Q==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:46:06.096  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 8388608(8192K) committed = 176160768(172032K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 240853504(235208K) committed = 358612992(350208K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 25165824(24576K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:46:06.100  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 8 documents share 23 terms out of 23 counted (100.00%)
+2022-11-23 12:46:06.100  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 8/8 recoverable documents with confidence 100.00%
+2022-11-23 12:46:06.100  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           8        23    100.00%    100.00%
+totalFrequency: 23	mode: 8
+2022-11-23 12:46:06.101  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 10485760(10240K) committed = 176160768(172032K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 240853504(235208K) committed = 358612992(350208K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 25165824(24576K) committed = 25165824(24576K) max = -1(-1K)
+2022-11-23 12:46:06.123  INFO [main] a.p.p.c.c.L.Task - 412. 💯 💿 U  got 200 79.02 KiB in 56.93s, last fetched 52m33s ago, fc:1 | 3/50/0/29/1198 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement3/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:46:06.128  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 12:46:06.128  WARN [main] a.p.s.a.AutoMiner -
+!!! No navigate url is found in document http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement3/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-shanghai-gov-cn-a9bed6b810bf58f18805166dc2fd1b44.htm !!!
+
+2022-11-23 12:46:06.128  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 12:46:06.137  INFO [main] a.p.p.c.c.L.Task - 415. 💯 💿 U  got 200 124.79 KiB in 50.332s, last fetched 52m35s ago, fc:1 | 3/83/3/51/1198 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:46:06.148  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:46:06.148  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-shanghai-gov-cn-b02ab073f1b496726b117f29af81ce00.htm
+2022-11-23 12:46:06.148  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/PEthm8CczXhReyjkYuLHfQ==.html
+2.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/mo53aMfNnrWQphY8vqCfLw==.html
+3.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/3E/5cbS0/JHoxGWxiFyACA==.html
+4.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/TGR4Mpht7JhwW/rZ+JYDDw==.html
+5.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/tVKN7H/BLtj6ipFSiqlC2Q==.html
+6.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/S8udb6sfcOWFNmLRVq4eWA==.html
+7.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/+9Y+1nLRYYGZwmqrJTiAvA==.html
+8.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/VyNfNnJB9sLPGBncfW4vNw==.html
+9.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/Mycghbrqx+1lvA7uoOeE1A==.html
+10.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/zJsXevQWjOV6WogYUwHsKw==.html
+2022-11-23 12:46:17.356  INFO [main] a.p.p.c.c.L.Task - 417. 💯 ⚡ U for N got 200 66.40 KiB in 10.064s, fc:1 | 3/54/1/24/3330 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/+9Y+1nLRYYGZwmqrJTiAvA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:46:36.703  INFO [main] a.p.p.c.c.L.Task - 419. 💯 ⚡ U for N got 200 66.51 KiB in 11.402s, fc:1 | 3/54/1/24/3551 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/3E/5cbS0/JHoxGWxiFyACA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:46:52.341  INFO [main] a.p.p.c.c.L.Task - 421. 💯 ⚡ U for N got 200 65.83 KiB in 11.305s, fc:1 | 3/54/1/24/3147 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/5QZz1uZOtNdtifGkzKzaWQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:47:14.127  INFO [main] a.p.p.c.c.L.Task - 423. 💯 ⚡ U for N got 200 67.36 KiB in 10.923s, fc:1 | 3/54/1/24/4095 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/C309GJbSvrfkptXQfrddMA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:47:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 67 pages in 50m(0.02 pages/s) successfully | content: 0, 3.21 MiB/s, 1.09 KiB/p
+2022-11-23 12:47:28.787  INFO [main] a.p.p.c.c.L.Task - 425. 💯 ⚡ U for N got 200 65.42 KiB in 12.39s, fc:1 | 3/54/1/24/3850 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/HRgndEU5QU2ZjiBMaDxyCQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:47:43.787  INFO [main] a.p.p.c.c.L.Task - 427. 💯 ⚡ U for N got 200 65.84 KiB in 13.072s, fc:1 | 3/54/1/24/3254 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/Mycghbrqx+1lvA7uoOeE1A==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:48:11.315  INFO [main] a.p.p.c.c.L.Task - 429. 💯 ⚡ U for N got 200 66.71 KiB in 20.486s, fc:1 | 3/54/1/24/3209 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/PEthm8CczXhReyjkYuLHfQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:48:30.838  INFO [main] a.p.p.c.c.L.Task - 431. 💯 ⚡ U for N got 200 66.32 KiB in 10.929s, fc:1 | 3/54/1/24/4002 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/S8udb6sfcOWFNmLRVq4eWA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:48:43.064  INFO [main] a.p.p.c.c.L.Task - 433. 💯 ⚡ U for N got 200 66.71 KiB in 10.429s, fc:1 | 3/54/1/24/3323 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/TGR4Mpht7JhwW/rZ+JYDDw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:49:02.483  INFO [main] a.p.p.c.c.L.Task - 435. 💯 ⚡ U for N got 200 65.30 KiB in 9.932s, fc:1 | 3/54/1/24/3060 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/VyNfNnJB9sLPGBncfW4vNw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:49:23.073  INFO [main] a.p.p.c.c.L.Task - 437. 💯 ⚡ U for N got 200 65.54 KiB in 10.876s, fc:1 | 3/54/1/24/3714 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/XPDTAp26Jh2P1G7aKQY36w==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:49:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 74 pages in 52m(0.02 pages/s) successfully | content: 0, 3.66 MiB/s, 1.20 KiB/p
+2022-11-23 12:49:45.429  INFO [main] a.p.p.c.c.L.Task - 439. 💯 ⚡ U for N got 200 64.58 KiB in 14.268s, fc:1 | 3/54/1/24/2988 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/mo53aMfNnrWQphY8vqCfLw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:50:04.138  INFO [main] a.p.p.c.c.L.Task - 441. 💯 ⚡ U for N got 200 67.50 KiB in 8.852s, fc:1 | 3/55/1/25/3620 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/tVKN7H/BLtj6ipFSiqlC2Q==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:50:15.794  INFO [main] a.p.p.c.c.L.Task - 443. 💯 ⚡ U for N got 200 66.21 KiB in 9.808s, fc:1 | 3/54/1/24/3403 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/zJSKMnNTJbDwJKxu5Cp2kg==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:50:33.677  INFO [main] a.p.p.c.c.L.Task - 445. 💯 ⚡ U for N got 200 66.01 KiB in 9.818s, fc:1 | 3/54/1/24/3110 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/ZcyAnnouncement3004/zJsXevQWjOV6WogYUwHsKw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:50:33.731  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 29360128(28672K) committed = 167772160(163840K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 275140608(268692K) committed = 387973120(378880K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 2713584(2649K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 12:50:33.737  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 15 documents share 18 terms out of 21 counted (85.71%)
+2022-11-23 12:50:33.738  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 15/15 recoverable documents with confidence 85.71%
+2022-11-23 12:50:33.738  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           14         3     14.29%     14.29%
+2           15        18     85.71%    100.00%
+totalFrequency: 21	mode: 15
+2022-11-23 12:50:33.739  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 31457280(30720K) committed = 167772160(163840K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 275140608(268692K) committed = 387973120(378880K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 2713584(2649K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 12:50:33.759  INFO [main] a.p.p.c.c.L.Task - 448. 💯 💿 U  got 200 123.64 KiB in 30.977s, last fetched 56m25s ago, fc:2 | 3/83/3/51/1198 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:50:33.768  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:50:33.769  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-shanghai-gov-cn-be6c8b43b9455f8edf952abb5e1416e2.htm
+2022-11-23 12:50:33.769  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/i29MFnPJyG99Yor+Y/xKLw==.html
+2.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/aattD6gxUNwYtN0ByCsZoA==.html
+3.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/H8lZTA4hUDjSo9VlzH7DyA==.html
+4.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/Ip4HRxd03qGyrGofMAoCMQ==.html
+5.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/RztW+2e7dQI2KlqRG1O1ZA==.html
+6.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/Rk4YeTJLBeeBcHFGnD9AAw==.html
+7.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/JJnjM9u7GdB4+vUGU6q8+Q==.html
+8.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/CW0dvmn3cj1MaBt6ILc41Q==.html
+9.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/dhz9+Neb/5pOZgE+BkdRbA==.html
+10.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/h3KlZimqt3SPvTvgmUqhZw==.html
+2022-11-23 12:50:51.701  INFO [main] a.p.p.c.c.L.Task - 450. 💯 ⚡ U for N got 200 60.97 KiB in 9.843s, fc:1 | 3/54/1/24/2419 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/CW0dvmn3cj1MaBt6ILc41Q==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:51:08.322  INFO [main] a.p.p.c.c.L.Task - 452. 💯 ⚡ U for N got 200 58.99 KiB in 10.262s, fc:1 | 3/54/1/24/2203 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/H8lZTA4hUDjSo9VlzH7DyA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:51:24.592  INFO [main] a.p.p.c.c.L.Task - 454. 💯 ⚡ U for N got 200 59.06 KiB in 9.916s, fc:1 | 3/54/1/24/2203 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/Hdl2AdSffsjYnMKKU9ag5g==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:51:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 81 pages in 54m(0.02 pages/s) successfully | content: 0, 4.09 MiB/s, 1.29 KiB/p
+2022-11-23 12:51:41.109  INFO [main] a.p.p.c.c.L.Task - 456. 💯 ⚡ U for N got 200 58.39 KiB in 8.91s, fc:1 | 3/54/1/24/2119 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/Ip4HRxd03qGyrGofMAoCMQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:51:54.960  INFO [main] a.p.p.c.c.L.Task - 458. 💯 ⚡ U for N got 200 59.10 KiB in 9.065s, fc:1 | 3/54/1/24/2203 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/JJnjM9u7GdB4+vUGU6q8+Q==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:52:10.707  INFO [main] a.p.p.c.c.L.Task - 460. 💯 ⚡ U for N got 200 61.09 KiB in 10.836s, fc:1 | 3/54/1/24/2419 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/QI2rC5pTrfBBjo3xVvpCOw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:52:26.568  INFO [main] a.p.p.c.c.L.Task - 462. 💯 ⚡ U for N got 200 59.37 KiB in 10.456s, fc:1 | 3/54/1/24/2236 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/Rk4YeTJLBeeBcHFGnD9AAw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:52:41.281  INFO [main] a.p.p.c.c.L.Task - 464. 💯 ⚡ U for N got 200 59.16 KiB in 9.284s, fc:1 | 3/54/1/24/2203 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/RztW+2e7dQI2KlqRG1O1ZA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:52:54.857  INFO [main] a.p.p.c.c.L.Task - 466. 💯 ⚡ U for N got 200 60.68 KiB in 9.752s, fc:1 | 3/54/1/24/2631 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/aattD6gxUNwYtN0ByCsZoA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:53:13.380  INFO [main] a.p.p.c.c.L.Task - 468. 💯 ⚡ U for N got 200 61.01 KiB in 10.443s, fc:1 | 3/54/1/24/2419 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/dhz9+Neb/5pOZgE+BkdRbA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:53:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 88 pages in 56m(0.03 pages/s) successfully | content: 0, 4.50 MiB/s, 1.37 KiB/p
+2022-11-23 12:53:28.036  INFO [main] a.p.p.c.c.L.Task - 470. 💯 ⚡ U for N got 200 58.82 KiB in 10.076s, fc:1 | 3/54/1/24/2203 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/h3KlZimqt3SPvTvgmUqhZw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:53:47.151  INFO [main] a.p.p.c.c.L.Task - 472. 💯 ⚡ U for N got 200 58.90 KiB in 8.922s, fc:1 | 3/54/1/24/2203 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/i29MFnPJyG99Yor+Y/xKLw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:54:00.693  INFO [main] a.p.p.c.c.L.Task - 474. 💯 ⚡ U for N got 200 58.42 KiB in 10.103s, fc:1 | 3/54/1/24/2119 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/javPV8WhitWtQEa/Cn95JA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:54:14.403  INFO [main] a.p.p.c.c.L.Task - 476. 💯 ⚡ U for N got 200 59.64 KiB in 9.87s, fc:1 | 3/54/1/24/2369 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/mqqw4jjDwxGkP5wbRsTdog==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:54:26.102  INFO [main] a.p.p.c.c.L.Task - 478. 💯 ⚡ U for N got 200 64.62 KiB in 8.829s, fc:1 | 3/54/1/24/2853 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/ZcyAnnouncement3010/trr6iPH0z3/0tNfKjhubVw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:54:26.144  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 56623104(55296K) committed = 155189248(151552K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 274702336(268264K) committed = 383778816(374784K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 20589512(20106K) committed = 20971520(20480K) max = -1(-1K)
+2022-11-23 12:54:26.150  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 15 documents share 21 terms out of 21 counted (100.00%)
+2022-11-23 12:54:26.150  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 15/15 recoverable documents with confidence 100.00%
+2022-11-23 12:54:26.150  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           15        21    100.00%    100.00%
+totalFrequency: 21	mode: 15
+2022-11-23 12:54:26.151  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 58720256(57344K) committed = 155189248(151552K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 274702336(268264K) committed = 383778816(374784K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 20589512(20106K) committed = 20971520(20480K) max = -1(-1K)
+2022-11-23 12:54:26.162  INFO [main] a.p.p.c.c.L.Task - 481. 💯 💿 U  got 200 122.82 KiB in 18.814s, last fetched 1h22s ago, fc:2 | 3/83/3/51/1198 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:54:26.172  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:54:26.173  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-shanghai-gov-cn-fbcddebe15baace96a70b89f35689a58.htm
+2022-11-23 12:54:26.173  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/b7VPHsLymCRkGPnfjMNGZA==.html
+2.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/FdXHfEXZgwQPQfuxqJXuvQ==.html
+3.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/5ePAItCwoiORi/bGfaQwUA==.html
+4.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/Vi13EtgmfTOJamT5ip8wLw==.html
+5.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/lQ6FHtKh3oWtpuZ97ZM0vQ==.html
+6.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/UuJGFW2vkHAJmvFiYmVtuA==.html
+7.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/qFLjqi3Sf3yOZlq7PjsnKQ==.html
+8.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/svqnGfWzak6uNSydmOtDxw==.html
+9.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/0NJ7UFiM8eKwE/AC+Use4g==.html
+10.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/BuqrZ46cCt3RTU1jAMjjCQ==.html
+2022-11-23 12:54:37.232  INFO [main] a.p.p.c.c.L.Task - 483. 💯 ⚡ U for N got 200 58.05 KiB in 8.899s, fc:1 | 3/55/1/25/1917 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/0NJ7UFiM8eKwE/AC+Use4g==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:54:54.284  INFO [main] a.p.p.c.c.L.Task - 485. 💯 ⚡ U for N got 200 57.87 KiB in 10.402s, fc:1 | 3/55/1/25/1887 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/5ePAItCwoiORi/bGfaQwUA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:55:10.962  INFO [main] a.p.p.c.c.L.Task - 487. 💯 ⚡ U for N got 200 57.61 KiB in 8.966s, fc:1 | 3/55/1/25/1887 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/7IPI3/ZUmp5kAcA4A5IrpQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:55:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 96 pages in 58m(0.03 pages/s) successfully | content: 0, 4.96 MiB/s, 1.46 KiB/p
+2022-11-23 12:55:26.755  INFO [main] a.p.p.c.c.L.Task - 489. 💯 ⚡ U for N got 200 58.31 KiB in 11.062s, fc:1 | 3/55/1/25/1887 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/BuqrZ46cCt3RTU1jAMjjCQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:55:39.195  INFO [main] a.p.p.c.c.L.Task - 491. 💯 ⚡ U for N got 200 58.12 KiB in 9.909s, fc:1 | 3/55/1/25/1953 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/FdXHfEXZgwQPQfuxqJXuvQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:55:53.367  INFO [main] a.p.p.c.c.L.Task - 493. 💯 ⚡ U for N got 200 59.74 KiB in 9.375s, fc:1 | 3/56/1/26/1887 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/PIqdyjeu40g+sneDIkDivw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:56:10.984  INFO [main] a.p.p.c.c.L.Task - 495. 💯 ⚡ U for N got 200 57.78 KiB in 9.901s, fc:1 | 3/55/1/25/1923 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/UuJGFW2vkHAJmvFiYmVtuA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:56:26.802  INFO [main] a.p.p.c.c.L.Task - 497. 💯 ⚡ U for N got 200 58.65 KiB in 9.375s, fc:1 | 3/55/1/25/1989 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/Vi13EtgmfTOJamT5ip8wLw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:56:46.960  INFO [main] a.p.p.c.c.L.Task - 499. 💯 ⚡ U for N got 200 59.95 KiB in 9.883s, fc:1 | 3/56/1/26/1887 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/b7VPHsLymCRkGPnfjMNGZA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:57:04.464  INFO [main] a.p.p.c.c.L.Task - 501. 💯 ⚡ U for N got 200 57.78 KiB in 8.896s, fc:1 | 3/55/1/25/1887 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/d49zBwmuRIesRpAQElJD9A==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:57:17.591  INFO [main] a.p.p.c.c.L.Task - 503. 💯 ⚡ U for N got 200 61.90 KiB in 9.766s, fc:1 | 3/57/1/27/1887 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/lQ6FHtKh3oWtpuZ97ZM0vQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:57:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 104 pages in 1h(0.03 pages/s) successfully | content: 0, 5.42 MiB/s, 1.54 KiB/p
+2022-11-23 12:57:37.560  INFO [main] a.p.p.c.c.L.Task - 505. 💯 ⚡ U for N got 200 59.86 KiB in 9.871s, fc:1 | 3/56/1/26/1923 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/qFLjqi3Sf3yOZlq7PjsnKQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:57:48.380  INFO [main] a.p.p.c.c.L.Task - 507. 💯 ⚡ U for N got 200 57.94 KiB in 8.928s, fc:1 | 3/55/1/25/1923 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/svqnGfWzak6uNSydmOtDxw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:58:04.399  INFO [main] a.p.p.c.c.L.Task - 509. 💯 ⚡ U for N got 200 58.17 KiB in 10.47s, fc:1 | 3/55/1/25/1887 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/tCDSr55xjlARQs8InrlArQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:58:14.866  INFO [main] a.p.p.c.c.L.Task - 511. 💯 ⚡ U for N got 200 58.18 KiB in 8.865s, fc:1 | 3/55/1/25/1923 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/ZcyAnnouncement3015/w9XusIq18svuOCAaspwSzQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:58:14.909  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 85983232(83968K) committed = 146800640(143360K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 308185088(300962K) committed = 411041792(401408K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1953440(1907K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 12:58:14.915  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 15 documents share 18 terms out of 22 counted (81.82%)
+2022-11-23 12:58:14.916  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 15/15 recoverable documents with confidence 81.82%
+2022-11-23 12:58:14.916  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           10         2      9.09%      9.09%
+2           11         2      9.09%     18.18%
+3           15        18     81.82%    100.00%
+totalFrequency: 22	mode: 15
+2022-11-23 12:58:14.917  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 88080384(86016K) committed = 146800640(143360K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 308185088(300962K) committed = 411041792(401408K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1953440(1907K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 12:58:14.928  INFO [main] a.p.p.c.c.L.Task - 514. 💯 💿 U  got 200 85.24 KiB in 30.159s, last fetched 1h4m7s ago, fc:2 | 3/75/3/56/1198 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/index.html -ignoreFailure -requireSize 1000
+2022-11-23 12:58:14.937  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 1 navigate components
+2022-11-23 12:58:14.937  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-shanghai-gov-cn-4fa52637e71bb73f4341bb59c5d6b137.htm
+2022-11-23 12:58:14.937  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/oWAB0lxvSrswbfMz19EKUw==.html
+2.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/8mAnLMoKh08bb67CfYgNGw==.html
+3.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/tJ2Andw20ipPTsWbacEKBA==.html
+4.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/35P0nphziIYyUcoPUirSeQ==.html
+5.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/9rl+fkC3ctW6N5rxi7abvA==.html
+6.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/D6XQ9qsViupuil3kprzPmw==.html
+7.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/lVE3SPJfRnPGBTomrRPe8A==.html
+8.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016//luj1Blxe1PdFfrVuoYfHg==.html
+9.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/DdXnA4pr0fMC1WceYuxPOA==.html
+10.	http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/Tsib/mHH1Pjq7++LKgxUQg==.html
+2022-11-23 12:58:29.187  INFO [main] a.p.p.c.c.L.Task - 516. 💯 ⚡ U for N got 200 51.49 KiB in 9.89s, fc:1 | 3/51/1/21/2162 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/+ZmPKwhoRCWi9UUbAEjeWg==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:58:44.113  INFO [main] a.p.p.c.c.L.Task - 518. 💯 ⚡ U for N got 200 51.54 KiB in 8.891s, fc:1 | 3/51/1/21/2181 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/luj1Blxe1PdFfrVuoYfHg==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:59:03.663  INFO [main] a.p.p.c.c.L.Task - 520. 💯 ⚡ U for N got 200 51.73 KiB in 8.897s, fc:1 | 3/51/1/21/2205 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/35P0nphziIYyUcoPUirSeQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:59:20.940  INFO [main] a.p.p.c.c.L.Task - 522. 💯 ⚡ U for N got 200 52.35 KiB in 10.961s, fc:1 | 3/51/1/21/2328 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/7FsdSZ+kQjR6och5q7i9NA==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:59:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 112 pages in 1h2m(0.03 pages/s) successfully | content: 0, 5.85 MiB/s, 1.61 KiB/p
+2022-11-23 12:59:38.044  INFO [main] a.p.p.c.c.L.Task - 524. 💯 ⚡ U for N got 200 52.18 KiB in 10.489s, fc:1 | 3/51/1/21/2263 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/8mAnLMoKh08bb67CfYgNGw==.html -ignoreFailure -requireSize 1000
+2022-11-23 12:59:54.239  INFO [main] a.p.p.c.c.L.Task - 526. 💯 ⚡ U for N got 200 51.55 KiB in 9.875s, fc:1 | 3/51/1/21/2181 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/9rl+fkC3ctW6N5rxi7abvA==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:00:11.228  INFO [main] a.p.p.c.c.L.Task - 528. 💯 ⚡ U for N got 200 51.63 KiB in 9.4s, fc:1 | 3/51/1/21/2181 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/D6XQ9qsViupuil3kprzPmw==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:00:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 115 pages in 1h3m(0.03 pages/s) successfully | content: 0, 6.01 MiB/s, 1.63 KiB/p
+2022-11-23 13:00:28.358  INFO [main] a.p.p.c.c.L.Task - 530. 💯 ⚡ U for N got 200 52.23 KiB in 10.476s, fc:1 | 3/51/1/21/2276 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/DdXnA4pr0fMC1WceYuxPOA==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:00:47.163  INFO [main] a.p.p.c.c.L.Task - 532. 💯 ⚡ U for N got 200 52.13 KiB in 9.831s, fc:1 | 3/51/1/21/2419 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/Nx4n9bRQRMQ+OBKkrWbajg==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:01:00.406  INFO [main] a.p.p.c.c.L.Task - 534. 💯 ⚡ U for N got 200 51.97 KiB in 8.828s, fc:1 | 3/51/1/21/2415 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/Tsib/mHH1Pjq7++LKgxUQg==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:01:15.718  INFO [main] a.p.p.c.c.L.Task - 536. 💯 ⚡ U for N got 200 52.30 KiB in 10.404s, fc:1 | 3/51/1/21/2302 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/dmsZ/DT/WjdbVNF9hC3/ow==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:01:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 119 pages in 1h4m(0.03 pages/s) successfully | content: 0, 6.21 MiB/s, 1.66 KiB/p
+2022-11-23 13:01:28.483  INFO [main] a.p.p.c.c.L.Task - 538. 💯 ⚡ U for N got 200 52.33 KiB in 9.45s, fc:1 | 3/51/1/21/2234 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/fZ0DRHSKBi5rbEV9S5RudQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:01:40.113  INFO [main] a.p.p.c.c.L.Task - 540. 💯 ⚡ U for N got 200 52.31 KiB in 9.355s, fc:1 | 3/51/1/21/2306 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/lVE3SPJfRnPGBTomrRPe8A==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:01:53.264  INFO [main] a.p.p.c.c.L.Task - 542. 💯 ⚡ U for N got 200 51.86 KiB in 9.373s, fc:1 | 3/51/1/21/2467 | 8h2XoA4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/oWAB0lxvSrswbfMz19EKUw==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:02:08.002  INFO [main] a.p.p.c.c.L.Task - 544. 💯 ⚡ U for N got 200 51.65 KiB in 9.398s, fc:1 | 3/51/1/21/2181 | 7XDhZh4 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/tJ2Andw20ipPTsWbacEKBA==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:02:08.045  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 4194304(4096K) committed = 14680064(14336K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 328240128(320547K) committed = 530579456(518144K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 13151088(12842K) committed = 14680064(14336K) max = -1(-1K)
+2022-11-23 13:02:08.051  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 15 documents share 18 terms out of 18 counted (100.00%)
+2022-11-23 13:02:08.051  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 15/15 recoverable documents with confidence 100.00%
+2022-11-23 13:02:08.051  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           15        18    100.00%    100.00%
+totalFrequency: 18	mode: 15
+2022-11-23 13:02:08.051  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 4194304(4096K) committed = 14680064(14336K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 328240128(320547K) committed = 530579456(518144K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 13151088(12842K) committed = 14680064(14336K) max = -1(-1K)
+2022-11-23 13:02:08.070  INFO [main] a.p.p.c.c.L.Task - 547. 💯 💿 U  got 200 54.96 KiB in 27.937s, last fetched 1h8m4s ago, fc:2 | 3/76/4/55/1122 | http://www.ccgp-tianjin.gov.cn/portal/topicView.do?method=view&view=Infor&id=1662&ver=2&st=1&stmp=1636953278438 -ignoreFailure -requireSize 1000
+2022-11-23 13:02:08.083  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 2 navigate components
+2022-11-23 13:02:08.084  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-tianjin.gov.cn:8088/portal/topicView.do?method=view&view=Infor&id=1662&ver=2&st=1&stmp=1636953278438 | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-tianjin-gov-cn-8b921b1f8f9b3e3735ccf925d435ca23.htm
+2022-11-23 13:02:08.084  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=364385833&ver=2
+2.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=355866505&ver=2
+3.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=370457241&ver=2
+4.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=368006031&ver=2
+5.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=359888658&ver=2
+6.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371579131&ver=2
+7.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374693624&ver=2
+8.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=373093655&ver=2
+9.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=362368380&ver=2
+10.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=361572718&ver=2
+2022-11-23 13:02:23.317  INFO [main] a.p.p.c.c.L.Task - 549. 💯 ⚡ U for N got 200 19.84 KiB in 10.071s, fc:1 | 3/17/1/16/968 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=355866505&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:02:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 124 pages in 1h5m(0.03 pages/s) successfully | content: 0, 6.43 MiB/s, 1.69 KiB/p
+2022-11-23 13:02:43.208  INFO [main] a.p.p.c.c.L.Task - 551. 💯 ⚡ U for N got 200 18.47 KiB in 9.648s, fc:1 | 3/17/1/18/818 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=359888658&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:03:00.243  INFO [main] a.p.p.c.c.L.Task - 553. 💯 ⚡ U for N got 200 18.50 KiB in 8.979s, fc:1 | 3/16/1/16/818 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=361572718&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:03:15.038  INFO [main] a.p.p.c.c.L.Task - 555. 💯 ⚡ U for N got 200 18.52 KiB in 11.938s, fc:1 | 3/17/1/18/818 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=362368380&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:03:33.993  INFO [main] a.p.p.c.c.L.Task - 557. 💯 ⚡ U for N got 200 20.04 KiB in 8.983s, fc:1 | 3/17/1/17/968 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=364385833&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:03:50.187  INFO [main] a.p.p.c.c.L.Task - 559. 💯 ⚡ U for N got 200 18.53 KiB in 9.044s, fc:1 | 3/17/1/19/818 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=368006031&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:04:07.688  INFO [main] a.p.p.c.c.L.Task - 561. 💯 ⚡ U for N got 200 19.03 KiB in 9.967s, fc:1 | 3/17/1/17/868 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=370457241&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:04:23.004  INFO [main] a.p.p.c.c.L.Task - 563. 💯 ⚡ U for N got 200 18.78 KiB in 9.173s, fc:1 | 3/17/1/18/868 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371579131&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:04:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 131 pages in 1h7m(0.03 pages/s) successfully | content: 0, 6.56 MiB/s, 1.67 KiB/p
+2022-11-23 13:04:43.245  INFO [main] a.p.p.c.c.L.Task - 565. 💯 ⚡ U for N got 200 18.58 KiB in 10.015s, fc:1 | 3/17/1/18/818 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=373093655&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:04:56.780  INFO [main] a.p.p.c.c.L.Task - 567. 💯 ⚡ U for N got 200 18.53 KiB in 9.426s, fc:1 | 3/17/1/18/818 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374693624&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:04:56.797  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 81788928(79872K) committed = 117440512(114688K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 339152384(331203K) committed = 438304768(428032K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 4194304(4096K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 13:04:56.800  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 10 documents share 13 terms out of 13 counted (100.00%)
+2022-11-23 13:04:56.800  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 10/10 recoverable documents with confidence 100.00%
+2022-11-23 13:04:56.800  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           10        13    100.00%    100.00%
+totalFrequency: 13	mode: 10
+2022-11-23 13:04:56.800  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 81788928(79872K) committed = 117440512(114688K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 339152384(331203K) committed = 438304768(428032K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 4194304(4096K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 13:04:56.816  INFO [main] a.p.p.c.c.L.Task - 570. 💯 💿 U  got 200 66.29 KiB in 13.503s, last fetched 1h10m52s ago, fc:2 | 3/76/4/55/1122 | http://www.ccgp-tianjin.gov.cn/portal/topicView.do?method=view&view=Infor&id=1994&ver=2&stmp=1636953278438 -ignoreFailure -requireSize 1000
+2022-11-23 13:04:56.823  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 2 navigate components
+2022-11-23 13:04:56.823  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-tianjin.gov.cn:8088/portal/topicView.do?method=view&view=Infor&id=1994&ver=2&stmp=1636953278438 | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-tianjin-gov-cn-18833aa7ce7b6ce38caf8c5729f3d2fa.htm
+2022-11-23 13:04:56.823  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=373751520&ver=2
+2.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374761188&ver=2
+3.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=372132398&ver=2
+4.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374741741&ver=2
+5.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374706894&ver=2
+6.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371913349&ver=2
+7.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375189526&ver=2
+8.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371911914&ver=2
+9.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=372347877&ver=2
+10.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371908086&ver=2
+2022-11-23 13:05:10.024  INFO [main] a.p.p.c.c.L.Task - 572. 💯 ⚡ U for N got 200 19.27 KiB in 9.92s, fc:1 | 3/17/1/16/943 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371908086&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:05:26.997  INFO [main] a.p.p.c.c.L.Task - 574. 💯 ⚡ U for N got 200 19.94 KiB in 8.938s, fc:1 | 3/17/1/16/993 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371911914&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:05:43.590  INFO [main] a.p.p.c.c.L.Task - 576. 💯 ⚡ U for N got 200 18.88 KiB in 9.464s, fc:1 | 3/17/1/17/893 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=371913349&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:05:54.057  INFO [main] a.p.p.c.c.L.Task - 578. 💯 ⚡ U for N got 200 18.52 KiB in 9.449s, fc:1 | 3/17/1/17/818 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=372132398&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:06:12.120  INFO [main] a.p.p.c.c.L.Task - 580. 💯 ⚡ U for N got 200 18.97 KiB in 9.175s, fc:1 | 3/16/1/16/868 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=372347877&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:06:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 138 pages in 1h9m(0.03 pages/s) successfully | content: 0, 6.69 MiB/s, 1.65 KiB/p
+2022-11-23 13:06:29.281  INFO [main] a.p.p.c.c.L.Task - 582. 💯 ⚡ U for N got 200 19.10 KiB in 8.93s, fc:1 | 3/16/1/16/943 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=373751520&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:06:45.895  INFO [main] a.p.p.c.c.L.Task - 584. 💯 ⚡ U for N got 200 19.27 KiB in 10.057s, fc:1 | 3/17/1/16/918 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374706894&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:07:02.862  INFO [main] a.p.p.c.c.L.Task - 586. 💯 ⚡ U for N got 200 18.70 KiB in 9.879s, fc:1 | 3/17/1/16/843 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374741741&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:07:19.364  INFO [main] a.p.p.c.c.L.Task - 588. 💯 ⚡ U for N got 200 18.49 KiB in 9.431s, fc:1 | 3/17/1/17/843 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=374761188&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:07:39.167  INFO [main] a.p.p.c.c.L.Task - 590. 💯 ⚡ U for N got 200 19.43 KiB in 9.396s, fc:1 | 3/17/1/16/943 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375189526&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:07:39.186  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 58720256(57344K) committed = 106954752(104448K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 339152384(331203K) committed = 476053504(464896K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 14577280(14235K) committed = 14680064(14336K) max = -1(-1K)
+2022-11-23 13:07:39.188  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 10 documents share 13 terms out of 13 counted (100.00%)
+2022-11-23 13:07:39.188  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 10/10 recoverable documents with confidence 100.00%
+2022-11-23 13:07:39.189  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1           10        13    100.00%    100.00%
+totalFrequency: 13	mode: 10
+2022-11-23 13:07:39.189  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 60817408(59392K) committed = 106954752(104448K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 339152384(331203K) committed = 476053504(464896K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 14577280(14235K) committed = 14680064(14336K) max = -1(-1K)
+2022-11-23 13:07:39.205  INFO [main] a.p.p.c.c.L.Task - 593. 💯 💿 U  got 200 54.29 KiB in 22.946s, last fetched 1h13m35s ago, fc:2 | 3/76/4/56/1122 | http://www.ccgp-tianjin.gov.cn/portal/topicView.do?method=view&view=Infor&id=1665&ver=2&st=1&stmp=1636952855102 -ignoreFailure -requireSize 1000
+2022-11-23 13:07:39.210  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 2 navigate components
+2022-11-23 13:07:39.211  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-tianjin.gov.cn:8088/portal/topicView.do?method=view&view=Infor&id=1665&ver=2&st=1&stmp=1636952855102 | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-tianjin-gov-cn-67ccffd8250425f9e1c94c4418469dbb.htm
+2022-11-23 13:07:39.211  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375017177&ver=2
+2.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375024928&ver=2
+3.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016503&ver=2
+4.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375018329&ver=2
+5.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375025762&ver=2
+6.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016860&ver=2
+7.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016852&ver=2
+8.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375028487&ver=2
+9.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375031214&ver=2
+10.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016163&ver=2
+2022-11-23 13:07:51.921  INFO [main] a.p.p.c.c.L.Task - 595. 💯 ⚡ U for N got 200 2.03 KiB in 9.416s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016163&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:08:08.098  INFO [main] a.p.p.c.c.L.Task - 597. 💯 ⚡ U for N got 200 2.03 KiB in 9.384s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016503&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:08:24.376  INFO [main] a.p.p.c.c.L.Task - 599. 💯 ⚡ U for N got 200 2.03 KiB in 9.402s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016852&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:08:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 146 pages in 1h11m(0.03 pages/s) successfully | content: 0, 6.79 MiB/s, 1.63 KiB/p
+2022-11-23 13:08:34.935  INFO [main] a.p.p.c.c.L.Task - 601. 💯 ⚡ U for N got 200 2.03 KiB in 9.409s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375016860&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:08:48.873  INFO [main] a.p.p.c.c.L.Task - 603. 💯 ⚡ U for N got 200 2.03 KiB in 8.983s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375017177&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:09:08.179  INFO [main] a.p.p.c.c.L.Task - 605. 💯 ⚡ U for N got 200 2.03 KiB in 8.903s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375018329&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:09:18.869  INFO [main] a.p.p.c.c.L.Task - 607. 💯 ⚡ U for N got 200 2.03 KiB in 8.919s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375024928&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:09:30.551  INFO [main] a.p.p.c.c.L.Task - 609. 💯 ⚡ U for N got 200 2.03 KiB in 9.928s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375025762&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:09:50.548  INFO [main] a.p.p.c.c.L.Task - 611. 💯 ⚡ U for N got 200 2.03 KiB in 9.443s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375028487&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:10:07.351  INFO [main] a.p.p.c.c.L.Task - 613. 💯 ⚡ U for N got 200 2.03 KiB in 9.403s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375031214&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:10:07.370  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 10485760(10240K) committed = 134217728(131072K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 357161984(348791K) committed = 461373440(450560K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1961888(1915K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 13:10:07.371  WARN [main] a.p.s.a.c.AnalysablePageCorpus - !!! No regional texts shared by 10 sample documents (df rate: 0.8) !!!
+2022-11-23 13:10:07.372  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Document frequency of regional texts:
+2022-11-23 13:10:07.372  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 10485760(10240K) committed = 134217728(131072K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 357161984(348791K) committed = 461373440(450560K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1961888(1915K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 13:10:07.393  INFO [main] a.p.p.c.c.L.Task - 616. 💯 💿 U  got 200 65.72 KiB in 25.81s, last fetched 1h16m2s ago, fc:2 | 3/76/4/56/1122 | http://www.ccgp-tianjin.gov.cn/portal/topicView.do?method=view&view=Infor&id=1664&ver=2&stmp=1636952863754 -ignoreFailure -requireSize 1000
+2022-11-23 13:10:07.400  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 2 navigate components
+2022-11-23 13:10:07.400  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-tianjin.gov.cn:8088/portal/topicView.do?method=view&view=Infor&id=1664&ver=2&stmp=1636952863754 | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-tianjin-gov-cn-51afde92207c30aede7dbe8a97568ae5.htm
+2022-11-23 13:10:07.400  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375192716&ver=2
+2.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375020018&ver=2
+3.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375058937&ver=2
+4.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375191093&ver=2
+5.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375026567&ver=2
+6.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375025599&ver=2
+7.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375020522&ver=2
+8.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375033942&ver=2
+9.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375191915&ver=2
+10.	http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375027207&ver=2
+2022-11-23 13:10:22.124  INFO [main] a.p.p.c.c.L.Task - 618. 💯 ⚡ U for N got 200 2.03 KiB in 9.92s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375020018&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:10:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 154 pages in 1h13m(0.04 pages/s) successfully | content: 0, 6.81 MiB/s, 1.59 KiB/p
+2022-11-23 13:10:39.195  INFO [main] a.p.p.c.c.L.Task - 620. 💯 ⚡ U for N got 200 2.03 KiB in 9.429s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375020522&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:10:57.199  INFO [main] a.p.p.c.c.L.Task - 622. 💯 ⚡ U for N got 200 2.03 KiB in 9.908s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375025599&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:11:08.871  INFO [main] a.p.p.c.c.L.Task - 624. 💯 ⚡ U for N got 200 2.03 KiB in 9.956s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375026567&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:11:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 157 pages in 1h14m(0.04 pages/s) successfully | content: 0, 6.81 MiB/s, 1.57 KiB/p
+2022-11-23 13:11:28.576  INFO [main] a.p.p.c.c.L.Task - 626. 💯 ⚡ U for N got 200 2.03 KiB in 8.922s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375027207&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:11:41.098  INFO [main] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #7XDhZh4 has lived for 34m34s | success: 59(0.03 pages/s) | small: 0(0.0%) | traffic: 1,007.62 MiB(192.15 KiB/s) | tasks: 60 total run: 60 | null
+2022-11-23 13:11:41.103  INFO [main] a.p.p.c.c.L.Task - 628. 💯 ⚡ U for N got 200 2.03 KiB in 8.878s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375033942&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:11:53.789  INFO [main] a.p.p.c.c.L.Task - 630. 💯 ⚡ U for N got 200 2.03 KiB in 8.84s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375058937&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:12:07.064  INFO [main] a.p.p.c.c.L.Task - 632. 💯 ⚡ U for N got 200 2.03 KiB in 9.563s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375191093&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:12:26.071  INFO [main] a.p.p.c.c.L.Task - 634. 💯 ⚡ U for N got 200 2.03 KiB in 8.812s, fc:1 | 1/1/0/1/238 | 8h2XoA4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375191915&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:12:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 162 pages in 1h15m(0.04 pages/s) successfully | content: 0, 6.82 MiB/s, 1.55 KiB/p
+2022-11-23 13:12:46.424  INFO [main] a.p.p.c.c.L.Task - 636. 💯 ⚡ U for N got 200 2.03 KiB in 9.886s, fc:1 | 1/1/0/1/238 | 7XDhZh4 | http://www.ccgp-tianjin.gov.cn:8088/viewer.do?id=375192716&ver=2 -ignoreFailure -requireSize 1000
+2022-11-23 13:12:46.439  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 75497472(73728K) committed = 134217728(131072K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 357161984(348791K) committed = 461373440(450560K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1961888(1915K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 13:12:46.439  WARN [main] a.p.s.a.c.AnalysablePageCorpus - !!! No regional texts shared by 10 sample documents (df rate: 0.8) !!!
+2022-11-23 13:12:46.440  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Document frequency of regional texts:
+2022-11-23 13:12:46.440  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 75497472(73728K) committed = 134217728(131072K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 357161984(348791K) committed = 461373440(450560K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 1961888(1915K) committed = 2097152(2048K) max = -1(-1K)
+2022-11-23 13:12:46.452  INFO [main] a.p.p.c.c.L.Task - 639. 💯 💿 U  got 200 177.50 KiB in 23.185s, last fetched 1h18m34s ago, fc:2 | 2/106/3/69/1218 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/index.html -ignoreFailure -requireSize 1000
+2022-11-23 13:12:46.465  INFO [main] a.p.s.s.BlockLocator - Found 1 anchor groups from 2 navigate components
+2022-11-23 13:12:46.465  INFO [main] a.p.s.a.AutoMiner - Find 1 anchor groups in page http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/index.html | file:///tmp/pulsar-vincent/cache/web/export/portal/ccgp-guangxi-gov-cn-e3050f1a5c7e596f48d3305304d11f62.htm
+2022-11-23 13:12:46.465  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+1.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/95szpciDW+6B8zrM8GWeHg==.html
+2.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001//WIud5+b9JhS67LF/1l15A==.html
+3.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/Zb9UGRz602sttVCrd/dR7A==.html
+4.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/RYvrLjWTa8LYL4I+peCTSg==.html
+5.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/v20ExX8RgCuKlaNYPmfFlg==.html
+6.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/ltQtkPnFzPo1lmydWc9l+Q==.html
+7.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/hx9gPgJxrJWd2Jowxgnq9Q==.html
+8.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/Bqp4p99DXPWGLFVkxrP2xw==.html
+9.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/VoVTuIS2wQaYsU+NThyJMA==.html
+10.	http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/AYAIjyXoV7mJ3PtgSnI7Iw==.html
+2022-11-23 13:13:01.504  INFO [main] a.p.p.c.c.L.Task - 641. 💯 ⚡ U for N got 200 74.54 KiB in 13.667s, fc:1 | 4/66/1/30/3813 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/WIud5+b9JhS67LF/1l15A==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:13:25.766  INFO [main] a.p.p.c.c.L.Task - 643. 💯 ⚡ U for N got 200 74.92 KiB in 14.179s, fc:1 | 7/66/1/30/3114 | 7XDhZh4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/67phupMD/0SGKf1PK4QehQ==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:13:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 165 pages in 1h16m(0.04 pages/s) successfully | content: 0, 6.97 MiB/s, 1.56 KiB/p
+2022-11-23 13:13:45.664  INFO [main] a.p.p.c.c.L.Task - 645. 💯 ⚡ U for N got 200 76.47 KiB in 8.925s, fc:1 | 7/66/1/30/4174 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/6C5tsLLx3D35eh3+hZWgTA==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:13:58.144  INFO [main] a.p.p.c.c.L.Task - 647. 💯 ⚡ U for N got 200 82.70 KiB in 11.197s, fc:1 | 4/66/1/30/5173 | 7XDhZh4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/95szpciDW+6B8zrM8GWeHg==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:14:15.494  INFO [main] a.p.p.c.c.L.Task - 649. 💯 ⚡ U for N got 200 77.02 KiB in 10.02s, fc:1 | 4/66/1/30/4184 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/AYAIjyXoV7mJ3PtgSnI7Iw==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:14:30.460  INFO [main] a.p.p.c.c.L.Task - 651. 💯 ⚡ U for N got 200 76.49 KiB in 10.947s, fc:1 | 4/66/1/30/3982 | 7XDhZh4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/Bqp4p99DXPWGLFVkxrP2xw==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:14:43.016  INFO [main] a.p.p.c.c.L.Task - 653. 💯 ⚡ U for N got 200 75.50 KiB in 10.487s, fc:1 | 4/65/1/29/4456 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/RYvrLjWTa8LYL4I+peCTSg==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:15:02.681  INFO [main] a.p.p.c.c.L.Task - 655. 💯 ⚡ U for N got 200 75.53 KiB in 10.932s, fc:1 | 4/66/1/30/3787 | 7XDhZh4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/VoVTuIS2wQaYsU+NThyJMA==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:15:16.628  INFO [main] a.p.p.c.c.L.Task - 657. 💯 ⚡ U for N got 200 81.90 KiB in 10.18s, fc:1 | 4/66/1/30/4491 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/Zb9UGRz602sttVCrd/dR7A==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:15:26.198  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 172 pages in 1h18m(0.04 pages/s) successfully | content: 0, 7.50 MiB/s, 1.64 KiB/p
+2022-11-23 13:15:32.386  INFO [main] a.p.p.c.c.L.Task - 659. 💯 ⚡ U for N got 200 72.04 KiB in 10.564s, fc:1 | 7/66/1/30/2960 | 7XDhZh4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/aMqCf6SHv2PkY3XUTF+Law==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:15:52.675  INFO [main] a.p.p.c.c.L.Task - 661. 💯 ⚡ U for N got 200 78.41 KiB in 10.584s, fc:1 | 7/65/1/29/4417 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/hx9gPgJxrJWd2Jowxgnq9Q==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:16:09.896  INFO [main] a.p.p.c.c.L.Task - 663. 💯 ⚡ U for N got 200 71.57 KiB in 10.457s, fc:1 | 4/65/1/29/3058 | 7XDhZh4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/ltQtkPnFzPo1lmydWc9l+Q==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:16:25.822  INFO [main] a.p.p.c.c.L.Task - 665. 💯 ⚡ U for N got 200 78.88 KiB in 10.47s, fc:1 | 4/65/1/29/4953 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/oCh1kY5gc+Q+xpsXsVE6bw==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:16:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 176 pages in 1h19m(0.04 pages/s) successfully | content: 0, 7.80 MiB/s, 1.68 KiB/p
+2022-11-23 13:16:43.729  INFO [main] a.p.p.c.c.L.Task - 667. 💯 ⚡ U for N got 200 73.59 KiB in 11.017s, fc:1 | 4/65/1/29/4198 | 7XDhZh4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/tuvaxbJCNqxe6vGFIolUng==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:17:01.493  INFO [main] a.p.p.c.c.L.Task - 669. 💯 ⚡ U for N got 200 74.95 KiB in 9.984s, fc:1 | 4/65/1/29/4334 | 8h2XoA4 | http://www.ccgp-guangxi.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/ZcyAnnouncement3001/v20ExX8RgCuKlaNYPmfFlg==.html -ignoreFailure -requireSize 1000
+2022-11-23 13:17:01.555  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 16777216(16384K) committed = 153092096(149504K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 345490432(337393K) committed = 448790528(438272K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 4194304(4096K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 13:17:01.563  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Total 15 documents share 16 terms out of 23 counted (69.57%)
+2022-11-23 13:17:01.563  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Find 15/15 recoverable documents with confidence 69.57%
+2022-11-23 13:17:01.563  INFO [main] a.p.s.a.c.AnalysablePageCorpus - Term frequency of df report, `dff = tf(df, <df>)`:
+          Value      Freq       Pct   Cum Pct
+1            6         3     13.04%     13.04%
+2            9         4     17.39%     30.43%
+3           15        16     69.57%    100.00%
+totalFrequency: 23	mode: 15
+2022-11-23 13:17:01.563  INFO [main] a.p.s.a.AutoMiner - G1 Eden Space: init = 25165824(24576K) used = 16777216(16384K) committed = 153092096(149504K) max = -1(-1K),	G1 Old Gen: init = 232783872(227328K) used = 345490432(337393K) committed = 448790528(438272K) max = 4127195136(4030464K),	G1 Survivor Space: init = 0(0K) used = 4194304(4096K) committed = 4194304(4096K) max = -1(-1K)
+2022-11-23 13:17:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 178 pages in 1h20m(0.04 pages/s) successfully | content: 0, 7.94 MiB/s, 1.69 KiB/p
+2022-11-23 13:19:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 178 pages in 1h22m(0.04 pages/s) successfully | content: 0, 7.94 MiB/s, 1.65 KiB/p
+2022-11-23 13:20:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 178 pages in 1h23m(0.04 pages/s) successfully | content: 0, 7.94 MiB/s, 1.63 KiB/p
+2022-11-23 13:21:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 178 pages in 1h24m(0.04 pages/s) successfully | content: 0, 7.94 MiB/s, 1.61 KiB/p
+2022-11-23 13:22:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 178 pages in 1h25m(0.03 pages/s) successfully | content: 0, 7.94 MiB/s, 1.59 KiB/p
+2022-11-23 13:24:26.199  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 178 pages in 1h27m(0.03 pages/s) successfully | content: 0, 7.94 MiB/s, 1.56 KiB/p
+2022-11-23 13:35:56.979  INFO [Thread-0] a.p.p.c.s.AbstractPulsarContext - Closing context #1/2 | DefaultClassPathXmlScentH2Context
+2022-11-23 13:35:57.113  INFO [Thread-0] a.p.p.s.AbstractPulsarSession - Session is closed | #2000002
+2022-11-23 13:35:57.114  INFO [Thread-0] a.p.p.s.AbstractPulsarSession - Session is closed | #2000001
+2022-11-23 13:35:57.129  INFO [utdownHook] a.p.p.c.f.p.PrivacyManager - Closing privacy contexts
+2022-11-23 13:35:57.136  INFO [l-worker-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #7XDhZh4 has lived for 58m50s | success: 68(0.02 pages/s) | small: 0(0.0%) | traffic: 1,007.62 MiB(144.81 KiB/s) | tasks: 69 total run: 69 | null
+2022-11-23 13:35:57.173  INFO [utdownHook] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #8h2XoA4 has lived for 58m18s | success: 69(0.02 pages/s) | small: 0(0.0%) | traffic: 1,007.62 MiB(144.81 KiB/s) | tasks: 69 total run: 69 | null
+2022-11-23 13:35:57.174  INFO [utdownHook] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds (shutdown) | 8h2XoA41
+2022-11-23 13:35:57.174  INFO [utdownHook] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully (shutdown) | 8h2XoA41 | {pulsar_chrome | /tmp/pulsar-vincent/context/cx.8h2XoA4}
+2022-11-23 13:36:02.412  INFO [Thread-86] a.p.p.c.Runtimes - Exit | vincent  22570  17904  2022-11-23T04:34:50.410Z  PT3.31S    /opt/google/chrome/chrome
+2022-11-23 13:36:02.435  INFO [Thread-88] a.p.p.c.Runtimes - Exit | vincent  22709  17904  2022-11-23T04:35:01.240Z  PT3.19S    /opt/google/chrome/chrome
+2022-11-23 13:36:02.464  INFO [Thread-20] a.p.p.c.Runtimes - Exit | vincent  18314  17904  2022-11-23T03:58:41.710Z  PT33.52S   /opt/google/chrome/chrome
+2022-11-23 13:36:02.491  INFO [Thread-96] a.p.p.c.Runtimes - Exit | vincent  23268  17904  2022-11-23T04:35:52.060Z  PT5.4S     /opt/google/chrome/chrome
+2022-11-23 13:36:02.534  INFO [Thread-94] a.p.p.c.Runtimes - Exit | vincent  22979  17904  2022-11-23T04:35:41.010Z  PT4.69S    /opt/google/chrome/chrome
+2022-11-23 13:36:02.577  INFO [Thread-102] a.p.p.c.Runtimes - Exit | vincent  23790  17904  2022-11-23T04:37:06.310Z  PT39.36S   /opt/google/chrome/chrome
+2022-11-23 13:36:02.636  INFO [Thread-104] a.p.p.c.Runtimes - Exit | vincent  24004  17904  2022-11-23T04:37:38.750Z  PT43.01S   /opt/google/chrome/chrome
+2022-11-23 13:36:02.679  INFO [Thread-12] a.p.p.c.Runtimes - Exit | vincent  18052  17904  2022-11-23T03:58:04.900Z  PT30.9S    /opt/google/chrome/chrome

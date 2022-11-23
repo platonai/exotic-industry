@@ -1,4 +1,4 @@
-package ai.platon.exotic.examples.common
+package ai.platon.exotic.bidding.common
 
 import ai.platon.pulsar.common.AppPaths
 import ai.platon.pulsar.common.config.CapabilityTypes
@@ -75,10 +75,10 @@ open class VerboseHarvester(
         }
     }
 
-    fun arrangeDocument(portalUrl: String) {
+    fun arrangeDocument(portalUrl: String, args: String = "") {
         val taskName = AppPaths.fromUri(portalUrl)
 
-        val normUrl = session.normalize(portalUrl, session.options(defaultArgs))
+        val normUrl = session.normalize(portalUrl, session.options(args))
         val options = normUrl.hOptions
         val portalPage = session.load(normUrl)
         val portalDocument = session.parse(portalPage)
@@ -95,9 +95,7 @@ open class VerboseHarvester(
         portalDocument.also { it.annotateNodes(options) }.also { session.export(it, type = "portal") }
     }
 
-    fun harvest(url: String) = harvest(url, defaultArgs)
-
-    fun harvest(url: String, args: String) = harvest(url, session.options(args))
+    fun harvest(url: String, args: String = "") = harvest(url, session.options(args))
 
     fun harvest(url: String, options: HarvestOptions) = harvest(session, url, options)
 

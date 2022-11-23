@@ -1,14 +1,31 @@
-http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=5cf26c45-6f50-4278-aa80-a3eaba8923ad
+# http://www.nbzfcg.cn/project/zcyNotice_view.aspx?Id=5cf26c45-6f50-4278-aa80-a3eaba8923ad
+
+# 宁波政府采购网，宁波政府购买服务信息平台
+# 可检索，RPA for navigation, total 158 pages, 自由文本
 http://www.nbzfcg.cn/project/zcyNotice.aspx?noticetype=12
+
+# 全国公共资源交易平台（湖南省），（湖南省）公共资源交易服务平台
+# 可检索，RPA for navigation, total 7 pages, 自由文本
 https://hnsbenji.hnsggzy.com/gczb/index.jhtml
+
+# 广州交易集团有限公司 广州公共资源交易中心
+# RPA for navigation, total 2823 pages, 自由文本，无标题
 http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml
+
+# RPA for navigation, total 5 pages, 纸质文件的照片
 http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/moreinfo2.html
-中国政府采购网 合同公告 http://htgs.ccgp.gov.cn/GS8/contractpublish/search
+
+# 中国政府采购网, 购买服务信息平台
+# total 100878 pages, prefect content structure
+合同公告 http://htgs.ccgp.gov.cn/GS8/contractpublish/search
+
+# RPA for navigation, total 13125 pages, prefect content structure
 采购意向 http://cgyx.ccgp.gov.cn/cgyx/pub/projSearch
+
 采购公告 http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index=1&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time=2021%3A05%3A17&end_time=2021%3A11%3A15&timeType=5&displayZone=&zoneId=&pppStatus=0&agentName=
 财政部 中央招标公告 http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhaobiaogonggao/
 中央中标公告 http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhongbiaogonggao/
-中央更正公告 http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyanggengzhenggonggao/
+# 中央更正公告 http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyanggengzhenggonggao/
 地方招标公告 http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhaobiaogonggao/
 地方中标公告 http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhongbiaogonggao/
 地方更正公告 http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difanggengzhenggonggao/

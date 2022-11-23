@@ -1,6 +1,6 @@
-package ai.platon.exotic.examples
+package ai.platon.exotic.bidding
 
-import ai.platon.exotic.examples.common.VerboseHarvester
+import ai.platon.exotic.bidding.common.VerboseHarvester
 import ai.platon.pulsar.common.LinkExtractors
 import ai.platon.scent.ScentContext
 import ai.platon.scent.ql.h2.context.ScentSQLContexts
@@ -10,7 +10,7 @@ class WebStructureMining(
 ): VerboseHarvester(context) {
 
     private val seeds = LinkExtractors.fromResource("seeds/bidding.txt").toList()
-    private val args = """-requireSize 1000 -ignoreFailure"""
+    private val args = """-requireSize 1000 -requireItemSize 1000 -ignoreFailure"""
 
     fun arrangeDocuments() {
         seeds.map { "$it $args" }.forEach { url ->
@@ -20,7 +20,7 @@ class WebStructureMining(
 
     fun harvest() {
         val url = seeds[0]
-        harvest(url)
+        harvest(url, "$defaultArgs $args")
     }
 
     fun loadAll() {
@@ -29,11 +29,13 @@ class WebStructureMining(
 
     fun harvestAll() {
 //        seeds.forEach { println(it) }
-        seeds.forEach { harvest(it) }
+        seeds.forEach { harvest(it, "$defaultArgs $args") }
     }
 }
 
 fun main() {
 //    BrowserSettings.headless()
-    WebStructureMining().arrangeDocuments()
+    val miner = WebStructureMining()
+    miner.harvest()
+    // miner.harvestAll()
 }

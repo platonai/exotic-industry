@@ -1,4 +1,4 @@
-package ai.platon.exotic.examples.common
+package ai.platon.exotic.bidding.common
 
 import ai.platon.pulsar.common.NetUtil
 import ai.platon.pulsar.common.options.LoadOptions

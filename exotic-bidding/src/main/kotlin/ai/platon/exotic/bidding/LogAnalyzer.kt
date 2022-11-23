@@ -1,8 +1,6 @@
-package ai.platon.exotic.examples
+package ai.platon.exotic.bidding
 
 import ai.platon.pulsar.common.LinkExtractors
-import ai.platon.pulsar.common.urls.UrlUtils
-import ai.platon.pulsar.crawl.common.URLUtil
 
 class LogAnalyzer {
     fun extractFailedLinks() {
