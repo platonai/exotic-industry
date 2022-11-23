@@ -1,0 +1,187 @@
+2022-11-23 01:41:05.690  INFO [main] a.p.p.c.c.L.Task - 122. 💔 🔃 U for RT got 1601 0 <- 305.30 KiB in 1.369s, last fetched 4h28m18s ago, fc:2/3 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 1/155/1/399/1134 | 112.84.109.114 | 2zch8U2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\9d839ba647af1b7c86c39350a7c8fe75.htm | http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:41:05.696  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:41:05.697  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\gzggzy-cn-9d839ba647af1b7c86c39350a7c8fe75.htm !!!
+
+2022-11-23 01:41:05.697  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:41:18.391  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 125. Page is NO_ANCHOR(1.54 KiB) with [115.239.102.144:4214 => 115.239.102.144](0/3/22m12s) in dezhou.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\2c0e56fc52b08a5a43e85251b8742ff8.htm
+2022-11-23 01:41:18.422  INFO [main] a.p.p.c.c.L.Task - 125. 💔 🔃 U for RT got 1601 0 <- 0 in 9.1s, last fetched 4h27m21s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\2c0e56fc52b08a5a43e85251b8742ff8.htm | http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/moreinfo2.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:41:18.424  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:41:18.430  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:41:18.430  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:41:26.594  INFO [main] a.p.p.c.c.L.Task - 128. 💔 🔃 U for RT got 1601 0 <- 0 in 1.255s, last fetched 4h27m9s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 2zch8U2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\b30e2fd1da8fe1580726d4fe6671206b.htm | http://htgs.ccgp.gov.cn/GS8/contractpublish/search -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:41:26.601  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:41:26.602  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:41:26.602  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:41:43.322  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 131. Page is NO_ANCHOR(1.48 KiB) with [115.239.102.144:4214 => 115.239.102.144](1/3/21m47s) in ccgp.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\ea52832d08ad576d7504a514e7e2da32.htm
+2022-11-23 01:41:43.350  INFO [main] a.p.p.c.c.L.Task - 131. 💔 🔃 U for RT got 1601 0 <- 0 in 9.428s, last fetched 4h27m8s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\ea52832d08ad576d7504a514e7e2da32.htm | http://cgyx.ccgp.gov.cn/cgyx/pub/projSearch -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:41:43.358  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:41:43.359  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:41:43.359  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:41:43.388  INFO [main] a.p.p.p.b.e.c.MultiPrivacyContextManager - Privacy context is created #3g7Pc02, active: 1, allowed: 2
+2022-11-23 01:41:43.391  INFO [main] a.p.s.p.p.ProxyVendorLoader - Fetching proxies from provider | http://webapi.http.zhimacangku.com/getip?num=1&type=2&pro=&city=0&yys=0&port=1&time=1&ts=1&ys=1&cs=1&lb=1&sb=0&pb=4&mr=1&regions=
+2022-11-23 01:41:43.577  INFO [main] a.p.s.p.p.ProxyVendorLoader - Testing proxies, vendor: zm, format: json | file://C:\Users\Vincent Zhang\.pulsar\proxy\proxies-archived\proxies.zhimacangku-com-7b6af383ab71aea3362352bbf457baa1.zm.json
+2022-11-23 01:41:43.578  INFO [main] a.p.s.p.p.ProxyVendorLoader - Test passed: [42.177.143.195:4231 => 42.177.143.195](0/0/24m28s)
+2022-11-23 01:41:43.579  INFO [main] a.p.s.p.p.ProxyVendorLoader - Loaded 1/3 proxies
+2022-11-23 01:41:48.388  INFO [4-thread-1] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #2zch8U2(leaked) has lived for 2m20s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 0 B(0 B/s) | tasks: 3 total run: 3 | [121.227.138.174:4257 => 121.227.138.174](3/0/22m41s) (st, 1), (pg, 3), (fpg, 3)
+2022-11-23 01:41:48.396  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 2zch8U21
+2022-11-23 01:41:48.519  INFO [4-thread-1] a.p.p.p.b.d.WebDriverPoolManager - Web drivers are in GUI mode, please close it manually | {pulsar_chrome, 121.227.138.174:4257 | C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\context\cx.2zch8U2} 
+2022-11-23 01:41:48.519  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - All tasks return in 0 seconds | 2zch8U21
+2022-11-23 01:41:48.519  INFO [4-thread-1] a.p.p.p.b.e.c.WebDriverContext - Web driver context is closed successfully | 2zch8U21 | {pulsar_chrome, 121.227.138.174:4257 | C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\context\cx.2zch8U2}
+2022-11-23 01:41:48.519  INFO [4-thread-1] a.p.p.c.f.p.PrivacyManager - The latest context throughput: 0.00 (success/min)
+2022-11-23 01:41:50.731  INFO [main] a.p.p.c.ProcessLauncher - Launching process:
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --proxy-server=42.177.143.195:4231 --disable-gpu --hide-scrollbars --remote-debugging-port=0 --no-default-browser-check --no-first-run --no-startup-window --mute-audio --disable-background-networking --disable-background-timer-throttling --disable-client-side-phishing-detection --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-translate --disable-blink-features=AutomationControlled --metrics-recording-only --safebrowsing-disable-auto-update --no-sandbox --ignore-certificate-errors --window-size=1920,1080 --pageLoadStrategy=none --throwExceptionOnScriptError=true "--user-data-dir=C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\context\browser\br.216nvb"
+2022-11-23 01:41:58.637  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 3 pages in 3m(0.02 pages/s) successfully using 3 proxies | content: 135.63 KiB, 771 B/s, 45.21 KiB/p
+2022-11-23 01:42:05.399  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 134. Page is NO_ANCHOR(2.22 KiB) with [42.177.143.195:4231 => 42.177.143.195](0/0/24m6s) in ccgp.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\1c6c2e3b7060faf7137c59cf76df5cbe.htm
+2022-11-23 01:42:05.457  INFO [main] a.p.p.c.c.L.Task - 134. 💔 🔃 U for RT got 1601 0 <- 0 in 8.928s, last fetched 4h27m17s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\1c6c2e3b7060faf7137c59cf76df5cbe.htm | http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index=1&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time=2021%3A05%3A17&end_time=2021%3A11%3A15&timeType=5&displayZone=&zoneId=&pppStatus=0&agentName= -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:42:05.464  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:42:05.464  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:42:05.465  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:42:17.858  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 137. Page is NO_ANCHOR(1.60 KiB) with [42.177.143.195:4231 => 42.177.143.195](1/0/23m54s) in mof.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\dc5d418c1f7042873fd1e91d4e20342e.htm
+2022-11-23 01:42:17.879  INFO [main] a.p.p.c.c.L.Task - 137. 💔 🔃 U for RT got 1601 0 <- 0 in 9.988s, last fetched 4h26m24s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\dc5d418c1f7042873fd1e91d4e20342e.htm | http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhaobiaogonggao/ -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:42:17.887  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:42:17.888  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:42:17.888  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:42:29.776  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 140. Page is NO_ANCHOR(1.60 KiB) with [115.239.102.144:4214 => 115.239.102.144](2/3/21m1s) in mof.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\412fce4aa61126b47cc2519ab0c46f5d.htm
+2022-11-23 01:42:29.790  INFO [main] a.p.p.c.c.L.Task - 140. 💔 Updated 🔃 U for RT got 1601 0 <- 0 in 8.917s, last fetched 4h26m16s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\412fce4aa61126b47cc2519ab0c46f5d.htm | http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhongbiaogonggao/ -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:42:29.793  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:42:29.793  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:42:29.793  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:42:41.952  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 143. Page is NO_ANCHOR(1.60 KiB) with [42.177.143.195:4231 => 42.177.143.195](2/0/23m30s) in mof.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\d35f8e316dc9fe2720d6256c906428d6.htm
+2022-11-23 01:42:41.970  INFO [main] a.p.p.c.c.L.Task - 143. 💔 🔃 U for RT got 1601 0 <- 0 in 9.39s, last fetched 4h26m13s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\d35f8e316dc9fe2720d6256c906428d6.htm | http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyanggengzhenggonggao/ -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:42:41.973  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:42:41.974  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:42:41.974  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:42:54.539  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 146. Page is NO_ANCHOR(1.58 KiB) with [115.239.102.144:4214 => 115.239.102.144](3/3/20m36s) in mof.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\30503ab9669b9f326c2b8ee5b298d67b.htm
+2022-11-23 01:42:54.579  INFO [main] a.p.p.c.c.L.Task - 146. 💔 🔃 U for RT got 1601 0 <- 0 in 9.433s, last fetched 4h26m15s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\30503ab9669b9f326c2b8ee5b298d67b.htm | http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhaobiaogonggao/ -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:42:54.584  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:42:54.584  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:42:54.584  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:43:13.650  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 149. Page is NO_ANCHOR(1.58 KiB) with [42.177.143.195:4231 => 42.177.143.195](3/0/22m58s) in mof.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\ac89aa3299e4de6cbf727092cb4f2722.htm
+2022-11-23 01:43:13.662  INFO [main] a.p.p.c.c.L.Task - 149. 💔 🔃 U for RT got 1601 0 <- 0 in 9.246s, last fetched 4h26m22s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\ac89aa3299e4de6cbf727092cb4f2722.htm | http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhongbiaogonggao/ -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:43:13.665  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:43:13.666  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:43:13.666  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:43:34.136  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 152. Page is NO_ANCHOR(1.58 KiB) with [115.239.102.144:4214 => 115.239.102.144](4/3/19m56s) in mof.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\03acd967d13bdd77bbe7dde7474b053b.htm
+2022-11-23 01:43:34.148  INFO [main] a.p.p.c.c.L.Task - 152. 💔 🔃 U for RT got 1601 0 <- 0 in 9.677s, last fetched 4h26m28s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\03acd967d13bdd77bbe7dde7474b053b.htm | http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difanggengzhenggonggao/ -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:43:34.152  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:43:34.153  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:43:34.153  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:43:53.372  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 155. Page is NO_ANCHOR(1.55 KiB) with [42.177.143.195:4231 => 42.177.143.195](4/0/22m18s) in ccgp-beijing.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\bbed2efec28e1299977caf0af720ad1d.htm
+2022-11-23 01:43:53.422  INFO [main] a.p.p.c.c.L.Task - 155. 💔 🔃 U for RT got 1601 0 <- 0 in 9.191s, last fetched 4h26m36s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\bbed2efec28e1299977caf0af720ad1d.htm | http://www.ccgp-beijing.gov.cn/xxgg/index.html?name=jieshou -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:43:53.425  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:43:53.425  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:43:53.426  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:43:58.637  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 3 pages in 5m(0.01 pages/s) successfully using 3 proxies | content: 135.63 KiB, 462 B/s, 45.21 KiB/p
+2022-11-23 01:44:05.845  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 158. Page is NO_ANCHOR(1.53 KiB) with [115.239.102.144:4214 => 115.239.102.144](5/3/19m25s) in ccgp-beijing.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\aa58a6833d9b24e138bdb37c3d3fb66c.htm
+2022-11-23 01:44:05.901  INFO [main] a.p.p.c.c.L.Task - 158. 💔 🔃 U for RT got 1601 0 <- 0 in 9.486s, last fetched 4h26m36s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\aa58a6833d9b24e138bdb37c3d3fb66c.htm | http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:44:05.905  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:44:05.905  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:44:05.905  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:44:25.715  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 161. Page is NO_ANCHOR(1.62 KiB) with [42.177.143.195:4231 => 42.177.143.195](5/0/21m46s) in ccgp-shanghai.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\3f4ddcf83f8bee9747afd21e0b120171.htm
+2022-11-23 01:44:25.763  INFO [main] a.p.p.c.c.L.Task - 161. 💔 🔃 U for RT got 1601 0 <- 0 in 9.053s, last fetched 4h26m36s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\3f4ddcf83f8bee9747afd21e0b120171.htm | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:44:25.766  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:44:25.766  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:44:25.766  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:44:43.549  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 164. Page is NO_ANCHOR(1.62 KiB) with [115.239.102.144:4214 => 115.239.102.144](6/3/18m47s) in ccgp-shanghai.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\b78758058eb96cac05ea33ae9fc1d6f1.htm
+2022-11-23 01:44:43.568  INFO [main] a.p.p.c.c.L.Task - 164. 💔 🔃 U for RT got 1601 0 <- 0 in 9.432s, last fetched 4h26m36s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\b78758058eb96cac05ea33ae9fc1d6f1.htm | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:44:43.576  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:44:43.576  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:44:43.576  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:44:56.257  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 167. Page is NO_ANCHOR(1.62 KiB) with [42.177.143.195:4231 => 42.177.143.195](6/0/21m15s) in ccgp-shanghai.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\a9bed6b810bf58f18805166dc2fd1b44.htm
+2022-11-23 01:44:56.321  INFO [main] a.p.p.c.c.L.Task - 167. 💔 🔃 U for RT got 1601 0 <- 0 in 10.093s, last fetched 4h26m33s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\a9bed6b810bf58f18805166dc2fd1b44.htm | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement3/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:44:56.321  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:44:56.321  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:44:56.329  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:44:58.658  INFO [oreMetrics] a.p.p.c.CoreMetrics - 🚚 Fetched 3 pages in 6m(0.01 pages/s) successfully using 3 proxies | content: 135.63 KiB, 385 B/s, 45.21 KiB/p
+2022-11-23 01:45:07.303  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 170. Page is NO_ANCHOR(1.62 KiB) with [115.239.102.144:4214 => 115.239.102.144](7/3/18m23s) in ccgp-shanghai.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\b02ab073f1b496726b117f29af81ce00.htm
+2022-11-23 01:45:07.321  INFO [main] a.p.p.c.c.L.Task - 170. 💔 Updated 🔃 U for RT got 1601 0 <- 0 in 9.524s, last fetched 4h26m44s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\b02ab073f1b496726b117f29af81ce00.htm | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:45:07.326  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:07.326  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:07.326  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:26.698  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 173. Page is NO_ANCHOR(1.62 KiB) with [42.177.143.195:4231 => 42.177.143.195](7/0/20m45s) in ccgp-shanghai.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\be6c8b43b9455f8edf952abb5e1416e2.htm
+2022-11-23 01:45:26.720  INFO [main] a.p.p.c.c.L.Task - 173. 💔 🔃 U for RT got 1601 0 <- 0 in 9.154s, last fetched 4h26m1s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 3g7Pc02 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\be6c8b43b9455f8edf952abb5e1416e2.htm | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:45:26.720  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:26.720  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:26.720  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:44.054  WARN [main] a.p.p.p.b.e.i.BrowserEmulatorImplBase - 176. Page is NO_ANCHOR(1.62 KiB) with [115.239.102.144:4214 => 115.239.102.144](8/3/17m46s) in ccgp-shanghai.gov.cn(0) | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\fbcddebe15baace96a70b89f35689a58.htm
+2022-11-23 01:45:44.094  INFO [main] a.p.p.c.c.L.Task - 176. 💔 🔃 U for RT got 1601 0 <- 0 in 9.145s, last fetched 4h25m55s ago, fc:2/2 Retry(1601) rsp: CRAWL, rrs: NO_ANCHOR | 1pN3uv2 | file://C:\Users\VINCEN~1\AppData\Local\Temp\ln\fbcddebe15baace96a70b89f35689a58.htm | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:45:44.102  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:44.102  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:44.102  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:47.422  INFO [Thread-0] a.p.p.c.s.AbstractPulsarContext - Closing context #1/2 | DefaultClassPathXmlScentH2Context
+2022-11-23 01:45:47.433  INFO [Thread-0] a.p.p.s.AbstractPulsarSession - Session is closed | #2000002
+2022-11-23 01:45:47.433  INFO [Thread-0] a.p.p.s.AbstractPulsarSession - Session is closed | #2000001
+2022-11-23 01:45:47.433  INFO [utdownHook] a.p.p.c.f.p.PrivacyManager - Closing privacy contexts
+2022-11-23 01:45:47.433  INFO [utdownHook] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #1pN3uv2 has lived for 6m43s | success: 3(0.01 pages/s) | small: 0(0.0%) | traffic: 0 B(0 B/s) | tasks: 12 total run: 12 | [115.239.102.144:4214 => 115.239.102.144](9/3/17m43s) (st, 1), (pg, 12), (fpg, 9)
+2022-11-23 01:45:47.440  INFO [l-worker-5] a.p.p.p.b.e.c.BrowserPrivacyContext - Privacy context #3g7Pc02 has lived for 4m4s | success: 0(0.00 pages/s) | small: 0(0.0%) | traffic: 0 B(0 B/s) | tasks: 9 total run: 8 | [42.177.143.195:4231 => 42.177.143.195](8/0/20m24s) (st, 1), (pg, 8), (fpg, 8)
+2022-11-23 01:45:47.450  INFO [l-worker-5] a.p.p.p.b.e.c.WebDriverContext - Low memory (1.92GiB), close 1 retired browsers immediately (shutdown) | 3g7Pc021
+2022-11-23 01:45:47.456  INFO [l-worker-5] a.p.p.p.b.e.c.WebDriverContext - Still 1 running tasks after context close (shutdown) | 24(CANCELED) | 3g7Pc021
+2022-11-23 01:45:47.790  INFO [Thread-14] a.p.p.c.Runtimes - Exit | LAPTOP-60HVBRMS\Vincent Zhang 28332  18544  2022-11-22T17:40:10.734Z  PT2.78125S 
+2022-11-23 01:45:47.970  INFO [Thread-21] a.p.p.c.Runtimes - Exit | LAPTOP-60HVBRMS\Vincent Zhang 22004  18544  2022-11-22T17:41:50.733Z  PT7.234375S 
+2022-11-23 01:45:48.032  INFO [Thread-6] a.p.p.c.Runtimes - Exit | LAPTOP-60HVBRMS\Vincent Zhang 27276  18544  2022-11-22T17:39:09.588Z  PT5.140625S 
+2022-11-23 01:45:52.120  INFO [main] a.p.p.c.c.L.Task - 179. 🗙 🗙 U for RT got 1601 0 <- 0 in 2.4s, last fetched 4h25m53s ago, fc:1/1 Retry(1601) rsp: CRAWL, rrs: BrowserErrorPageException | 3g7Pc02 | http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/index.html -diagnose -expires PT24H -itemExpires PT24H -nScreens 5 -nVerbose 1 -requireSize 1000 -showImage -showTip
+2022-11-23 01:45:52.122  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:52.122  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:52.122  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:52.135  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:52.136  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:52.136  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:52.146  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:52.146  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:52.147  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:52.154  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:52.155  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:52.155  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:52.161  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:52.161  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!
+
+2022-11-23 01:45:52.161  INFO [main] a.p.e.e.c.VerboseHarvester - ------------------------------
+2022-11-23 01:45:52.166  INFO [main] a.p.s.s.BlockLocator - Found 0 anchor groups from 0 navigate components
+2022-11-23 01:45:52.167  WARN [main] a.p.s.a.AutoMiner - 
+!!! No navigate url is found in document http://internal.pulsar.platon.ai/nil | file://C:\Users\VINCEN~1\AppData\Local\Temp\pulsar-Vincent Zhang\cache\web\export\portal\platon-ai-712f06b24f845cd8ece35c1eb79938df.htm !!!

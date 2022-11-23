@@ -43,6 +43,11 @@
         <!-- for scent-beans/app-context.xml -->
         <dependency>
             <groupId>ai.platon.scent</groupId>
+            <artifactId>scent-proxy</artifactId>
+            <version>${scent.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ai.platon.scent</groupId>
             <artifactId>scent-beans</artifactId>
             <version>${scent.version}</version>
         </dependency>

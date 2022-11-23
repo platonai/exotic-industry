@@ -1,0 +1,36 @@
+=== Failed links ===
+http://www.gzggzy.cn/jyywjsgcszgczbgg/index.jhtml
+http://ggzyjy.dezhou.gov.cn/qh/zcfg/003002/moreinfo2.html
+http://internal.pulsar.platon.ai/nil
+http://htgs.ccgp.gov.cn/GS8/contractpublish/search
+http://cgyx.ccgp.gov.cn/cgyx/pub/projSearch
+http://webapi.http.zhimacangku.com/getip?num=1&type=2&pro=&city=0&yys=0&port=1&time=1&ts=1&ys=1&cs=1&lb=1&sb=0&pb=4&mr=1&regions=
+http://search.ccgp.gov.cn/bxsearch?searchtype=1&page_index=1&bidSort=0&buyerName=&projectId=&pinMu=0&bidType=0&dbselect=bidx&kw=&start_time=2021%3A05%3A17&end_time=2021%3A11%3A15&timeType=5&displayZone=&zoneId=&pppStatus=0&agentName=
+http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhaobiaogonggao/
+http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyangzhongbiaogonggao/
+http://www.mof.gov.cn/gkml/xinxi/zhongyangbiaoxun/zhongyanggengzhenggonggao/
+http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhaobiaogonggao/
+http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difangzhongbiaogonggao/
+http://www.mof.gov.cn/gkml/xinxi/difangbiaoxun/difanggengzhenggonggao/
+http://www.ccgp-beijing.gov.cn/xxgg/index.html?name=jieshou
+http://www.ccgp-beijing.gov.cn/cgyx/sjcgyx/index.html
+http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement1/index.html
+http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement2/index.html
+http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement3/index.html
+http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement4/index.html
+http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement5/index.html
+http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement/ZcyAnnouncement6/index.html
+http://www.ccgp-shanghai.gov.cn/ZcyAnnouncement10016/index.html
+
+=== Failed hosts ===
+http://www.gzggzy.cn
+http://ggzyjy.dezhou.gov.cn
+http://htgs.ccgp.gov.cn                       -- Error 404--Not Found
+http://cgyx.ccgp.gov.cn                       -- Error 404--Not Found
+http://webapi.http.zhimacangku.com            -- page content is only 'ok'
+http://search.ccgp.gov.cn
+http://www.mof.gov.cn
+http://www.ccgp-beijing.gov.cn
+http://www.ccgp-shanghai.gov.cn
+
+Process finished with exit code 0

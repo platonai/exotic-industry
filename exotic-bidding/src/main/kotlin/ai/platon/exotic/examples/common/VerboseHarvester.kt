@@ -35,8 +35,6 @@ open class VerboseHarvester(
     }
 
     val defaultArgs = "" +
-            " -expires 1d" +
-            " -itemExpires 1d" +
 //                " -scrollCount 6" +
 //                " -itemScrollCount 4" +
             " -nScreens 5" +

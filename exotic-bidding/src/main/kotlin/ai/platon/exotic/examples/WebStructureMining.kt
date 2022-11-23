@@ -1,21 +1,19 @@
 package ai.platon.exotic.examples
 
 import ai.platon.exotic.examples.common.VerboseHarvester
-import ai.platon.pulsar.browser.common.BrowserSettings
 import ai.platon.pulsar.common.LinkExtractors
-import ai.platon.pulsar.common.ResourceLoader
 import ai.platon.scent.ScentContext
 import ai.platon.scent.ql.h2.context.ScentSQLContexts
-import org.slf4j.LoggerFactory
 
-class HarvestExamples(
+class WebStructureMining(
     context: ScentContext = ScentSQLContexts.create()
 ): VerboseHarvester(context) {
 
     private val seeds = LinkExtractors.fromResource("seeds/bidding.txt").toList()
+    private val args = """-requireSize 1000 -ignoreFailure"""
 
     fun arrangeDocuments() {
-        listOf(seeds).flatten().filter { it.isNotBlank() }.forEach { url ->
+        seeds.map { "$it $args" }.forEach { url ->
             arrangeDocument(url)
         }
     }
@@ -23,6 +21,10 @@ class HarvestExamples(
     fun harvest() {
         val url = seeds[0]
         harvest(url)
+    }
+
+    fun loadAll() {
+        session.loadAll(seeds.map { "$it $args" })
     }
 
     fun harvestAll() {
@@ -33,5 +35,5 @@ class HarvestExamples(
 
 fun main() {
 //    BrowserSettings.headless()
-    HarvestExamples().harvestAll()
+    WebStructureMining().arrangeDocuments()
 }
