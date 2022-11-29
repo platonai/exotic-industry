@@ -1,3 +1,2 @@
 Bidding Industry
 =
-
