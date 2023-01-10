@@ -1,6 +1,7 @@
 package ai.platon.exotic.bidding
 
 import ai.platon.pulsar.common.LinkExtractors
+import ai.platon.pulsar.common.ResourceLoader
 
 class LogAnalyzer {
     fun extractFailedLinks() {
@@ -12,9 +13,15 @@ class LogAnalyzer {
         links.distinct().map { it.split("/").take(3).joinToString("/") }
             .distinct().forEach { println(it) }
     }
+
+    fun extractFailedLinks2() {
+        val links = ResourceLoader.readAllLines("result/arrange.2.log")
+        println("=== Failed links ===")
+        links.filter { it.startsWith("!!! No navigate") }.distinct().forEach { println(it) }
+    }
 }
 
 fun main() {
     val analyzer = LogAnalyzer()
-    analyzer.extractFailedLinks()
+    analyzer.extractFailedLinks2()
 }

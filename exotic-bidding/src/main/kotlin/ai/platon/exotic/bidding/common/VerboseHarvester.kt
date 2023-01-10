@@ -5,6 +5,7 @@ import ai.platon.pulsar.common.config.CapabilityTypes
 import ai.platon.pulsar.common.sql.ResultSetFormatter
 import ai.platon.pulsar.common.urls.UrlUtils
 import ai.platon.pulsar.dom.FeaturedDocument
+import ai.platon.pulsar.dom.nodes.node.ext.ExportPaths
 import ai.platon.scent.ScentContext
 import ai.platon.scent.ScentSession
 import ai.platon.scent.dom.HNormUrl
@@ -75,21 +76,60 @@ open class VerboseHarvester(
         }
     }
 
-    fun arrangeDocument(portalUrl: String, args: String = "") {
-        val taskName = AppPaths.fromUri(portalUrl)
-
+    fun submitAllArrangedLinks(portalUrl: String, args: String = "") {
         val normUrl = session.normalize(portalUrl, session.options(args))
         val options = normUrl.hOptions
+        val itemOptions = options.createItemOptions()
         val portalPage = session.load(normUrl)
         val portalDocument = session.parse(portalPage)
         val anchorGroups = session.arrangeLinks(normUrl, portalDocument)
+
         logger.info("------------------------------")
+        // Take the best group
         anchorGroups.take(1).forEach {
-            it.urlStrings.shuffled().take(10).forEachIndexed { i, url -> println("${1 + i}.\t$url") }
-            it.urlStrings.take(options.topLinks)
-                    .map { session.load(it, options) }
-                    .map { session.parse(it, options) }
-                    .let { session.arrangeDocuments(normUrl, portalPage, it) }
+            val n = 10
+            logger.info("Top group has {} links, showing {} random links", it.size, n)
+            it.urlStrings.shuffled().take(n).forEachIndexed { i, url -> println("${1 + i}.\t$url") }
+
+            val urls = it.urlStrings.take(options.topLinks)
+            session.submitAll(urls, itemOptions)
+        }
+
+        portalDocument.also { it.annotateNodes(options) }.also { session.export(it, type = "portal") }
+    }
+
+    fun arrangeDocument(portalUrl: String, args: String = "") {
+        val normUrl = session.normalize(portalUrl, session.options(args))
+        val options = normUrl.hOptions
+        val itemOptions = options.createItemOptions()
+        val portalPage = session.load(normUrl)
+        val portalDocument = session.parse(portalPage)
+        val anchorGroups = session.arrangeLinks(normUrl, portalDocument)
+
+        logger.info("------------------------------")
+        // Take the best group
+        anchorGroups.take(1).forEach {
+            val n = 10
+            logger.info("Top group has {} links, showing {} random links", it.size, n)
+            it.urlStrings.shuffled().take(n).forEachIndexed { i, url -> println("${1 + i}.\t$url") }
+
+            val itemUrls = it.urlStrings.take(options.topLinks)
+            val pages = session.loadAll(itemUrls, itemOptions).filter { it.contentLength > 1000 }
+            val documents = pages.map { session.parse(it) }
+            val visualDocuments = session.arrangeDocuments(normUrl, portalPage, documents)
+
+            // do something with the visual documents
+
+
+//            val domain = AppPaths.fromDomain(portalUrl)
+            documents.forEachIndexed { i, doc ->
+                val ident = counter.incrementAndGet() % 7
+                val fileName = AppPaths.fromUri(doc.baseUri, "", ".htm")
+                doc.annotateNodes(options)
+                val path = ExportPaths.get("annotated", "$ident").resolve(fileName)
+                Files.createDirectories(path.parent)
+                session.exportTo(doc, path, type = "annotated")
+            }
         }
 
         portalDocument.also { it.annotateNodes(options) }.also { session.export(it, type = "portal") }

@@ -241,6 +241,49 @@
 				<artifactId>pulsar-ql-common</artifactId>
 				<version>${pulsar.version}</version>
 			</dependency>
+			<!-- Java Predictive Model Markup Language -->
+			<dependency>
+				<groupId>org.jpmml</groupId>
+				<artifactId>pmml-agent</artifactId>
+				<version>${pmml.version}</version>
+			</dependency>
+
+			<!-- Java Predictive Model Markup Language -->
+			<dependency>
+				<groupId>org.jpmml</groupId>
+				<artifactId>pmml-model-jackson</artifactId>
+				<version>${pmml.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jpmml</groupId>
+				<artifactId>pmml-evaluator-metro</artifactId>
+				<version>${pmml.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jpmml</groupId>
+				<artifactId>pmml-evaluator-testing</artifactId>
+				<version>${pmml.version}</version>
+			</dependency>
+
+			<!-- jakarta.xml.bind-api:3.0.1 is required by pmml-evaluator-metro:1.6.4 -->
+			<!-- The JAXB APIs are considered to be Java EE APIs and therefore are no longer contained on the default classpath in Java SE 9.
+				In Java 11, they are completely removed from the JDK.
+
+				@see https://stackoverflow.com/questions/43574426/how-to-resolve-java-lang-noclassdeffounderror-javax-xml-bind-jaxbexception
+				-->
+			<!-- API, java.xml.bind module -->
+			<dependency>
+				<groupId>jakarta.xml.bind</groupId>
+				<artifactId>jakarta.xml.bind-api</artifactId>
+				<version>3.0.1</version>
+			</dependency>
+			<!-- Override the default version, required by jpmml -->
+			<dependency>
+				<groupId>com.sun.activation</groupId>
+				<artifactId>jakarta.activation</artifactId>
+				<version>2.0.1</version>
+			</dependency>
+
 			<dependency>
 				<groupId>javax.servlet</groupId>
 				<artifactId>javax.servlet-api</artifactId>
@@ -294,7 +337,10 @@
 		<javac.target.version>11</javac.target.version>
 		<kotlin.version>1.5.32</kotlin.version>
 
-		<pulsar.version>1.10.6</pulsar.version>
+		<pulsar.version>1.10.7-SNAPSHOT</pulsar.version>
 		<scent.version>1.10.3-SNAPSHOT</scent.version>
+		<pmml.version>1.6.4</pmml.version>
+		<!-- Override spring boot's version -->
+		<glassfish-jaxb.version>3.0.2</glassfish-jaxb.version>
 	</properties>
 </project>

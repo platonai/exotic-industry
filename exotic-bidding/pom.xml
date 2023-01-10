@@ -26,6 +26,12 @@
             <groupId>ai.platon.pulsar</groupId>
             <artifactId>pulsar-all</artifactId>
             <version>${pulsar.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.glassfish.jaxb</groupId>
+                    <artifactId>*</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>ai.platon.pulsar</groupId>
@@ -51,11 +57,36 @@
             <artifactId>scent-beans</artifactId>
             <version>${scent.version}</version>
         </dependency>
-        <!-- Required by ai.platon.pulsar.browser.driver.chrome.impl.Chrome -->
+
+        <!-- https://mvnrepository.com/artifact/org.jpmml/jpmml-sklearn -->
+        <dependency>
+            <groupId>org.jpmml</groupId>
+            <artifactId>pmml-evaluator-metro</artifactId>
+        </dependency>
+        <!-- Required by ai.platon.pulsar.browser.driver.chrome.impl.Chrome and jpmml -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>jakarta.activation</artifactId>
+        </dependency>
+        <!-- jakarta.xml.bind-api:3.0.1 is required by pmml-evaluator-metro:1.6.4 -->
+        <!-- API, java.xml.bind module -->
+<!--        <dependency>-->
+<!--            <groupId>jakarta.xml.bind</groupId>-->
+<!--            <artifactId>jakarta.xml.bind-api</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.glassfish.jaxb</groupId>-->
+<!--            <artifactId>jaxb-runtime</artifactId>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.glassfish.jaxb</groupId>-->
+<!--            <artifactId>jaxb-core</artifactId>-->
+<!--        </dependency>-->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
