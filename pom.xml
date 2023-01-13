@@ -337,8 +337,8 @@
 		<javac.target.version>11</javac.target.version>
 		<kotlin.version>1.5.32</kotlin.version>
 
-		<pulsar.version>1.10.7-SNAPSHOT</pulsar.version>
-		<scent.version>1.10.3-SNAPSHOT</scent.version>
+		<pulsar.version>1.10.7</pulsar.version>
+		<scent.version>1.10.3</scent.version>
 		<pmml.version>1.6.4</pmml.version>
 		<!-- Override spring boot's version -->
 		<glassfish-jaxb.version>3.0.2</glassfish-jaxb.version>

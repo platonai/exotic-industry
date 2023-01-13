@@ -63,6 +63,11 @@ top-g0,top-g1,top-g2,top-g3,left-g0,left-g1,left-g2,left-g3,width-g0,width-g1,wi
         if (!Files.exists(evaluator.model.toPath())) {
             System.err.println("Model file not found | $modelPath")
         }
+
+        if (predictResultPath != null) {
+            Files.deleteIfExists(predictResultPath)
+            messageWriter.write("URL,Title,Brief,Content", predictResultPath)
+        }
     }
 
     fun predict(record: Map<String, *>): Map<String, *> {
@@ -117,9 +122,6 @@ top-g0,top-g1,top-g2,top-g3,left-g0,left-g1,left-g2,left-g3,width-g0,width-g1,wi
         val ele = x.node.bestElement
         val title = ele.text()
 
-//        val csvFormat = CSVFormat.newFormat(',')
-//        csvFormat.format(url).format(title)
-
         sb.append(cleanCsvCell(url)).append(",")
         sb.append(cleanCsvCell(title)).append(",")
 
@@ -153,14 +155,46 @@ fun main() {
         FileUtils.copyURLToFile(modelURL, modelPath.toFile())
     }
 
-    val model = DOMEvaluator(modelPath)
+    val predictResultPath = Paths.get("/tmp/dom_decision_tree_predict.csv")
+    val model = DOMEvaluator(modelPath, predictResultPath)
 
     val urls = """
 http://www.ccgp.gov.cn/cggg/zygg/gkzb/201811/t20181128_11209985.htm
+http://www.infobidding.com/infobidding/upload2/html/info/2022/12/23/info_57986964.html
+http://www.ccgp-xizang.gov.cn/freecms/site/xizang/xzcggg/info/2022/73046.html
+https://jyzx.dh.gov.cn/jyxx/jsgcZbjggsDetail?guid=739ff5bc-a590-4fa5-86e2-c49b7f9b4961&isOther=false
+https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=766181105433137152
+https://www.plap.cn/index/selectArticleNewsById.do?id=E114E25B7E254B55B5F725A63ABFACE9
+http://www.ccgp-xizang.gov.cn/freecms/site/xizang/xzcggg/info/2022/73281.html
+https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=77698184
+http://cg.gemas.com.cn/cgcgwgg/213173.jhtml
+http://www.yulin.gov.cn/zwgk/ggzypzlygk/zfcgly/zbgg/t14505306.shtml
+http://www.qlebid.com/cms/channel/1ywgg2fw/32828.htm
+http://www.gzggzy.cn/jyywjsgcyllyzsjggs/916231.jhtml
+http://www.hljggzyjyw.org.cn/jyfwdt/003002/003002001/003002001001/20221208/b5b310cc-ac7e-4251-87de-a594e9f89b22.html
+http://47.96.125.164:8060/jcqgg/15380.jhtml
+http://ggzyjy.lsz.gov.cn/TPFront/infodetail/?infoid=d8422a0a-6d40-40c3-9ba1-1755ed0c66f6&categoryNum=005001007
+http://www.gzggzy.cn/jyywjsgcyllyzbhxrgs/917951.jhtml
+http://ggb.sx.gov.cn/art/2022/11/18/art_1518855_58977140.html
+http://ggzyjy.zgzhijiang.gov.cn/zjSite/InfoDetail/?InfoID=a8c26778-0cb6-4dd4-8429-5f9a7ffec3e5&CategoryNum=003001004003
+http://ggzy.yueyang.gov.cn/56114/56143/56144/content_2020850.html
+http://ggb.sx.gov.cn/art/2022/12/16/art_1518857_58978178.html
+https://www.plap.cn/index/selectArticleNewsById.do?id=74D707E111BD413ABCECDCB23EE9324D
+https://ggzy.yibin.gov.cn/Jyweb/JYXTXiangMuXinXiView.aspx?type=%e5%bb%ba%e8%ae%be%e5%b7%a5%e7%a8%8b&subtype=130&XXLY=2&Guid=71aac070-8bd0-4761-84a7-4664ca06673d
+http://www.yulin.gov.cn/zwgk/ggzypzlygk/zfcgly/gzcq/t14010118.shtml
+http://www.zmzb.com/cms/channel/ywgg4hw/21585.htm
+http://ggzyjy.yichang.gov.cn/TPFront/infodetail/?infoid=1b12da6b-81c5-4759-bb07-5172806d1aeb&categoryNum=003002002001
+http://www.ccgp-xizang.gov.cn/freecms/site/xizang/xzcggg/info/2022/73243.html
+http://218.67.246.33/webInfo/getWebInfoByPkWebInfoId1.do?pkWebInfoId=0632C73E-6C24-493C-BDD5-9F5731FCC65D
+http://www.whszfcg.com/wuhan/views/announce/announce_info.html?uuid=033cd1ce3f474b89939ff2a3646096a2&type=1
         """.trimIndent().split("\n").map { it.trim() }.filter { it.startsWith("http") }
 
     urls.take(100).forEach { url ->
         val result = model.predict(url)
         println(result)
     }
+
+    println("\n=======================")
+    println("Extracted result are exported to $predictResultPath")
+    println("=======================\n")
 }

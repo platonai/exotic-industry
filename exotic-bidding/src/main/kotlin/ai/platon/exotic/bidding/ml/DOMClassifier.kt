@@ -64,7 +64,7 @@ class DOMClassifier {
                 node.numChars > 5
     }
 
-    fun encodeElements() {
+    fun encode() {
         labelSet.clear()
 
         var headerNotWritten = true
