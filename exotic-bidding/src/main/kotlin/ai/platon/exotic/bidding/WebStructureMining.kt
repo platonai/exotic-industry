@@ -6,13 +6,12 @@ import ai.platon.pulsar.common.LinkExtractors
 import ai.platon.pulsar.context.PulsarContexts
 import ai.platon.scent.ScentContext
 import ai.platon.scent.ql.h2.context.ScentSQLContexts
-import kotlin.math.min
 
 class WebStructureMining(
     context: ScentContext = ScentSQLContexts.create()
 ): VerboseHarvester(context) {
 
-    private val seeds = LinkExtractors.fromResource("seeds/bidding.txt").toList().shuffled()
+    private val seeds = LinkExtractors.fromResource("seeds/bidding-portal.txt").toList().shuffled()
     private val args = """-requireSize 1000 -requireItemSize 1000 -ignoreFailure"""
 
     fun arrangeDocuments() {

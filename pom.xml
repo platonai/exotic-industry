@@ -26,10 +26,10 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/platonai/exotic.git</connection>
-		<developerConnection>scm:git:https://github.com/platonai/exotic.git</developerConnection>
-		<url>https://github.com/platonai/exotic</url>
-		<tag>v1.11.4-SNAPSHOT</tag>
+		<connection>scm:git:https://github.com/platonai/exotic-industry.git</connection>
+		<developerConnection>scm:git:https://github.com/platonai/exotic-industry.git</developerConnection>
+		<url>https://github.com/platonai/exotic-industry</url>
+		<tag>v1.10.0-SNAPSHOT</tag>
 	</scm>
 
 	<developers>
@@ -57,6 +57,17 @@
 			<snapshots>
 				<enabled>true</enabled>
 				<checksumPolicy>ignore</checksumPolicy>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>sonatype-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
 			</snapshots>
 		</repository>
 	</repositories>
