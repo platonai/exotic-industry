@@ -153,27 +153,27 @@ fun main() {
     val predictResultPath = Paths.get("/tmp/dom_decision_tree_predict.csv")
     val model = DOMEvaluator(modelPath, predictResultPath)
 
-    val urls0 = """
-http://www.ccgp.gov.cn/cggg/zygg/gkzb/201811/t20181128_11209985.htm
-http://www.infobidding.com/infobidding/upload2/html/info/2022/12/23/info_57986964.html
-        """.trimIndent().split("\n").map { it.trim() }.filter { it.startsWith("http") }
-
     val urls = LinkExtractors.fromResource("seeds/bidding-detail.txt")
         .filterNot { it.contains("index") }
         .shuffled()
         .take(100)
 
+    var predictedCount = 0
     urls.forEach { url ->
         val result = model.predict(url)
         if (result.isEmpty()) {
             println("Failed to predict")
         } else {
+            ++predictedCount
             println(result)
             println("Title:\t" + result["Title"])
         }
     }
 
     println("\n=======================")
+    val totalCount = urls.size
+    val predicatedRate = predictedCount / totalCount.toFloat()
+    println("Predicated: $predictedCount Total: ${urls.size} Predicated Rate: $predicatedRate")
     println("Full extracted result are exported to $predictResultPath")
     println("=======================\n")
 }
