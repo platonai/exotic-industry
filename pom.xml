@@ -73,7 +73,9 @@
 	</repositories>
 
 	<modules>
+		<module>exotic-industry-common</module>
 		<module>exotic-bidding</module>
+		<module>exotic-automobile</module>
 	</modules>
 
 	<build>
@@ -233,9 +235,13 @@
 
 			<dependency>
 				<groupId>ai.platon.pulsar</groupId>
-				<artifactId>pulsar-persist</artifactId>
+				<artifactId>pulsar-all</artifactId>
 				<version>${pulsar.version}</version>
 				<exclusions>
+					<exclusion>
+						<groupId>org.glassfish.jaxb</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
 					<exclusion>
 						<groupId>org.mortbay.jetty</groupId>
 						<artifactId>servlet-api</artifactId>
@@ -252,6 +258,13 @@
 				<artifactId>pulsar-ql-common</artifactId>
 				<version>${pulsar.version}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>ai.platon.scent</groupId>
+				<artifactId>scent-resources</artifactId>
+				<version>${scent.version}</version>
+			</dependency>
+
 			<!-- Java Predictive Model Markup Language -->
 			<dependency>
 				<groupId>org.jpmml</groupId>
@@ -348,7 +361,7 @@
 		<javac.target.version>11</javac.target.version>
 		<kotlin.version>1.5.32</kotlin.version>
 
-		<pulsar.version>1.10.7</pulsar.version>
+		<pulsar.version>1.10.8-SNAPSHOT</pulsar.version>
 		<scent.version>1.10.3</scent.version>
 		<pmml.version>1.6.4</pmml.version>
 		<!-- Override spring boot's version -->
