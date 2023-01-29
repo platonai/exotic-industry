@@ -86,9 +86,9 @@ class AutomobileCrawler(
 
 fun main() {
     val crawler = AutomobileCrawler()
-//    crawler.crawlDouyin()
-//    crawler.crawlCheshi()
-//    crawler.crawlPickup()
-//    crawler.crawlAutohome()
+    crawler.crawlDouyin()
+    crawler.crawlCheshi()
+    crawler.crawlPickup()
+    crawler.crawlAutohome()
     crawler.crawlMafengwo()
 }

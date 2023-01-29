@@ -34,6 +34,8 @@ class DOMEvaluator(
 
     private val messageWriter = session.context.getBean<ScentMiscMessageWriter>()
 
+    private val failedUrlReportFile = "predict-failed-urls.txt"
+
     private val biddingNodeFilter: (Node) -> Boolean = { node ->
         node is Element &&
                 node.left in 0..500 &&
@@ -73,6 +75,11 @@ class DOMEvaluator(
         val options = session.options()
 
         val document = session.loadDocument(url, options)
+        val hasIframe = document.selectFirstOrNull("iframe") != null
+        if (hasIframe) {
+            return mapOf("Failure" to "IFrame")
+        }
+
         val df = session.encodeNodes(listOf(document), options, biddingNodeFilter)
         val columns = df.schema.columns
 
@@ -96,6 +103,10 @@ class DOMEvaluator(
             messageWriter.write(sb.toString(), predictResultPath)
         }
         sb.clear()
+
+        if (result.isEmpty()) {
+            messageWriter.write(url, failedUrlReportFile)
+        }
 
         return result
     }
@@ -156,24 +167,30 @@ fun main() {
     val urls = LinkExtractors.fromResource("seeds/bidding-detail.txt")
         .filterNot { it.contains("index") }
         .shuffled()
-        .take(100)
+        .take(10000)
 
     var predictedCount = 0
+    var failureCount = 0
+    var iframeCount = 0
     urls.forEach { url ->
         val result = model.predict(url)
         if (result.isEmpty()) {
-            println("Failed to predict")
+            ++failureCount
+            println("Failed to predict, [Unknown Reason] | $url")
+        } else if (result.containsKey("Failure")) {
+            ++iframeCount
+            println("Failed to predict, [" + result["Failure"] + "] | $url")
         } else {
             ++predictedCount
             println(result)
-            println("Title:\t" + result["Title"])
+            println("Title:\t" + result["Title"] + " | $url")
         }
     }
 
     println("\n=======================")
-    val totalCount = urls.size
+    val totalCount = urls.size - iframeCount
     val predicatedRate = predictedCount / totalCount.toFloat()
-    println("Predicated: $predictedCount Total: ${urls.size} Predicated Rate: $predicatedRate")
+    println("Predicated: $predictedCount Total: $totalCount Predicated Rate: $predicatedRate")
     println("Full extracted result are exported to $predictResultPath")
     println("=======================\n")
 }
