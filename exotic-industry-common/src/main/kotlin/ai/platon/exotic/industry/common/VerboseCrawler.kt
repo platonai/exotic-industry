@@ -1,6 +1,7 @@
 package ai.platon.exotic.industry.common
 
 import ai.platon.pulsar.common.options.LoadOptions
+import ai.platon.pulsar.common.urls.Hyperlink
 import ai.platon.pulsar.context.PulsarContext
 import ai.platon.pulsar.context.PulsarContexts
 import ai.platon.pulsar.dom.FeaturedDocument
@@ -30,18 +31,21 @@ open class VerboseCrawler(
         return doc
     }
 
-    fun detectLinks(url: String, options: LoadOptions) {
+    fun collectLinks(url: String, options: LoadOptions): List<Hyperlink> {
         val page = session.load(url, options)
 
         val doc = session.parse(page)
         doc.absoluteLinks()
         doc.stripScripts()
 
-        doc.selectHyperlinks(options.outLinkSelector)
+        val links = doc.selectHyperlinks(options.outLinkSelector)
             .distinct()
-            .take(10)
+
+        links.take(10)
             .joinToString("\n") { it.url }
             .also { println(it) }
+
+        return links
     }
 
     fun loadOutPages(portalUrl: String, args: String): Collection<WebPage> {

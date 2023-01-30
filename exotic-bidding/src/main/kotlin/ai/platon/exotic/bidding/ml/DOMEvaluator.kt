@@ -42,7 +42,7 @@ class DOMEvaluator(
                 node.width >= 200 &&
                 node.top in 100..2000 &&
                 node.bottom > 100 &&
-                node.numChars > 5
+                node.numChars in 5..100
     }
 
     init {
