@@ -1,4 +1,4 @@
-package ai.platon.exotic.bidding.ml
+package ai.platon.exotic.automobile.ml
 
 import ai.platon.pulsar.common.LinkExtractors
 import ai.platon.pulsar.common.getLogger
@@ -34,15 +34,13 @@ class DOMEvaluator(
 
     private val messageWriter = session.context.getBean<ScentMiscMessageWriter>()
 
-    private val failedUrlReportFile = "predict-failed-urls.txt"
-
     private val biddingNodeFilter: (Node) -> Boolean = { node ->
         node is Element &&
                 node.left in 0..500 &&
                 node.width >= 200 &&
                 node.top in 100..2000 &&
                 node.bottom > 100 &&
-                node.numChars in 5..100
+                node.numChars > 5
     }
 
     init {
@@ -75,11 +73,6 @@ class DOMEvaluator(
         val options = session.options()
 
         val document = session.loadDocument(url, options)
-        val hasIframe = document.selectFirstOrNull("iframe") != null
-        if (hasIframe) {
-            return mapOf("Failure" to "IFrame")
-        }
-
         val df = session.encodeNodes(listOf(document), options, biddingNodeFilter)
         val columns = df.schema.columns
 
@@ -103,10 +96,6 @@ class DOMEvaluator(
             messageWriter.write(sb.toString(), predictResultPath)
         }
         sb.clear()
-
-        if (result.isEmpty()) {
-            messageWriter.write(url, failedUrlReportFile)
-        }
 
         return result
     }
@@ -164,33 +153,27 @@ fun main() {
     val predictResultPath = Paths.get("/tmp/dom_decision_tree_predict.csv")
     val model = DOMEvaluator(modelPath, predictResultPath)
 
-    val urls = LinkExtractors.fromResource("seeds/bidding-detail.txt")
+    val urls = LinkExtractors.fromResource("seeds/auto-detail.txt")
         .filterNot { it.contains("index") }
         .shuffled()
-        .take(10000)
+        .take(100)
 
     var predictedCount = 0
-    var failureCount = 0
-    var iframeCount = 0
     urls.forEach { url ->
         val result = model.predict(url)
         if (result.isEmpty()) {
-            ++failureCount
-            println("Failed to predict, [Unknown Reason] | $url")
-        } else if (result.containsKey("Failure")) {
-            ++iframeCount
-            println("Failed to predict, [" + result["Failure"] + "] | $url")
+            println("Failed to predict")
         } else {
             ++predictedCount
             println(result)
-            println("Title:\t" + result["Title"] + " | $url")
+            println("Title:\t" + result["Title"])
         }
     }
 
     println("\n=======================")
-    val totalCount = urls.size - iframeCount
+    val totalCount = urls.size
     val predicatedRate = predictedCount / totalCount.toFloat()
-    println("Predicated: $predictedCount Total: $totalCount Predicated Rate: $predicatedRate")
+    println("Predicated: $predictedCount Total: ${urls.size} Predicated Rate: $predicatedRate")
     println("Full extracted result are exported to $predictResultPath")
     println("=======================\n")
 }

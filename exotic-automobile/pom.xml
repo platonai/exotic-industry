@@ -18,10 +18,16 @@
         <version>1.10.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>exotic-bidding</artifactId>
-    <name>Exotic Bidding</name>
+    <artifactId>exotic-automobile</artifactId>
+    <name>Exotic Automobile</name>
 
     <dependencies>
+        <dependency>
+            <groupId>ai.platon.exotic</groupId>
+            <artifactId>exotic-industry-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>ai.platon.pulsar</groupId>
             <artifactId>pulsar-all</artifactId>
@@ -34,6 +40,11 @@
         </dependency>
 
         <!-- Internal dependency -->
+        <dependency>
+            <groupId>ai.platon.scent</groupId>
+            <artifactId>scent-resources</artifactId>
+            <version>${scent.version}</version>
+        </dependency>
 
         <!-- for scent-beans/app-context.xml -->
         <dependency>
