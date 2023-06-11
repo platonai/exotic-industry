@@ -361,7 +361,7 @@
 		<javac.target.version>11</javac.target.version>
 		<kotlin.version>1.5.32</kotlin.version>
 
-		<pulsar.version>1.10.14-SNAPSHOT</pulsar.version>
+		<pulsar.version>1.10.14</pulsar.version>
 		<scent.version>1.10.6</scent.version>
 
 		<pmml.version>1.6.4</pmml.version>
