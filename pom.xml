@@ -76,10 +76,11 @@
 		<module>exotic-industry-common</module>
 		<module>exotic-bidding</module>
 		<module>exotic-automobile</module>
+		<module>exotic-app</module>
 	</modules>
 
 	<build>
-		<defaultGoal>package</defaultGoal>
+		<defaultGoal>install</defaultGoal>
 
 		<pluginManagement>
 			<plugins>
@@ -217,21 +218,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>ai.platon.exotic</groupId>
-				<artifactId>exotic-driver</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>ai.platon.exotic</groupId>
-				<artifactId>exotic-server</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>ai.platon.exotic</groupId>
-				<artifactId>exotic-services</artifactId>
-				<version>${project.version}</version>
-			</dependency>
 
 			<dependency>
 				<groupId>ai.platon.pulsar</groupId>
