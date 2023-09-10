@@ -80,7 +80,7 @@
 	</modules>
 
 	<build>
-		<defaultGoal>install</defaultGoal>
+		<defaultGoal>package</defaultGoal>
 
 		<pluginManagement>
 			<plugins>
@@ -345,10 +345,11 @@
 	<properties>
 		<javac.src.version>11</javac.src.version>
 		<javac.target.version>11</javac.target.version>
-		<kotlin.version>1.5.32</kotlin.version>
+		<kotlin.version>1.7.21</kotlin.version>
 
-		<pulsar.version>1.10.14</pulsar.version>
-		<scent.version>1.10.6</scent.version>
+		<pulsar.version>1.10.20.1</pulsar.version>
+		<pulsar-tests.version>1.10.15</pulsar-tests.version>
+		<scent.version>1.10.7</scent.version>
 
 		<pmml.version>1.6.4</pmml.version>
 		<!-- Override spring boot's version -->

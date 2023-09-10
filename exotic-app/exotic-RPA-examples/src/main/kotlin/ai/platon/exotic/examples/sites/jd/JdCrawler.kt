@@ -144,7 +144,7 @@ java -Xmx10g -Xms2G -cp exotic-OCR-examples*.jar \
 -D"loader.main=ai.platon.exotic.examples.sites.jd.JdCrawlerKt" \
 org.springframework.boot.loader.PropertiesLauncher
  * */
-fun main(argv: Array<String>) {
+fun main() {
     val session = ScentContexts.createSession()
     val portalUrls = ResourceLoader.readAllLines("portal.urls.jd.txt")
     val args = "-i 1s -requireSize 250000 -ol a[href~=/item] -ignoreFailure"
