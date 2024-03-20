@@ -18,7 +18,7 @@ class AiqichaCrawler {
     private val session = ScentContexts.createSession()
 
     fun crawl() {
-        Systems.setProperty(CapabilityTypes.PRIVACY_CONTEXT_ID_GENERATOR_CLASS, "ai.platon.pulsar.crawl.fetch.privacy.SystemDefaultPrivacyContextIdGenerator")
+        Systems.setProperty(CapabilityTypes.PRIVACY_AGENT_GENERATOR_CLASS, "ai.platon.pulsar.crawl.fetch.privacy.SystemDefaultPrivacyAgentGenerator")
 
         urls.forEach { url ->
             session.submit(url, createOptions())
@@ -86,5 +86,5 @@ class AiqichaCrawler {
 fun main() {
     BrowserSettings.privacy(1).withSPA().withSystemDefaultBrowser()
     AiqichaCrawler().crawl()
-    readLine()
+    readlnOrNull()
 }

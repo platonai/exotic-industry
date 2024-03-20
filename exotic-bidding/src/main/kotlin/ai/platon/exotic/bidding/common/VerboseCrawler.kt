@@ -6,6 +6,7 @@ import ai.platon.pulsar.common.urls.UrlUtils
 import ai.platon.pulsar.context.PulsarContext
 import ai.platon.pulsar.context.PulsarContexts
 import ai.platon.pulsar.persist.WebPage
+import ai.platon.pulsar.session.AbstractPulsarSession
 import ai.platon.pulsar.session.PulsarSession
 import org.slf4j.LoggerFactory
 import java.net.URL
@@ -15,7 +16,7 @@ open class VerboseCrawler(
 ) {
     private val logger = LoggerFactory.getLogger(VerboseCrawler::class.java)
 
-    open val session: PulsarSession = PulsarContexts.createSession()
+    open val session: AbstractPulsarSession = PulsarContexts.createSession() as AbstractPulsarSession
 
     fun load(url: String, args: String) {
         val options = session.options(args)
@@ -30,7 +31,7 @@ open class VerboseCrawler(
         doc.stripScripts()
 
         doc.select(options.outLinkSelector) { it.attr("abs:href") }.asSequence()
-            .filter { UrlUtils.isValidUrl(it) }
+            .filter { UrlUtils.isStandard(it) }
             .mapTo(HashSet()) { it.substringBefore(".com") }
             .asSequence()
             .filter { it.isNotBlank() }

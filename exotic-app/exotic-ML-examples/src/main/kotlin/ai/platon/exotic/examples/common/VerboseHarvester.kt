@@ -8,11 +8,11 @@ import ai.platon.pulsar.common.urls.UrlUtils
 import ai.platon.pulsar.dom.FeaturedDocument
 import ai.platon.scent.ScentContext
 import ai.platon.scent.ScentSession
+import ai.platon.scent.analysis.corpus.annotateNodes
 import ai.platon.scent.context.ScentContexts
 import ai.platon.scent.dom.HNormUrl
 import ai.platon.scent.dom.HarvestOptions
 import ai.platon.scent.dom.nodes.AnchorGroup
-import ai.platon.scent.dom.nodes.annotateNodes
 import ai.platon.scent.entities.HarvestResult
 import kotlinx.coroutines.runBlocking
 import org.slf4j.LoggerFactory
@@ -94,7 +94,7 @@ open class VerboseHarvester(
             it.urlStrings.take(options.topLinks)
                     .map { session.load(it, options) }
                     .map { session.parse(it, options) }
-                    .let { session.arrangeDocuments(normUrl, portalPage, it) }
+                    .let { session.arrangeDocuments(normUrl, portalPage, it.asSequence()) }
         }
 
         portalDocument.also { it.annotateNodes(options) }.also { session.export(it, type = "portal") }
@@ -107,7 +107,7 @@ open class VerboseHarvester(
     fun harvest(url: String, options: HarvestOptions) = harvest(session, url, options)
 
     fun harvest(documents: List<FeaturedDocument>, options: HarvestOptions): HarvestResult {
-        val result = runBlocking { session.harvest(documents, options) }
+        val result = runBlocking { session.harvest(documents.asSequence(), options) }
         report(result, options)
         return result
     }

@@ -343,13 +343,24 @@
 	</dependencies>
 
 	<properties>
+
+		<!--  Java  -->
 		<javac.src.version>11</javac.src.version>
 		<javac.target.version>11</javac.target.version>
-		<kotlin.version>1.7.21</kotlin.version>
+		<!--  Kotlin  -->
+		<!-- supported languageVersion: 1.8, 1.9, 2.0, etc -->
+		<!--        <kotlin.compiler.languageVersion>1.9</kotlin.compiler.languageVersion>-->
+		<!-- Target version of the generated JVM bytecode, 1.8, 9, 10, ..., 21, default 1.8 -->
+		<kotlin.compiler.jvmTarget>11</kotlin.compiler.jvmTarget>
 
-		<pulsar.version>1.10.20.1</pulsar.version>
+		<kotlin.version>1.9.20</kotlin.version>
+		<kotlin.coroutine.version>1.7.3</kotlin.coroutine.version>
+		<kotlin.compiler.incremental>true</kotlin.compiler.incremental>
+
+
+		<pulsar.version>1.12.2</pulsar.version>
 		<pulsar-tests.version>1.10.15</pulsar-tests.version>
-		<scent.version>1.10.7</scent.version>
+		<scent.version>1.12.2</scent.version>
 
 		<pmml.version>1.6.4</pmml.version>
 		<!-- Override spring boot's version -->
