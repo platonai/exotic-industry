@@ -5,13 +5,13 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.5.4</version>
+		<version>2.6.12</version>
 		<relativePath/>
 	</parent>
 
 	<groupId>ai.platon.exotic</groupId>
 	<artifactId>exotic-industry</artifactId>
-	<version>1.10.0-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 
 	<packaging>pom</packaging>
 
@@ -29,7 +29,7 @@
 		<connection>scm:git:https://github.com/platonai/exotic-industry.git</connection>
 		<developerConnection>scm:git:https://github.com/platonai/exotic-industry.git</developerConnection>
 		<url>https://github.com/platonai/exotic-industry</url>
-		<tag>v1.10.0-SNAPSHOT</tag>
+		<tag>v0.0.2-SNAPSHOT</tag>
 	</scm>
 
 	<developers>
@@ -76,6 +76,7 @@
 		<module>exotic-industry-common</module>
 		<module>exotic-bidding</module>
 		<module>exotic-automobile</module>
+		<module>exotic-app</module>
 	</modules>
 
 	<build>
@@ -217,21 +218,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>ai.platon.exotic</groupId>
-				<artifactId>exotic-driver</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>ai.platon.exotic</groupId>
-				<artifactId>exotic-server</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>ai.platon.exotic</groupId>
-				<artifactId>exotic-services</artifactId>
-				<version>${project.version}</version>
-			</dependency>
 
 			<dependency>
 				<groupId>ai.platon.pulsar</groupId>
@@ -359,10 +345,11 @@
 	<properties>
 		<javac.src.version>11</javac.src.version>
 		<javac.target.version>11</javac.target.version>
-		<kotlin.version>1.5.32</kotlin.version>
+		<kotlin.version>1.7.21</kotlin.version>
 
-		<pulsar.version>1.10.14</pulsar.version>
-		<scent.version>1.10.6</scent.version>
+		<pulsar.version>1.10.20.1</pulsar.version>
+		<pulsar-tests.version>1.10.15</pulsar-tests.version>
+		<scent.version>1.10.7</scent.version>
 
 		<pmml.version>1.6.4</pmml.version>
 		<!-- Override spring boot's version -->
