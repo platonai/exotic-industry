@@ -11,17 +11,6 @@ class AutomobileCrawler(
     private val args = "-i 7s -ii 7s"
     private val links = mutableSetOf<Hyperlink>()
 
-    fun crawlDouyin() {
-        val url = "https://www.douyin.com/channel/300204"
-        val options = session.options("$args -ol a[href~=/video/]")
-        val be = options.event.browseEvent
-        be.onDocumentActuallyReady.addLast { page, driver ->
-            // close mask
-        }
-
-        collectLinks(url, options).toCollection(links)
-    }
-
     fun crawlPickup() {
         var url = "https://www.cnpickups.com/pikazixun/"
         var options = session.options("$args -ol a[href~=/news/]")
@@ -83,7 +72,6 @@ class AutomobileCrawler(
 
 fun main() {
     val crawler = AutomobileCrawler()
-    crawler.crawlDouyin()
     crawler.crawlCheshi()
     crawler.crawlPickup()
     crawler.crawlAutohome()

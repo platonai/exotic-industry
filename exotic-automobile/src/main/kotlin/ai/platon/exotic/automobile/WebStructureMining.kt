@@ -1,6 +1,6 @@
 package ai.platon.exotic.automobile
 
-import ai.platon.exotic.industry.common.VerboseHarvester
+import ai.platon.exotic.industry.common.VerboseCrawler
 import ai.platon.pulsar.browser.common.BrowserSettings
 import ai.platon.pulsar.common.LinkExtractors
 import ai.platon.pulsar.context.PulsarContexts
@@ -9,7 +9,7 @@ import ai.platon.scent.ql.h2.context.ScentSQLContexts
 
 class WebStructureMining(
     context: ScentContext = ScentSQLContexts.create()
-): VerboseHarvester(context) {
+): VerboseCrawler(context) {
 
     private val seeds = LinkExtractors.fromResource("seeds/auto-portal.txt").toList().shuffled()
     private val args = """-requireSize 1000 -requireItemSize 1000 -ignoreFailure"""
@@ -23,14 +23,14 @@ class WebStructureMining(
     fun loadAllArrangedLinks() {
         seeds.map { "$it $args" }.forEach { url ->
             if (session.isActive) {
-                submitAllArrangedLinks(url, "-topLinks 100")
+                // submitAllArrangedLinks(url, "-topLinks 100")
             }
         }
     }
 
     fun harvest() {
         val url = seeds[0]
-        harvest(url, "$defaultArgs $args")
+        harvest(url, args)
     }
 
     fun loadAll() {
@@ -49,7 +49,7 @@ class WebStructureMining(
 //        seeds.forEach { println(it) }
         seeds.forEach {
             if (session.isActive) {
-                harvest(it, "$defaultArgs $args")
+                harvest(it, args)
             }
         }
     }
